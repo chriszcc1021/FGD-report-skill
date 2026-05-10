@@ -1,0 +1,4 @@
+interface:
+  display_name: "FGD Report Synthesizer"
+  short_description: "Build Chinese FGD reports with evidence-backed feedback tables"
+  default_prompt: "Use $fgd-report-synthesizer to turn FGD transcripts or interview notes into the established Chinese report format with key findings, group comparison, and a concrete feedback recommendation table."
