@@ -11,6 +11,9 @@ Use this skill to turn raw FGD transcripts or notes into a clean Chinese researc
 
 Default to the established report style in `references/report-format.md`.
 
+When the user asks for a polished HTML version, use the visual system in
+`references/html-report-format.md`.
+
 ## Workflow
 
 1. Extract or read the source materials.
@@ -78,3 +81,7 @@ If combining multiple quotes into one row, separate them with `/` and keep sourc
 ## Reference
 
 Read `references/report-format.md` for the exact section template, table schema, consolidation rules, and wording checklist.
+
+Read `references/html-report-format.md` when producing an HTML report from the final Markdown report.
+
+Use `scripts/render-html-report.cjs` when a ready Markdown report should be converted into the standard single-file HTML report format.
