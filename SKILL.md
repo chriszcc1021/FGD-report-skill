@@ -23,6 +23,7 @@ When the user asks for a polished HTML version, use the visual system in
 2. Identify groups and context.
    - Capture market, session count, player type, game/version, and discussion scope.
    - For two-group player FGD, treat groups such as 新玩家 vs 老玩家 as the main comparison lens.
+   - Capture the research objective. If the FGD is mainly for 3C/combat validation, prioritize camera, controls, dodge/movement, targeting, block/parry, combat UI, and role combat positioning over supplemental topics such as PvE, art, social, or broad willingness to play.
 3. Build the report in Chinese using the established structure.
    - 项目背景
    - 核心结论
@@ -39,6 +40,7 @@ When the user asks for a polished HTML version, use the visual system in
 6. Deduplicate and consolidate.
    - Merge near-duplicate feedback points.
    - Keep separate rows only when they imply different product actions.
+   - Do not merge 格挡/招架 with 闪避/位移. 格挡/招架 means weapon/shield/staff defensive actions and parry feedback. 闪避/位移 means class-wide small movement such as dash/dodge/roll, distance, cooldown, and approach/escape value.
 7. Validate coverage before finalizing.
    - Every major claim in 关键发现 should appear in 具体反馈建议 or be intentionally omitted as low priority.
    - Check especially UI/战斗信息 items such as 血条、敌我识别、低血提示、小地图、脚步声.
@@ -53,6 +55,7 @@ When the user asks for a polished HTML version, use the visual system in
 - Use direct, business-friendly wording.
 - Separate player attitude from problem density: positive players can still raise many issues.
 - Distinguish new-player needs from old-player/core-player needs.
+- Distinguish research priority from mention frequency. If 3C/combat is the research goal, put 3C/combat modules before supplemental PvE even when PvE has repeated comments.
 - Keep source references inside the final evidence table, not scattered through the main narrative.
 - Do not over-quote in the main body. Save quotes for the evidence table.
 
@@ -65,6 +68,8 @@ Use `高 / 中 / 低` in the final table:
 - `低`: isolated detail, polish issue, or future validation item.
 
 When uncertain, choose the lower frequency and let the recommendation wording be conservative.
+
+Frequency is not the same as product priority. Preserve the frequency label as a mention-density signal, but order the final table by the research objective first when the user states one.
 
 ## Evidence Style
 

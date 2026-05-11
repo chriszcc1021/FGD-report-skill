@@ -227,34 +227,11 @@ const html = `<!doctype html>
     .nav { width: min(1160px, calc(100% - 44px)); margin: 0 auto; display: flex; gap: 6px; overflow-x: auto; padding: 10px 0; }
     .nav a { flex: 0 0 auto; padding: 8px 10px; color: var(--brand-dark); border-radius: 6px; font-size: 14px; font-weight: 700; }
     .nav a:hover, .nav a:focus { color: var(--brand-primary); background: var(--teal-weak); outline: none; }
-    .executive { display: grid; grid-template-columns: 1.15fr .85fr; gap: 18px; padding: 28px 0 24px; }
-    .thesis, .priority-panel {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--paper);
-      box-shadow: var(--shadow);
-    }
-    .thesis { padding: 24px 26px; }
-    .thesis h2, .priority-panel h2 { margin: 0 0 12px; color: var(--ink); font-family: var(--font-display); font-size: 22px; line-height: 1.35; }
-    .thesis p { margin: 0; color: var(--brand-dark); font-size: 16px; }
-    .priority-panel { padding: 18px; }
-    .priority-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
-    .priority-list li {
-      display: grid;
-      grid-template-columns: 78px 1fr;
-      gap: 10px;
-      align-items: start;
-      padding: 10px 0;
-      border-top: 1px solid var(--line);
-      color: var(--brand-dark);
-    }
-    .priority-list li:first-child { border-top: 0; padding-top: 0; }
-    .tag, .freq { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; font-size: 13px; font-weight: 900; }
-    .tag { min-height: 28px; }
-    .tag.high, .freq.high { color: var(--red); background: var(--red-weak); }
-    .tag.mid, .freq.mid { color: var(--amber); background: var(--amber-weak); }
+    .freq { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; font-size: 13px; font-weight: 900; }
+    .freq.high { color: var(--red); background: var(--red-weak); }
+    .freq.mid { color: var(--amber); background: var(--amber-weak); }
     .freq.low { color: var(--blue); background: var(--blue-weak); }
-    .content { padding: 10px 0 56px; }
+    .content { padding: 28px 0 56px; }
     .report-body, .evidence {
       background: var(--paper);
       border: 1px solid var(--line);
@@ -353,7 +330,6 @@ const html = `<!doctype html>
       .shell, .nav { width: min(100% - 28px, 1160px); }
       h1 { font-size: 32px; }
       .lead { font-size: 16px; }
-      .executive { grid-template-columns: 1fr; }
       .report-body, .evidence { padding: 22px 18px; }
       .section-title { grid-template-columns: 1fr; }
       .evidence-meta { justify-content: flex-start; }
@@ -363,7 +339,6 @@ const html = `<!doctype html>
       .top-rule { height: 6px; }
       .cover { padding-top: 26px; }
       h1 { font-size: 28px; }
-      .priority-list li { grid-template-columns: 1fr; }
       .report-body h2, .evidence h2 { font-size: 22px; }
     }
     @media print {
@@ -371,9 +346,7 @@ const html = `<!doctype html>
       .top-rule, .nav-wrap { display: none; }
       .shell, .nav { width: auto; margin: 0; }
       .cover { padding-top: 0; }
-      .executive { display: block; }
-      .thesis, .priority-panel, .report-body, .evidence { box-shadow: none; }
-      .priority-panel { margin-top: 6mm; }
+      .report-body, .evidence { box-shadow: none; }
     }
   </style>
 </head>
@@ -382,7 +355,7 @@ const html = `<!doctype html>
   <header class="cover shell">
     <p class="eyebrow">Player FGD / Research Report</p>
     <h1>${escapeHtml(title)}</h1>
-    <p class="lead">基于玩家 FGD 逐字稿整理，重点看新玩家的可读性门槛、老玩家对核心体验的担忧，以及镜头、操作、锁敌、格挡、职业、UI、氛围和 PvE 的产品反馈。</p>
+    <p class="lead">基于玩家 FGD 逐字稿整理，主要聚焦 3C 相关战斗体验：镜头、操作、闪避/位移、锁敌、格挡/招架、职业战斗定位和 UI 战斗信息。PvE、美术、社交等作为补充观察。</p>
     <div class="meta-row">
       <span>FGD 研究报告</span>
       <span>中文报告版</span>
@@ -399,20 +372,6 @@ const html = `<!doctype html>
     </nav>
   </div>
   <main class="shell content">
-    <section class="executive" aria-label="执行摘要">
-      <div class="thesis">
-        <h2>一句话结论</h2>
-        <p>玩家对题材和核心体验有兴趣，但产品需要在“新手看得懂”和“核心玩家仍觉得有风险、有技术表达”之间重新找平衡。</p>
-      </div>
-      <aside class="priority-panel">
-        <h2>优先看这三件事</h2>
-        <ul class="priority-list">
-          <li><span class="tag high">高频</span><span>操作、锁敌、血条、技能指示会直接影响新玩家留存。</span></li>
-          <li><span class="tag high">高频</span><span>镜头过宽、自动化和通用格挡会削弱核心玩家在意的压迫感。</span></li>
-          <li><span class="tag mid">中频</span><span>PvE 需要从刷资源通道升级为有挑战和复玩动力的模式。</span></li>
-        </ul>
-      </aside>
-    </section>
     <article class="report-body">${mainHtml}</article>
     ${feedbackHtml}
     <footer class="page-footer">Generated from ${escapeHtml(path.basename(inputPath))}</footer>
