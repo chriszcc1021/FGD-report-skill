@@ -21,7 +21,8 @@ When the user asks for a polished HTML version, use the visual system in
    - If the input is DOCX/PDF, extract text into a working file when useful.
    - If ASR quality is noisy, rely on repeated signals rather than one isolated sentence.
 2. Identify groups and context.
-   - Capture market, session count, player type, game/version, and discussion scope.
+   - Capture market/region, session count, player type, game/version, and discussion scope.
+   - For multi-region materials, list each region's sample separately in 项目背景, including session count, participant profile, and source file/session scope.
    - For two-group player FGD, treat groups such as 新玩家 vs 老玩家 as the main comparison lens.
    - Capture the research objective. If the FGD is mainly for 3C/combat validation, prioritize camera, controls, dodge/movement, targeting, block/parry, combat UI, and role combat positioning over supplemental topics such as PvE, art, social, or broad willingness to play.
 3. Build the report in Chinese using the established structure.
@@ -44,6 +45,19 @@ When the user asks for a polished HTML version, use the visual system in
 7. Validate coverage before finalizing.
    - Every major claim in 关键发现 should appear in 具体反馈建议 or be intentionally omitted as low priority.
    - Check especially UI/战斗信息 items such as 血条、敌我识别、低血提示、小地图、脚步声.
+
+## Multi-Region Rules
+
+Use these rules when the source materials cover more than one country, market, language, or region:
+
+- 项目背景 must explicitly list regions and samples by region.
+- 核心结论 should distinguish cross-region consensus from region-specific signals, but product judgment should assume the core gameplay is globally unified.
+- Do not recommend region-specific gameplay configurations unless the user explicitly asks. Instead, describe whether a feedback point is a global priority, a region-specific risk, or a signal that needs broader validation.
+- 关键发现 should mention region signals inside the finding when useful, for example: “该问题为跨地区共识；墨西哥玩家更强调自动瞄准带来的失控感，越南玩家更强调团战敌我识别。”
+- Do not add a standalone 地区对比 section by default.
+- Keep section 4 as 新玩家与老玩家对比. For multi-region reports, add a final `地区备注` column to that comparison table to indicate whether the dimension has region differences.
+- In the final table, use this column order for multi-region reports: `反馈模块 | 提及频度 | 反馈点 | 建议 | 涉及地区 | 地区差异说明 | 玩家原话`.
+- Frequency labels remain `高 / 中 / 低`. Do not change them to “跨地区高频” or “地区高频”; put that context in `地区差异说明`.
 
 ## Writing Rules
 
@@ -77,7 +91,7 @@ In the final `玩家原话` cell, use this format:
 
 ```text
 中文翻译：……
-越南语原文：“……”
+原文：“……”
 来源：Session X, line/page/location …
 ```
 

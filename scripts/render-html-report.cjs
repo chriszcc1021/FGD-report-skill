@@ -55,13 +55,29 @@ function parseMarkdownTable(markdown) {
     .slice(1)
     .map((line) => line.replace(/^\|/, "").replace(/\|$/, "").split("|").map((cell) => cell.trim()))
     .filter((cells) => cells.length >= 5)
-    .map(([module, frequency, point, recommendation, quote]) => ({
-      module,
-      frequency,
-      point,
-      recommendation,
-      quote,
-    }));
+    .map((cells) => {
+      const [module, frequency, point, recommendation] = cells;
+      if (cells.length >= 7) {
+        return {
+          module,
+          frequency,
+          point,
+          recommendation,
+          regions: cells[4],
+          regionNote: cells[5],
+          quote: cells.slice(6).join("|").trim(),
+        };
+      }
+      return {
+        module,
+        frequency,
+        point,
+        recommendation,
+        regions: "",
+        regionNote: "",
+        quote: cells.slice(4).join("|").trim(),
+      };
+    });
 }
 
 function decorateMain(html) {
@@ -91,7 +107,7 @@ function renderQuote(quote) {
     .map((part) => {
       let cls = "quote-line";
       if (part.startsWith("中文翻译：")) cls += " cn";
-      if (part.startsWith("越南语原文：")) cls += " vi";
+      if (/原文：/.test(part)) cls += " vi";
       if (part.startsWith("来源：")) cls += " src";
       return `<p class="${cls}">${escapeHtml(part)}</p>`;
     })
@@ -99,6 +115,7 @@ function renderQuote(quote) {
 }
 
 function renderFeedback(items) {
+  const hasRegionColumns = items.some((item) => item.regions || item.regionNote);
   const counts = items.reduce((acc, item) => {
     acc[item.frequency] = (acc[item.frequency] || 0) + 1;
     return acc;
@@ -118,8 +135,8 @@ function renderFeedback(items) {
         </div>
       </div>
       <div class="feedback-table-frame">
-        <table class="feedback-table">
-          <thead><tr><th>反馈模块</th><th>提及频度</th><th>反馈点</th><th>建议</th><th>玩家原话</th></tr></thead>
+        <table class="feedback-table${hasRegionColumns ? " multi-region" : ""}">
+          <thead><tr><th>反馈模块</th><th>提及频度</th><th>反馈点</th><th>建议</th>${hasRegionColumns ? "<th>涉及地区</th><th>地区差异说明</th>" : ""}<th>玩家原话</th></tr></thead>
           <tbody>
             ${items.map((item) => `
               <tr>
@@ -127,6 +144,7 @@ function renderFeedback(items) {
                 <td><span class="freq ${frequencyClass(item.frequency)}">${escapeHtml(item.frequency)}</span></td>
                 <td class="point">${escapeHtml(item.point)}</td>
                 <td class="action">${escapeHtml(item.recommendation)}</td>
+                ${hasRegionColumns ? `<td class="regions">${escapeHtml(item.regions)}</td><td class="region-note">${escapeHtml(item.regionNote)}</td>` : ""}
                 <td class="quote-cell">${renderQuote(item.quote)}</td>
               </tr>
             `).join("")}
@@ -314,12 +332,20 @@ const html = `<!doctype html>
     .feedback-table th:nth-child(3), .feedback-table td:nth-child(3) { width: 235px; }
     .feedback-table th:nth-child(4), .feedback-table td:nth-child(4) { width: 285px; }
     .feedback-table th:nth-child(5), .feedback-table td:nth-child(5) { width: 464px; }
+    .feedback-table.multi-region { min-width: 1500px; }
+    .feedback-table.multi-region th:nth-child(3), .feedback-table.multi-region td:nth-child(3) { width: 230px; }
+    .feedback-table.multi-region th:nth-child(4), .feedback-table.multi-region td:nth-child(4) { width: 280px; }
+    .feedback-table.multi-region th:nth-child(5), .feedback-table.multi-region td:nth-child(5) { width: 120px; text-align: left; }
+    .feedback-table.multi-region th:nth-child(6), .feedback-table.multi-region td:nth-child(6) { width: 220px; }
+    .feedback-table.multi-region th:nth-child(7), .feedback-table.multi-region td:nth-child(7) { width: 464px; }
     .feedback-table tbody tr:nth-child(even) td { background: #fbf8f7; }
     .feedback-table tbody tr:hover td { background: rgba(233, 215, 211, .32); }
     .module { color: var(--brand-primary); font-size: 14px; font-weight: 900; }
     .freq { min-width: 38px; padding: 5px 9px; text-align: center; }
     .point { color: var(--ink); font-size: 14px; font-weight: 900; }
     .action { border-left: 3px solid var(--brand-secondary); background: #fffaf0; color: var(--brand-dark); }
+    .regions, .region-note { color: var(--brand-dark); font-size: 13px; }
+    .regions { font-weight: 800; }
     .quote-cell { background: #fbf8f7; }
     .quote-line { margin: 0; color: var(--brand-dark); font-size: 12.5px; line-height: 1.65; }
     .quote-line + .quote-line { margin-top: 5px; }
