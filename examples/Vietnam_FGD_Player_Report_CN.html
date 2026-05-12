@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>越南玩家 FGD 研究报告</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+    :root {
+      --brand-primary: #C0504D;
+      --brand-secondary: #997E5A;
+      --brand-dark: #4D4D4D;
+      --brand-medium: #7F7F7F;
+      --brand-light: #BFBFBF;
+      --brand-bg: #E9D7D3;
+      --brand-bg-alt: #F5F0EE;
+      --brand-white: #FFFFFF;
+      --brand-black: #333333;
+      --page: #F5F0EE;
+      --paper: #ffffff;
+      --ink: #333333;
+      --body: #4D4D4D;
+      --muted: #7F7F7F;
+      --line: #d8cac7;
+      --line-strong: #BFBFBF;
+      --teal: #C0504D;
+      --teal-weak: rgba(192, 80, 77, 0.10);
+      --amber: #997E5A;
+      --amber-weak: rgba(153, 126, 90, 0.12);
+      --red: #C0504D;
+      --red-weak: rgba(192, 80, 77, 0.12);
+      --blue: #7F7F7F;
+      --blue-weak: rgba(127, 127, 127, 0.12);
+      --radius: 8px;
+      --shadow: 0 10px 28px rgba(77, 77, 77, .10);
+      --font-display: 'EB Garamond', 'Noto Serif SC', 'Garamond', 'Georgia', serif;
+      --font-body: 'EB Garamond', 'Noto Serif SC', 'Garamond', 'Georgia', serif;
+    }
+
+    @page {
+      size: A4;
+      margin: 14mm 13mm;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      letter-spacing: 0;
+    }
+
+    body {
+      margin: 0;
+      color: var(--body);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.68;
+      background: var(--page);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .top-rule {
+      height: 6px;
+      background: var(--brand-primary);
+      border-right: 28vw solid var(--brand-secondary);
+    }
+
+    .shell {
+      width: min(1160px, calc(100% - 44px));
+      margin: 0 auto;
+    }
+
+    .cover {
+      padding: 34px 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--font-display);
+      font-size: 42px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 880px;
+      margin: 16px 0 0;
+      color: #424a53;
+      color: var(--brand-dark);
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .meta-row span {
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--paper);
+      color: var(--brand-dark);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .nav-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(245, 240, 238, .94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav {
+      width: min(1160px, calc(100% - 44px));
+      margin: 0 auto;
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    .nav a {
+      flex: 0 0 auto;
+      padding: 8px 10px;
+      color: var(--brand-dark);
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 160ms ease, color 160ms ease;
+    }
+
+    .nav a:hover,
+    .nav a:focus {
+      color: var(--teal);
+      background: var(--teal-weak);
+      outline: none;
+    }
+
+    .content {
+      padding: 28px 0 56px;
+    }
+
+    .report-body,
+    .evidence {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .report-body {
+      padding: 30px 34px;
+    }
+
+    .report-body h2,
+    .evidence h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 34px 0 16px;
+      color: var(--ink);
+      font-family: var(--font-display);
+      font-size: 26px;
+      line-height: 1.35;
+      letter-spacing: 0;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .report-body h2:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .report-body h2 span,
+    .evidence h2 span {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      flex: 0 0 34px;
+      border: 1px solid rgba(0, 122, 115, .36);
+      border-radius: 50%;
+      color: var(--teal);
+      background: var(--teal-weak);
+      font-family: "Consolas", "Cascadia Mono", monospace;
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .report-body h3 {
+      margin: 24px 0 8px;
+      color: var(--brand-black);
+      font-family: var(--font-display);
+      font-size: 19px;
+      line-height: 1.45;
+      letter-spacing: 0;
+    }
+
+    .report-body p,
+    .report-body li {
+      color: var(--brand-dark);
+    }
+
+    .report-body p {
+      margin: 10px 0 0;
+    }
+
+    .report-body ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .report-body li {
+      margin: 6px 0;
+    }
+
+    strong {
+      color: var(--ink);
+      font-weight: 900;
+    }
+
+    .table-frame {
+      margin: 18px 0 6px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.55;
+      background: #fff;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      word-break: break-word;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--brand-black);
+      background: #eef2f5;
+      background: var(--brand-bg-alt);
+      font-weight: 900;
+    }
+
+    tbody td:first-child {
+      color: var(--teal);
+      font-weight: 900;
+    }
+
+    .evidence {
+      margin-top: 22px;
+      padding: 28px 30px 30px;
+    }
+
+    .section-title {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px 20px;
+      align-items: end;
+      margin-bottom: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-kicker {
+      grid-column: 1 / -1;
+      margin: 0;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .evidence h2 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .evidence-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .evidence-meta span {
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: #4c5661;
+      background: #fff;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .evidence-meta b {
+      color: var(--ink);
+    }
+
+    .feedback-table-frame {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+
+    .feedback-table {
+      min-width: 1180px;
+      table-layout: fixed;
+      font-size: 13px;
+      line-height: 1.58;
+    }
+
+    .feedback-table th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      color: #172027;
+      background: var(--brand-bg-alt);
+    }
+
+    .feedback-table th:nth-child(1),
+    .feedback-table td:nth-child(1) {
+      width: 112px;
+    }
+
+    .feedback-table th:nth-child(2),
+    .feedback-table td:nth-child(2) {
+      width: 84px;
+      text-align: center;
+    }
+
+    .feedback-table th:nth-child(3),
+    .feedback-table td:nth-child(3) {
+      width: 235px;
+    }
+
+    .feedback-table th:nth-child(4),
+    .feedback-table td:nth-child(4) {
+      width: 285px;
+    }
+
+    .feedback-table th:nth-child(5),
+    .feedback-table td:nth-child(5) {
+      width: 464px;
+    }
+
+    .feedback-table td {
+      background: #fff;
+    }
+
+    .feedback-table tbody tr:nth-child(even) td {
+      background: #fbf8f7;
+    }
+
+    .feedback-table tbody tr:hover td {
+      background: rgba(233, 215, 211, .32);
+    }
+
+    .module {
+      color: var(--teal);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .freq {
+      min-width: 38px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .freq.high { color: var(--red); background: var(--red-weak); }
+    .freq.mid { color: var(--amber); background: var(--amber-weak); }
+    .freq.low { color: var(--blue); background: var(--blue-weak); }
+
+    .point {
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .action {
+      border-left: 3px solid var(--amber);
+      background: #fffaf0;
+      color: var(--brand-dark);
+    }
+
+    .quote-cell {
+      background: #fbf8f7;
+    }
+
+    .quote-line {
+      margin: 0;
+      color: var(--brand-dark);
+      font-size: 12.5px;
+      line-height: 1.65;
+    }
+
+    .quote-line + .quote-line {
+      margin-top: 5px;
+    }
+
+    .quote-line.vi {
+      color: #1d252d;
+      font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+
+    .quote-line.cn {
+      color: var(--brand-black);
+      font-weight: 700;
+    }
+
+    .quote-line.src {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .page-footer {
+      margin: 20px 0 44px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    @media (max-width: 900px) {
+      .shell,
+      .nav {
+        width: min(100% - 28px, 1160px);
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .lead {
+        font-size: 16px;
+      }
+
+      .report-body,
+      .evidence {
+        padding: 22px 18px;
+      }
+
+      .section-title {
+        grid-template-columns: 1fr;
+      }
+
+      .evidence-meta {
+        justify-content: flex-start;
+      }
+
+    }
+
+    @media (max-width: 560px) {
+      body {
+        font-size: 15px;
+      }
+
+      .top-rule {
+        height: 6px;
+      }
+
+      .cover {
+        padding-top: 26px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .report-body h2,
+      .evidence h2 {
+        font-size: 22px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        font-size: 10pt;
+      }
+
+      .top-rule,
+      .nav-wrap {
+        display: none;
+      }
+
+      .shell,
+      .nav {
+        width: auto;
+        margin: 0;
+      }
+
+      .cover {
+        padding-top: 0;
+      }
+
+      .report-body,
+      .evidence {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-rule"></div>
+
+  <header class="cover shell">
+    <p class="eyebrow">Vietnam Player FGD / Gold & Glory</p>
+    <h1>越南玩家 FGD 研究报告</h1>
+    <p class="lead">基于越南两场玩家 FGD 逐字稿整理，主要聚焦 3C 相关战斗体验：镜头、操作、闪避/位移、锁敌、格挡/招架、职业战斗定位和 UI 战斗信息。PvE、美术、社交等作为补充观察。</p>
+    <div class="meta-row">
+      <span>Session 1：新玩家</span>
+      <span>Session 2：老玩家</span>
+      <span>中文报告版</span>
+      <span>含越南语原话证据</span>
+    </div>
+  </header>
+
+  <div class="nav-wrap">
+    <nav class="nav" aria-label="报告导航">
+      <a href="#background">项目背景</a>
+      <a href="#conclusion">核心结论</a>
+      <a href="#findings">关键发现</a>
+      <a href="#comparison">新老玩家对比</a>
+      <a href="#recommendations">具体反馈建议</a>
+    </nav>
+  </div>
+
+  <main class="shell content">
+    <article class="report-body">
+      <h2 id="background"><span>1</span>项目背景</h2>
+<p>本次研究基于越南市场两场玩家 FGD 逐字稿：</p>
+<ul>
+<li>Session 1：新玩家组，参与者此前未深度接触本游戏，主要体验战斗、角色、PvP/PvE 相关内容。</li>
+<li>Session 2：老玩家组，参与者为既有玩家或曾参与早期版本，对旧版本机制、氛围和职业体系有较强记忆。</li>
+</ul>
+<p>两场讨论围绕 Gold &amp; Glory 的新版本体验展开。本次研究的主要目标是验证 3C 相关战斗体验，重点覆盖镜头视角、操作控制、闪避/位移、锁敌与自动瞄准、格挡/招架、职业战斗定位、UI 战斗信息等维度。PvE、美术音效、社交与继续游玩意愿属于补充观察，用于理解整体接受度，但不作为本次优先判断的主轴。</p>
+<h2 id="conclusion"><span>2</span>核心结论</h2>
+<p>本次 FGD 的优先判断应放在 3C/战斗体验上。越南玩家对产品存在明确兴趣，但能否留下来，首先取决于战斗是否看得懂、按得顺、目标选得准，以及职业和武器是否仍有明确差异。</p>
+<p>新玩家更关注“能不能看懂、按顺、打中目标”。他们对题材、角色和组队有兴趣，但容易被按钮、锁敌、血条、敌我识别、技能指示、脚步声方向等战斗信息问题阻碍。对新玩家而言，3C 的核心任务是降低理解和操作成本。</p>
+<p>老玩家更关注“是否还保留压迫感、硬核感和技术表达”。他们担心视角过宽、自动锁敌太强、武器格挡过度通用化，以及远程职业拿到同等闪避/位移后过于安全。对老玩家而言，3C 的核心任务不是简单降低门槛，而是在可读性提升的同时保留风险、职业弱点和操作空间。</p>
+<p>总体判断：Gold &amp; Glory 在越南玩家中具备题材和玩法吸引力，但当前版本最需要优先处理的是 3C 相关战斗链路：镜头、操作、闪避/位移、锁敌、格挡/招架、职业定位和战斗信息。PvE 反馈有参考价值，但本次只作为补充调研结果，优先级低于战斗基础体验。</p>
+<h2 id="findings"><span>3</span>关键发现</h2>
+<h3 id="初始吸引力">3.1 初始吸引力</h3>
+<p>新玩家的兴趣主要来自题材、美术、角色和组队体验。他们多次提到中世纪、fantasy、dungeon、和朋友一起玩等元素。对新玩家而言，游戏像是一个可以在手机上体验的轻量动作冒险/组队游戏，这一点具有吸引力。</p>
+<p>老玩家的兴趣更偏向版本变化、角色强度、机制深度和社区玩法。他们会主动比较旧版本，讨论视角变化、闪避/位移、格挡机制、武器差异、职业定位、地图压迫感等更系统的问题。</p>
+<h3 id="镜头视角与可见性">3.2 镜头视角与可见性</h3>
+<p>新玩家整体可以接受第三人称视角，但反馈画面信息较乱，角色、怪物、敌人和背景有时不易区分。部分玩家觉得默认镜头速度不完全适合，需要更灵活的设置。</p>
+<p>老玩家对视角更敏感。部分玩家认为当前视角过宽，使战斗更容易预测，降低了伏击、压迫和探索的不确定性。老玩家倾向于旧版视角基础上小幅扩大，而不是当前的大幅拉远。</p>
+<p>关键结论：视角应提供可调节选项。默认视角需要兼顾新手可读性和老玩家的沉浸/紧张体验。</p>
+<h3 id="操作控制与战斗手感">3.3 操作控制与战斗手感</h3>
+<p>新玩家反馈集中在移动、按钮和技能释放：</p>
+<ul>
+<li>按钮较多，部分按钮功能理解成本高。</li>
+<li>跑步/辅助技能容易混淆。</li>
+<li>蹲伏、移动、开门、交互等操作在战斗中不够顺。</li>
+<li>技能指示不清，尤其是需要定向或落点判断的技能。</li>
+<li>部分按钮容易误触。</li>
+</ul>
+<p>老玩家则更关注动作响应和技能表达：</p>
+<ul>
+<li>角色跑动动画和实际速度不完全匹配，看起来像“走路”。</li>
+<li>蹲伏和移动切换不够即时。</li>
+<li>战斗时间变长有好处，但闪避、格挡、治疗等防御资源过度堆叠会拖慢节奏。</li>
+</ul>
+<p>关键结论：基础操作需要先解决“响应”和“意图表达”问题，否则战斗深度无法被正确感知。</p>
+<h3 id="闪避-位移与战斗节奏">3.4 闪避/位移与战斗节奏</h3>
+<p>这里的闪避/位移指每个职业都有的小位移能力，例如 dash、dodge、翻滚、短距离脱身或接近，不等同于武器格挡。</p>
+<p>新玩家主要从操作手感理解闪避/位移：他们关注按钮是否好按、距离是否够用、冷却是否太长、和跑步/技能是否容易混淆。</p>
+<p>老玩家更从职业平衡看闪避/位移。若远程职业、辅助职业拥有与近战相同的安全位移，会放大风筝、撤退和保命能力；相反，战士/近战如果位移距离不足，则很难接近法师等远程职业。</p>
+<p>关键结论：闪避/位移应按职业定位调距离、冷却、资源消耗和硬直。它是战斗节奏和近远程平衡问题，不应和格挡/招架混为一个“保命机制”处理。</p>
+<h3 id="锁敌与自动瞄准">3.5 锁敌与自动瞄准</h3>
+<p>新玩家希望锁敌更智能，例如不要在打玩家时突然锁到怪，也希望有优先目标设置。</p>
+<p>老玩家更担心自动锁敌削弱技术表达。他们认为锁敌和自动瞄准会让游戏变得过于简单，降低手动判断、预判、偷袭和走位价值。</p>
+<p>关键结论：锁敌可以作为新手辅助保留，但应提供关闭、弱化或优先级配置。高阶玩法中应减少自动化对战斗结果的影响。</p>
+<h3 id="格挡-招架与武器防御">3.6 格挡/招架与武器防御</h3>
+<p>这里的格挡/招架指武器、盾牌、法杖等防御动作和防御判定，例如盾牌格挡、武器格挡、法杖格挡、parry 成功后的反击反馈，不等同于每个职业都有的小位移。</p>
+<p>新玩家对格挡/招架机制理解不稳定，部分玩家没有意识到成功招架后的反击机制，也有人觉得格挡时间太短、反馈不清。</p>
+<p>老玩家普遍担心“所有武器都有格挡”会破坏武器差异和职业分工。他们尤其在意盾牌、近战武器、法杖/书本等防御逻辑是否应该一致。如果远程职业或辅助职业也拥有强格挡，会让近战、刺客和伏击玩法失去空间。</p>
+<p>关键结论：格挡/招架需要更清楚的教学和反馈，同时不建议做成所有职业/武器高度同质化的通用防御机制。盾牌、武器、法杖等防御动作应有不同成本、窗口、收益和反制方式。</p>
+<h3 id="职业与角色设计">3.7 职业与角色设计</h3>
+<p>战士：
+新玩家认为战士相对容易理解，但不够特别。老玩家认为战士需要更可靠的近身手段，否则面对远程职业时容易被风筝。</p>
+<p>法师：
+争议较大。新玩家认为法师技能难瞄、普攻装弹不符合法师直觉，且缺少典型法师应有的强 AoE 幻想。老玩家认为法师远程消耗、位移、控制和格挡叠加后，可能过度压制近战。</p>
+<p>先知/辅助：
+新玩家普遍喜欢先知，因为有控制、回血、团队支持，且角色好看。老玩家认为先知过于全能，集回血、控制、伤害、防御、位移于一体，容易成为必选角色，削弱阵容多样性。</p>
+<p>关键结论：每个职业需要明确强项和弱点。当前版本存在“全能化”倾向，尤其是先知和远程职业的保命能力需要谨慎控制。</p>
+<h3 id="ui-与战斗信息">3.8 UI 与战斗信息</h3>
+<p>新玩家多次提到信息识别问题：</p>
+<ul>
+<li>敌我角色不易区分。</li>
+<li>怪物和玩家血条需要区分。</li>
+<li>敌人血量百分比不清楚。</li>
+<li>低血提示过于占屏，建议更多使用音效或更轻量反馈。</li>
+<li>小地图和路线引导不够直观。</li>
+<li>脚步声方向、远近和敌我来源不够明确。</li>
+</ul>
+<p>老玩家对信息显示有不同需求。他们认可部分信息帮助操作，但也担心信息过多会降低紧张感，例如是否应该显示敌方血条。</p>
+<p>关键结论：可读性要提升，但应区分模式。新手和普通模式可以提供更多信息，硬核/高阶模式可以减少敌方血条等信息，保留风险感。</p>
+<h3 id="美术-音效与氛围">3.9 美术、音效与氛围</h3>
+<p>新玩家喜欢中世纪/奇幻方向，但认为画面有时偏暗、细节不足，角色和环境不够好辨认。</p>
+<p>老玩家更怀念旧版黑暗、压迫、恐怖的地牢氛围。他们认为当前版本偏亮、偏现代、角色和环境融合不自然，音乐有时不够“古老”或“地牢感”。</p>
+<p>关键结论：美术不应只追求亮和清楚。越南老玩家对 dark fantasy、恐怖感、地牢压迫感有明确期待。建议用光影、环境细节、怪物氛围、音效层次来增强沉浸，而不是整体提亮。</p>
+<h3 id="pve-模式-补充观察">3.10 PvE 模式（补充观察）</h3>
+<p>PvE 并非本次 FGD 的主要研究目标，属于补充观察。老玩家对当前 PvE 评价偏低，认为难度过低、重复动力不足，更像“缺装备时刷资源”的模式。</p>
+<p>他们希望 PvE 增加：</p>
+<ul>
+<li>难度分阶段递进</li>
+<li>随机路线或动态路径</li>
+<li>Boss 战</li>
+<li>陷阱、谜题、环境事件</li>
+<li>更多突发情况</li>
+<li>更有价值的奖励</li>
+</ul>
+<p>关键结论：当前 PvE 还不足以成为高留存玩法。该问题有参考价值，但优先级低于 3C/战斗基础体验；后续若要提升 PvE 吸引力，需要从“刷装备通道”升级为有挑战、有变化、有协作价值的副本体验。</p>
+<h2 id="comparison"><span>4</span>新玩家与老玩家对比</h2>
+<div class="table-frame"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>新玩家</th>
+<th>老玩家</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>核心动机</td>
+<td>题材、角色、组队、移动端便利</td>
+<td>机制深度、旧版记忆、竞技表达、社区玩法</td>
+</tr>
+<tr>
+<td>主要阻碍</td>
+<td>看不懂、按不顺、信息混乱</td>
+<td>过于简单、失去紧张感、职业同质化</td>
+</tr>
+<tr>
+<td>镜头偏好</td>
+<td>更容易观察即可</td>
+<td>不宜过宽，应保留压迫感</td>
+</tr>
+<tr>
+<td>锁敌/自动瞄准</td>
+<td>需要辅助，但要更智能</td>
+<td>担心降低技术含量</td>
+</tr>
+<tr>
+<td>闪避/位移</td>
+<td>需要好按、距离清楚、冷却好理解</td>
+<td>应按职业区分距离、冷却和接近/脱身价值</td>
+</tr>
+<tr>
+<td>格挡/招架</td>
+<td>需要明确成功反馈和反击提示</td>
+<td>不同武器/盾牌/法杖不应拥有同质化强格挡</td>
+</tr>
+<tr>
+<td>战斗期待</td>
+<td>清楚、容易上手、有反馈</td>
+<td>有风险、有反制、有职业弱点</td>
+</tr>
+<tr>
+<td>美术期待</td>
+<td>好看、清晰、角色吸引人</td>
+<td>dark fantasy、地牢压迫、旧版氛围</td>
+</tr>
+<tr>
+<td>PvE 期待（补充）</td>
+<td>非本次重点</td>
+<td>更难、更多随机、Boss、奖励驱动，但优先级低于 3C 战斗体验</td>
+</tr>
+</tbody></table></div>
+
+    </article>
+
+    
+    <section class="evidence" id="recommendations">
+      <div class="section-title">
+        <p class="section-kicker">Evidence-backed product actions</p>
+        <h2><span>5</span>具体反馈建议</h2>
+        <div class="evidence-meta" aria-label="反馈频度统计">
+          <span><b>12</b> 高频</span>
+          <span><b>12</b> 中频</span>
+          <span><b>0</b> 低频</span>
+        </div>
+      </div>
+      <div class="feedback-table-frame">
+        <table class="feedback-table">
+          <thead>
+            <tr>
+              <th>反馈模块</th>
+              <th>提及频度</th>
+              <th>反馈点</th>
+              <th>建议</th>
+              <th>玩家原话</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td><span class="module">操作/技能</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">新玩家觉得技能和按钮偏多，理解负担较高。</td>
+                <td class="action">新手阶段减少同时暴露的技能信息；强化核心动作教学，优先讲清 dash、block/parry、回血和交互。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：这样打起来我觉得技能太多了；相比之下我们更喜欢 parry 和 dash 这类核心技能。</p><p class="quote-line vi">越南语原文：“Em chỉ thấy là nó có nhiều kỹ năng quá... Tụi em lại thích chiều bury và chiều dash...”</p><p class="quote-line src">来源：Session 1, line 1313</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">操作/技能</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">定向技能缺少清晰落点/范围提示，玩家不知道技能会打到哪里。</td>
+                <td class="action">强化技能范围、落点、方向和高度提示；支持按住预瞄、松手释放，减少“按了但不知道飞去哪”的挫败。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：我不知道自己在往哪里扔；如果像 Naraka 一样能看到距离/范围，就能知道技能落点。现在按了以后它想扔哪里就扔哪里。</p><p class="quote-line vi">越南语原文：“Em không có xác định được là mình đang ném ở đâu... mình sẽ nhìn thấy được là các hợp cách là bao nhiêu... Còn cái này thì em không biết... nó ném đâu nó ném.”</p><p class="quote-line src">来源：Session 1, line 812</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">镜头/视野</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">老玩家认为当前视角过宽，削弱突袭感、压迫感和不确定性。</td>
+                <td class="action">增加 FOV/镜头距离设置；默认视角建议比旧版小幅放宽，而不是大幅拉远。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：现在视角太宽了，可以看到整体局势，变得更容易预测，会失去惊喜感/突袭感。</p><p class="quote-line vi">越南语原文：“Góc nhìn nó đang quá rộng... nhìn bao quát tổng thế... dễ đoán hơn. Nó sẽ mất tính bất ngờ.”</p><p class="quote-line src">来源：Session 2, lines 911-915</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">锁敌/自动瞄准</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">老玩家担心自动锁敌降低硬核感，让游戏变得过于简单。</td>
+                <td class="action">自动锁敌保留为新手辅助，但高阶玩法需要弱化其影响；避免自动瞄准决定核心胜负。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：我的问题当然是触控/硬核性，它让游戏变得太容易；如果再加这种辅助，可能很多玩家会离开。</p><p class="quote-line vi">越南语原文：“Vấn đề của em... cái tính hardscore đó, nó mặc quá dễ... thêm dịp thầy chắc nhiều người chơi cũng bỏ luôn.”</p><p class="quote-line src">来源：Session 2, line 1164</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">锁敌/自动瞄准</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">玩家在混战中会误锁怪物，影响 PvP/PvE 场景下的目标选择。</td>
+                <td class="action">优化锁敌优先级，区分玩家/怪物/中立单位；提供低血目标、最近玩家、手动锁定等优先项，减少误锁。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：我正在打这边，僵尸一出现就自动切过去，技能打到僵尸上；目标选择很奇怪，像是分不清对象。</p><p class="quote-line vi">越南语原文：“Em đang đánh ở bên này xong rồi tiếng zombie nó xuất hiện qua một ít thôi là tự động sai qua... vào zombie luôn.” / “Nó đắc mục tiêu khá là kỳ, kiểu như là nó không có phân biệt được.”</p><p class="quote-line src">来源：Session 1, lines 803, 835</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">格挡/招架</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">武器/盾牌/法杖格挡表现受欢迎，但“全职业/全武器通用强格挡”会削弱伏击、刺客和近战切入价值。</td>
+                <td class="action">保留格挡的视觉爽感，但不建议盾牌、近战武器、法杖/书本等拥有同质化强格挡；应按武器和职业设置不同防御能力、判定窗口、冷却、硬直和反击收益。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：现在几乎所有角色都能挡住切入的第一下，也能反制被偷袭，这会让刺客很难进场抓人。玩家也提到，格挡效果本身很好看，但如果作为通用机制放进游戏里会不平衡。</p><p class="quote-line vi">越南语原文：“Gần như tất cả các con tướng đều có thể là đỡ được đòn đầu tiên khi lao vào... chống được cái việc mà bị tập kích.” / “Thích là em thích cái hiệu ứng... Bây giờ con nào cũng đỡ được vì nó rất là đẹp. Nhưng mà cái cơ chế đó nếu mà đưa vào game thì nó không có được cân bằng.”</p><p class="quote-line src">来源：Session 2, lines 1313, 1318</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">职业/角色</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">先知/辅助被认为过于全能，集控制、冰冻、回血等能力于一体。</td>
+                <td class="action">收束先知定位，避免同时拥有强控制、强治疗、强保命和可观伤害；强化辅助强项但保留明确弱点。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：先知有点太强了，因为它既有 CC，又有冰冻，还有回血。</p><p class="quote-line vi">越南语原文：“Tiên Tri nó hơi bị mạnh Bởi vì nó vừa có CC, vừa có đóng băng... hồi máu cũng có luôn.”</p><p class="quote-line src">来源：Session 2, line 1345</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">职业/角色</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">法师不符合玩家对职业的典型预期：技能难瞄、AoE 不足，普攻“装弹”不符合法师直觉。</td>
+                <td class="action">明确法师定位。如果定位为远程 AoE/消耗，应强化范围技能、落点可控性和法师幻想；普攻资源可考虑 mana/能量逻辑替代装弹。同时单独评估法师的小位移和法杖格挡，避免远程职业过度安全。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：说到法师，玩家会想到大伤害和范围 AoE；但现在技能 1 比较简陋，技能 2 范围小，几乎只能打单体。玩家也认为法师打几下就装弹不合理，用 mana/能量会更合理。</p><p class="quote-line vi">越南语原文：“Nhắc đến pháp sư thì người ta sẽ suy nghĩ đến đám to và có skill AOE... skill 1 nó hơi sơ xài... Skill 2... hơi nhỏ...” / “Em nghĩ là... thay thế bằng Mana... hợp lý hơn so với việc mà tháp sư đang đánh thì lại đi nập đạn.”</p><p class="quote-line src">来源：Session 1, lines 1126, 0910</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">UI/战斗信息</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">血条、敌我、玩家/怪物信息不清，影响目标选择和战斗决策。</td>
+                <td class="action">区分玩家、怪物、中立单位和队友/敌人的血条颜色、大小、样式；低血目标要更可读，但避免闪烁造成干扰。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：血条太小，分不清敌人和自己队伍；血条一直是红色，不知道敌人还剩多少血；玩家和怪物的血条也应该不同。</p><p class="quote-line vi">越南语原文：“Thanh máu nó nhỏ quá, em không có thể phân biệt được địch với bên mình.” / “Nó màu đỏ hết... em không có biết được là địch còn bao nhiêu máu.” / “Thanh máu của người chơi nên khác biệt với lại của quái.”</p><p class="quote-line src">来源：Session 1, lines 997, 1002, 1013</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">闪避/位移</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">每个职业都有的小位移需要按职业定位调距离、冷却和收益；近战接近与远程脱身不能同质化。</td>
+                <td class="action">区分 dash/dodge 与格挡：闪避/位移用于节奏、接近和脱身，应按职业调整距离、冷却、硬直和资源成本。近战可获得更可靠但有成本的接近窗口，远程职业不宜拥有同等安全脱身能力。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：战士翻滚/位移距离不够，已经判断好法师技能冷却再滚过去，还是够不到；希望战士有能冲过去接近的技能。</p><p class="quote-line vi">越南语原文：“Lướt lại nhưng mà nó không tới... không có chiêu làm để tới được... cho đấu sĩ một cái chiêu gì đó mà có thể lao tới được.”</p><p class="quote-line src">来源：Session 2, lines 1266-1274</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">战斗节奏</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">老玩家认可新版本战斗时间更长、容错更高。</td>
+                <td class="action">保留适度容错，但要避免闪避、格挡、治疗等防御资源过度堆叠导致战斗拖沓；通过伤害、冷却、资源消耗控制战斗节奏。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：现在伤害较低，会让交战时间更长，打完后也更容易撤退；以前只要犯一个错就会直接倒。</p><p class="quote-line vi">越南语原文：“Sát thương... thấp... nó sẽ đẩy thời gian giao tranh lâu hơn và mình cũng hoàn toàn có thể rút lui được sau giao tranh nó dễ hơn... hồi trước... chỉ cần lỗi 1 cái là nằm luôn.”</p><p class="quote-line src">来源：Session 2, line 885</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">操作/交互</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">蹲伏、移动、攀爬等状态切换不够即时，容易导致误操作或掉落。</td>
+                <td class="action">优化移动状态切换响应；蹲伏/站起/攀爬/开门等交互要更即时，并减少战斗中精确对准交互物的要求。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：蹲下、爬上爬下、移动都很慢，很容易掉下去；我爬上去蹲着，结果掉下来一次，移动很难。</p><p class="quote-line vi">越南语原文：“Cách di chuyển... hơi bị slow... ngồi xuống... leo lên... rất là dễ bị rớt xuống... rất là khó di chuyển.”</p><p class="quote-line src">来源：Session 2, line 902</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">格挡/招架</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">招架成功后的反击机制不够明显，新玩家没有意识到可反击。</td>
+                <td class="action">强化 parry 成功提示、反击按钮、音效和短教学；让玩家明确知道何时成功、可反击、反击收益是什么。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：主持人问是否注意到战士 parry 成功后会出现反击按钮，玩家回答“我完全没看到”。</p><p class="quote-line vi">越南语原文：“Em có nhận ra là con tố sĩ khi mà em Barry thành công... có một cái nút... phản đòn lại... Em không thấy gì cả.”</p><p class="quote-line src">来源：Session 1, lines 983-984</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">UI/战斗信息</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">低血提示过于占屏，小地图和路线引导不够直观。</td>
+                <td class="action">低血提示可改为呼吸声、受伤音效、边缘暗角等轻量反馈；小地图需要更清晰的层级、路径和目标引导。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：低血时一直闪“需要回血”，画面有点被占住；小地图也难看懂、方向不好判断，路线太乱。</p><p class="quote-line vi">越南语原文：“Khi mình yếu, nó cứ nhấp nháy... cần hồi máu... hơi trắng màn hình.” / “Minimap... khó nhìn, khó xác định... rối quá.”</p><p class="quote-line src">来源：Session 1, lines 1047, 1052</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">音效/战斗信息</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">脚步声方向、距离和敌我来源不够清楚。</td>
+                <td class="action">优化空间音频，区分敌人/队友脚步声，并用音量、滤波或 UI 辅助表达远近。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：脚步声让我不太舒服，方向不好判断，也分不清左右；另一个玩家也说不知道敌人脚步是近还是远。</p><p class="quote-line vi">越南语原文：“Tiếng chân... em không xác định được cái hướng... không phân biệt ra được bên trái bên phải.” / “Em không biết xác định được là địch em ở gần hay định em ở xa.”</p><p class="quote-line src">来源：Session 1, lines 1162, 1178</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">锁敌/自动瞄准</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">高阶玩家希望能关闭或调低辅助瞄准，自己选择目标；新手则仍需要辅助。</td>
+                <td class="action">提供自动锁敌开关、强度和优先目标配置；默认帮助新手，高级设置允许老玩家关闭或调低辅助，避免战斗中误锁怪物或非目标单位。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：我平时会把目标辅助关掉，这样我想打谁、想瞄谁就可以自己决定。这个机制可以帮助新手和反应慢的玩家，但职业玩家或老玩家通常会把它关掉。</p><p class="quote-line vi">越南语原文：“Thường em sẽ tắt đi để em có thể... mình muốn đánh, mình muốn nhắm vào ai thì mình đánh.” / “Cũng có thể hỗ trợ với người chơi mới... pro player hay là những người chơi lâu năm họ cũng cắt cái đó đi.”</p><p class="quote-line src">来源：Session 2, lines 1176, 1184</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">整体吸引力</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">新玩家被中世纪/奇幻题材吸引，愿意正式上线后尝试。</td>
+                <td class="action">强化中世纪、fantasy、dungeon、角色幻想等第一眼卖点；宣发和新手包装应突出题材差异，但优先确保 3C 战斗体验顺畅。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：我喜欢中世纪背景、风格和主题，所以如果游戏上线我会试玩。</p><p class="quote-line vi">越南语原文：“Em thích cái kiểu background hời trung cổ. Em thích cái style, cái thim. Cái vai cũng trung cổ. Nên là em nghĩ nếu khi game ra mắt thì em sẽ chơi thử.”</p><p class="quote-line src">来源：Session 1, line 1291</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">社交/组队</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">新玩家认为游戏适合邀请朋友一起玩，尤其是手机上的 PUBG/Naraka 混合感。</td>
+                <td class="action">强化好友邀请、组队、语音/快捷沟通、组队任务奖励；新手期优先让玩家体验团队乐趣，但组队体验要建立在清晰的战斗信息和操作反馈上。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：它有点像 PUBG，也有点像 Naraka，而且是在手机上玩，所以很适合拉朋友一起玩；它比较容易、比较简单。</p><p class="quote-line vi">越南语原文：“Em thấy nó vừa có một chút giống PUBG, vừa có một chút giống Naraka mà nó chơi trên điện thoại... phù hợp để em đũa bạn bè em chơi... cũng khá là dễ, nó cũng đơn giản.”</p><p class="quote-line src">来源：Session 1, line 1325</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">整体吸引力</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">手机端便利性是新玩家愿意尝试的重要原因。</td>
+                <td class="action">强调“随时随地组队开局”的移动端优势；降低单局进入和组队成本。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：手机可以在任何地方玩；一开始机制有点难懂，但熟悉后觉得游戏好玩、值得体验。</p><p class="quote-line vi">越南语原文：“Với điện thoại thì em có thể dù ở đâu cũng được... cái lúc mà em quen rồi á, thấy à, game này hay, đáng để trải nghiệm vào.”</p><p class="quote-line src">来源：Session 1, line 1309</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">美术/氛围</span></td>
+                <td><span class="freq high">高</span></td>
+                <td class="point">环境偏暗但角色过亮，角色和环境不融合。</td>
+                <td class="action">统一角色、场景、光照和阴影风格；用高辨识边缘/阵营提示解决战斗可读性，而不是简单提亮角色。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：环境和光照偏暗，但角色太亮，角色和场景不匹配。</p><p class="quote-line vi">越南语原文：“Phần ánh sáng... ở tối nhưng mà nhân vật thì quá bật. Nó không match với nhau.”</p><p class="quote-line src">来源：Session 2, line 917</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">美术/音效</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">老玩家怀念旧版更黑暗、恐怖、古旧的地牢氛围，认为当前音乐偏现代。</td>
+                <td class="action">地牢地图应强化 dark fantasy 和恐怖感：更强明暗对比、环境生物/蛛网/蝙蝠等细节、旧式/压迫感音乐，而不是整体变亮。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：当前地图太亮，没有 fantasy/dungeon 的感觉；音乐听起来太现代，旧版更古老、更紧张，夜晚会让人害怕。</p><p class="quote-line vi">越南语原文：“Bản đồ hiện tại nó đang sáng quá...” / “Âm thanh... bị hiện đại quá... bản cũ... hồi hộp quá... em sợ lại chứ.”</p><p class="quote-line src">来源：Session 2, lines 1558, 1565-1575</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">社区功能</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">核心玩家强烈要求自定义房间和赛事功能，并认为它能帮助传播和展示技术。</td>
+                <td class="action">优先评估 custom room、duel room、房间码、观战/回放和小型赛事工具；用社区赛事承接老玩家热情，鼓励内容产出和核心玩家拉新。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：我想要创建房间的模式，也愿意自己出钱办比赛给大家玩；因为我想让游戏更出名，给大家创造一个舞台，也能展示技术。</p><p class="quote-line vi">越南语原文：“Em muốn có chế độ tạo phòng... em sẽ tự lấy tiền của em ra để em tạo giải cho mọi người.” / “Em muốn làm game của mình nổi tiếng hơn... tạo một cái sân chơi cho mọi người... show kỹ năng.”</p><p class="quote-line src">来源：Session 2, lines 2237-2242, 2246-2256</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">地图/PVE（补充）</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">PvE 难度过低，缺少突发事件、Boss、谜题、陷阱和环境挑战。</td>
+                <td class="action">作为后续补充方向评估阶段性难度、怪物威胁、随机事件、动态路线、环境陷阱、谜题房和终局 Boss；当前优先级低于 3C 战斗基础体验。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：玩家直接评价“太简单”；他们希望路上有突发因素，最后要打大 Boss，还需要谜题、陷阱、环境挑战。</p><p class="quote-line vi">越南语原文：“Dễ quá luôn.” / “Dễ quá.” / “Em muốn... yếu tố bất ngờ... Khúc cuối mình phải đánh bót... thử thách câu đố... bẫy... môi trường...”</p><p class="quote-line src">来源：Session 2, lines 1968-1970, 1978-1988</p></td>
+              </tr>
+            
+              <tr>
+                <td><span class="module">地图/PVE（补充）</span></td>
+                <td><span class="freq mid">中</span></td>
+                <td class="point">当前 PvE 缺少复玩动力，玩家认为只有 loot，奖励吸引力也需要加强。</td>
+                <td class="action">后续可建立更明确的副本目标、阶段奖励、挑战事件和队伍分工，让 PvE 不只是刷资源；但该方向属于补充调研结论，优先级低于 3C 战斗体验。</td>
+                <td class="quote-cell"><p class="quote-line cn">中文翻译：因为只有 loot，我看不到其他东西，所以没有想继续玩的感觉；也有玩家提到奖励需要更多一些。</p><p class="quote-line vi">越南语原文：“Bởi vì chỉ có lút đồ thôi... Không có cảm giác muốn chơi tiếp.” / “Phần thưởng nó phải nhiều nhiều hơn tí ít.”</p><p class="quote-line src">来源：Session 2, lines 1980-1981, 2019-2020</p></td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+  
+
+    <footer class="page-footer">Generated from Vietnam_FGD_Player_Report_CN.md</footer>
+  </main>
+</body>
+</html>
