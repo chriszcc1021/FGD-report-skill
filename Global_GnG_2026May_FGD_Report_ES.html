@@ -1,0 +1,652 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Informe FGD de GnG en tres mercados, mayo de 2026</title><style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+    :root { --brand-primary:#C0504D; --brand-secondary:#997E5A; --brand-dark:#4D4D4D; --brand-medium:#7F7F7F; --brand-light:#BFBFBF; --brand-bg:#E9D7D3; --brand-bg-alt:#F5F0EE; --brand-white:#FFFFFF; --brand-black:#333333; --page:#F5F0EE; --paper:#FFFFFF; --ink:#333333; --body:#4D4D4D; --muted:#7F7F7F; --line:#d8cac7; --radius:8px; --shadow:0 10px 28px rgba(77,77,77,.10); --font-display:'EB Garamond','Noto Serif SC','Garamond','Georgia',serif; --font-body:'EB Garamond','Noto Serif SC','Garamond','Georgia',serif; }
+    @page { size:A4; margin:14mm 13mm; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; letter-spacing:0; }
+    body { margin:0; color:var(--body); font-family:var(--font-body); font-size:16px; line-height:1.68; background:var(--page); }
+    code { padding:1px 5px; border-radius:4px; background:var(--brand-bg-alt); color:var(--brand-primary); }
+    .top-rule { height:6px; background:var(--brand-primary); border-right:28vw solid var(--brand-secondary); }
+    .shell { width:min(1160px, calc(100% - 44px)); margin:0 auto; }
+    .cover { padding:34px 0 22px; border-bottom:1px solid var(--line); }
+    .eyebrow { margin:0 0 12px; color:var(--brand-primary); font-size:13px; font-weight:800; }
+    h1 { max-width:920px; margin:0; color:var(--ink); font-family:var(--font-display); font-size:42px; line-height:1.18; letter-spacing:0; }
+    .lead { max-width:920px; margin:16px 0 0; color:var(--brand-dark); font-size:18px; line-height:1.75; }
+    .meta-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+    .meta-row span { padding:7px 10px; border:1px solid var(--line); border-radius:999px; background:var(--paper); color:var(--brand-dark); font-size:13px; font-weight:700; }
+    .nav-wrap { position:sticky; top:0; z-index:10; background:rgba(245,240,238,.94); border-bottom:1px solid var(--line); backdrop-filter:blur(12px); }
+    .nav { width:min(1160px, calc(100% - 44px)); margin:0 auto; display:flex; gap:6px; overflow-x:auto; padding:10px 0; }
+    .nav a { flex:0 0 auto; padding:8px 10px; color:var(--brand-dark); border-radius:6px; font-size:14px; font-weight:700; text-decoration:none; }
+    .nav a:hover, .nav a:focus { color:var(--brand-primary); background:rgba(192,80,77,.10); outline:none; }
+    .content { padding:28px 0 56px; }
+    .report-body, .evidence { background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); }
+    .report-body { padding:30px 34px; }
+    .report-body h2, .evidence h2 { display:flex; align-items:center; gap:12px; margin:34px 0 16px; color:var(--ink); font-family:var(--font-display); font-size:26px; line-height:1.35; letter-spacing:0; padding-top:20px; border-top:1px solid var(--line); }
+    .report-body h2:first-child { margin-top:0; padding-top:0; border-top:0; }
+    .report-body h2 span, .evidence h2 span { display:inline-grid; place-items:center; width:34px; height:34px; flex:0 0 34px; border:1px solid rgba(192,80,77,.36); border-radius:50%; color:var(--brand-primary); background:rgba(192,80,77,.10); font-family:Consolas,'Cascadia Mono',monospace; font-size:14px; font-weight:900; }
+    .report-body h3 { margin:24px 0 8px; color:var(--brand-black); font-family:var(--font-display); font-size:19px; line-height:1.45; letter-spacing:0; }
+    .report-body p, .report-body li { color:var(--brand-dark); } .report-body p { margin:10px 0 0; } .report-body ul { margin:10px 0 0; padding-left:20px; } .report-body li { margin:6px 0; } strong { color:var(--ink); font-weight:900; }
+    .table-frame, .feedback-table-frame { margin:18px 0 6px; overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius); background:#fff; }
+    table { width:100%; min-width:760px; border-collapse:collapse; font-size:14px; line-height:1.55; background:#fff; }
+    th, td { padding:13px 14px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); text-align:left; vertical-align:top; word-break:break-word; }
+    th:last-child, td:last-child { border-right:0; } tbody tr:last-child td { border-bottom:0; }
+    th { color:var(--brand-black); background:var(--brand-bg-alt); font-weight:900; } tbody td:first-child { color:var(--brand-primary); font-weight:900; }
+    .evidence { margin-top:22px; padding:28px 30px 30px; }
+    .section-title { display:grid; grid-template-columns:1fr auto; gap:10px 20px; align-items:end; margin-bottom:18px; padding-bottom:16px; border-bottom:1px solid var(--line); }
+    .section-kicker { grid-column:1 / -1; margin:0; color:var(--brand-primary); font-size:12px; font-weight:900; text-transform:uppercase; }
+    .evidence h2 { margin:0; padding:0; border:0; } .evidence-meta { display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
+    .evidence-meta span { padding:7px 10px; border:1px solid var(--line); border-radius:999px; color:var(--brand-dark); background:#fff; font-size:13px; font-weight:800; }
+    .feedback-table { min-width:1450px; table-layout:fixed; font-size:13px; line-height:1.58; }
+    .feedback-table th:nth-child(1), .feedback-table td:nth-child(1) { width:112px; }
+    .feedback-table th:nth-child(2), .feedback-table td:nth-child(2) { width:78px; text-align:center; }
+    .feedback-table th:nth-child(3), .feedback-table td:nth-child(3) { width:260px; }
+    .feedback-table th:nth-child(4), .feedback-table td:nth-child(4) { width:160px; }
+    .feedback-table th:nth-child(5), .feedback-table td:nth-child(5) { width:72px; }
+    .feedback-table th:nth-child(6), .feedback-table td:nth-child(6) { width:768px; }
+    .feedback-table tbody tr:nth-child(even) td { background:#fbf8f7; }
+    .module { color:var(--brand-primary); font-size:14px; font-weight:900; }
+    .freq { display:inline-flex; min-width:38px; justify-content:center; padding:5px 9px; border-radius:999px; font-size:13px; font-weight:900; }
+    .freq.high { color:#C0504D; background:rgba(192,80,77,.12); } .freq.mid { color:#997E5A; background:rgba(153,126,90,.12); } .freq.low { color:#6F7782; background:rgba(127,127,127,.12); }
+    .point { color:var(--ink); font-size:14px; font-weight:900; } .action { border-left:3px solid var(--brand-secondary); background:#fffaf0; color:var(--brand-dark); } .regions { font-weight:800; line-height:1.7; white-space:normal; }
+    .quote-cell { background:#fbf8f7; } .quote-line { margin:0; color:var(--brand-dark); font-size:12.5px; line-height:1.65; } .quote-line + .quote-line { margin-top:5px; } .quote-line.cn { color:var(--brand-black); font-weight:700; } .quote-line.src { color:var(--muted); font-size:13px; }
+    .page-footer { margin:20px 0 44px; color:var(--muted); font-size:13px; text-align:right; }
+    @media (max-width:900px) { .shell, .nav { width:min(100% - 28px, 1160px); } h1 { font-size:32px; } .lead { font-size:16px; } .report-body, .evidence { padding:22px 18px; } .section-title { grid-template-columns:1fr; } .evidence-meta { justify-content:flex-start; } }
+    @media (max-width:560px) { body { font-size:15px; } h1 { font-size:28px; } .report-body h2, .evidence h2 { font-size:22px; } }
+    @media print { body { background:#fff; font-size:10pt; } .top-rule, .nav-wrap { display:none; } .shell { width:auto; margin:0; } .cover { padding-top:0; } .report-body, .evidence { box-shadow:none; } }
+
+    .score-summary { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:16px 0 18px; }
+    .score-card { border:1px solid var(--line); border-radius:8px; background:#fff; padding:12px 14px; }
+    .score-card h4 { margin:0 0 6px; font-size:16px; color:var(--brand-primary); }
+    .score-card p { margin:0; font-size:14px; line-height:1.55; }
+    .heatmap-table { min-width:1180px; table-layout:fixed; }
+    .heatmap-table th { white-space:nowrap; }
+    .heatmap-table th:nth-child(1), .heatmap-table td:nth-child(1) { width:145px; }
+    .heatmap-table th:nth-child(2), .heatmap-table td:nth-child(2),
+    .heatmap-table th:nth-child(3), .heatmap-table td:nth-child(3),
+    .heatmap-table th:nth-child(4), .heatmap-table td:nth-child(4),
+    .heatmap-table th:nth-child(5), .heatmap-table td:nth-child(5) { width:126px; text-align:center; }
+    .heatmap-table th:nth-child(6), .heatmap-table td:nth-child(6) { width:531px; }
+    .score-cell { font-weight:900; vertical-align:middle; }
+    .score-cell b { display:block; font-size:18px; line-height:1.1; }
+    .score-cell span { display:block; margin-top:4px; font-size:11.5px; font-weight:700; color:rgba(51,51,51,.72); white-space:nowrap; }
+    .score-low { background:#f6d4cf; color:#9b2c28; }
+    .score-watch { background:#f7e2bf; color:#805312; }
+    .score-ok { background:#e4edd7; color:#536a2f; }
+    .score-strong { background:#cfe5d7; color:#285b38; }
+    .score-na { background:#f5f0ee; color:var(--muted); }
+    .source-note { margin-top:8px; color:var(--muted); font-size:13px; }
+    @media(max-width:820px){ .score-summary { grid-template-columns:1fr; } }
+  
+    .feedback-table { min-width:1960px; table-layout:fixed; font-size:13px; line-height:1.58; }
+    .feedback-table th:nth-child(1), .feedback-table td:nth-child(1) { width:112px; }
+    .feedback-table th:nth-child(2), .feedback-table td:nth-child(2) { width:220px; text-align:left; }
+    .feedback-table th:nth-child(3), .feedback-table td:nth-child(3) { width:260px; }
+    .feedback-table th:nth-child(4), .feedback-table td:nth-child(4) { width:150px; }
+    .feedback-table th:nth-child(5), .feedback-table td:nth-child(5) { width:72px; }
+    .feedback-table th:nth-child(6), .feedback-table td:nth-child(6) { width:820px; }
+    .feedback-table th:nth-child(7), .feedback-table td:nth-child(7),
+    .feedback-table th:nth-child(8), .feedback-table td:nth-child(8) { width:90px; }
+    .coverage { display:block; margin-top:8px; color:var(--body); font-size:12px; line-height:1.55; font-weight:700; }
+    .coverage span { display:block; }
+    .report-body p strong { color:var(--brand-primary); }
+
+
+.report-body p strong { color: inherit; }
+.attitude { display: inline-flex; align-items: center; justify-content: center; margin-right: 6px; padding: 2px 8px; border-radius: 999px; font-size: 12px; line-height: 1.35; font-weight: 900; white-space: nowrap; }
+.attitude-positive { color: #2f6d3a; background: rgba(79,143,88,.14); border: 1px solid rgba(79,143,88,.30); }
+.attitude-neutral-positive { color: #5d7443; background: rgba(125,151,86,.16); border: 1px solid rgba(125,151,86,.32); }
+.attitude-neutral { color: #666; background: rgba(127,127,127,.14); border: 1px solid rgba(127,127,127,.28); }
+.attitude-neutral-negative { color: #8a6236; background: rgba(153,126,90,.16); border: 1px solid rgba(153,126,90,.34); }
+.attitude-negative { color: #a53a37; background: rgba(192,80,77,.14); border: 1px solid rgba(192,80,77,.34); }
+.feedback-table { width: 100%; min-width: 0; table-layout: fixed; font-size: 12px; line-height: 1.48; }
+.feedback-table th, .feedback-table td { padding: 10px 9px; }
+.feedback-table th:nth-child(1), .feedback-table td:nth-child(1) { width: 8%; }
+.feedback-table th:nth-child(2), .feedback-table td:nth-child(2) { width: 12%; text-align: left; }
+.feedback-table th:nth-child(3), .feedback-table td:nth-child(3) { width: 20%; }
+.feedback-table th:nth-child(4), .feedback-table td:nth-child(4) { width: 16%; }
+.feedback-table th:nth-child(5), .feedback-table td:nth-child(5) { width: 32%; }
+.feedback-table th:nth-child(6), .feedback-table td:nth-child(6),
+.feedback-table th:nth-child(7), .feedback-table td:nth-child(7) { width: 6%; }
+.feedback-table th:nth-child(2) { line-height: 1.25; }
+.feedback-table .module { font-size: 13px; }
+.feedback-table .freq { min-width: 30px; padding: 3px 7px; font-size: 11px; }
+.feedback-table .coverage { margin-top: 6px; font-size: 10.5px; line-height: 1.45; }
+.feedback-table .point, .feedback-table .action { font-size: 12px; line-height: 1.5; }
+.feedback-table .action {
+  color: #2f2924;
+  background: #fff5df;
+  font-weight: 760;
+  box-shadow: inset 3px 0 0 #9b7b48;
+}
+.feedback-table .action .next-tag {
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #f1e2bf;
+  color: #6f4d1f;
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.feedback-table .quote-line { font-size: 10px; line-height: 1.45; }
+.feedback-table .quote-line + .quote-line { margin-top: 2px; }
+.feedback-table .quote-line.src { font-size: 9.8px; }
+
+
+/* Localized report controls */
+.language-switcher {
+  position: fixed;
+  top: 14px;
+  right: 18px;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: flex-end;
+  max-width: min(360px, calc(100vw - 32px));
+  padding: 6px;
+  border: 1px solid rgba(216,202,199,.92);
+  border-radius: 999px;
+  background: rgba(250,247,245,.94);
+  box-shadow: 0 8px 24px rgba(77,77,77,.10);
+  backdrop-filter: blur(10px);
+}
+.language-switcher a {
+  min-width: 34px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  color: var(--brand-dark);
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.language-switcher a:hover,
+.language-switcher a:focus {
+  color: var(--brand-primary);
+  background: rgba(192,80,77,.10);
+  outline: none;
+}
+.language-switcher a.active {
+  color: #fff;
+  background: var(--brand-primary);
+  box-shadow: 0 4px 12px rgba(192,80,77,.22);
+}
+.feedback-table thead th:nth-child(4) {
+  background: #f4ead7 !important;
+}
+.feedback-table tbody td.action,
+.feedback-table tbody tr:nth-child(odd) td.action,
+.feedback-table tbody tr:nth-child(even) td.action {
+  background: #fff6e4 !important;
+}
+body[data-locale="en"],
+body[data-locale="vi"],
+body[data-locale="id"],
+body[data-locale="es"],
+body[data-locale="pt-BR"] {
+  word-break: normal;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+body[data-locale="th"] {
+  line-height: 1.82;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+body[data-locale="th"] .lead,
+body[data-locale="th"] .report-body,
+body[data-locale="th"] .feedback-table,
+body[data-locale="th"] .heatmap-table {
+  line-height: 1.76;
+}
+body[data-locale="vi"] .feedback-table,
+body[data-locale="es"] .feedback-table,
+body[data-locale="pt-BR"] .feedback-table {
+  font-size: 11.5px;
+}
+body[data-locale="id"] .feedback-table,
+body[data-locale="en"] .feedback-table {
+  font-size: 11.8px;
+}
+@media (max-width: 900px) {
+  .language-switcher { position: sticky; top: 8px; margin: 8px 14px 0 auto; }
+}
+@media print {
+  .language-switcher { display: none; }
+}
+
+
+
+
+
+
+/* Report comment layer */
+.review-toolbar {
+  position: fixed;
+  top: 56px;
+  right: 18px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid rgba(216,202,199,.92);
+  border-radius: 999px;
+  background: rgba(250,247,245,.97);
+  box-shadow: 0 10px 28px rgba(77,77,77,.12);
+  backdrop-filter: blur(10px);
+}
+.review-toolbar button {
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: transparent;
+  color: var(--brand-dark);
+  font: inherit;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 900;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.review-toolbar button:hover,
+.review-toolbar button:focus {
+  color: var(--brand-primary);
+  background: rgba(192,80,77,.10);
+  outline: none;
+}
+.review-toolbar button.active {
+  color: var(--paper);
+  background: var(--brand-primary);
+  box-shadow: 0 4px 12px rgba(192,80,77,.24);
+}
+.review-count {
+  min-width: 28px;
+  padding: 0 7px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  text-align: center;
+}
+.review-status {
+  position: fixed;
+  right: 18px;
+  top: 100px;
+  z-index: 59;
+  display: none;
+  max-width: 280px;
+  padding: 7px 11px;
+  border: 1px solid rgba(153,126,90,.30);
+  border-radius: 999px;
+  background: #fff8e8;
+  color: #64451b;
+  box-shadow: 0 8px 20px rgba(77,77,77,.08);
+  font-size: 12px;
+  font-weight: 850;
+}
+body.comment-mode .review-status { display: block; }
+body.comment-mode .commentable-hover {
+  outline: 2px solid rgba(192,80,77,.24);
+  outline-offset: 2px;
+  cursor: crosshair;
+}
+.report-comment-bubble {
+  position: absolute;
+  z-index: 55;
+  display: none;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 7px;
+  border: 1px solid rgba(250,247,245,.86);
+  border-radius: 999px;
+  background: var(--brand-primary);
+  color: var(--paper);
+  box-shadow: 0 8px 18px rgba(77,77,77,.20);
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  transform: translateZ(0);
+}
+body.comment-mode .report-comment-bubble { display: block; }
+.report-comment-bubble:hover { transform: translateY(-1px); }
+.report-comment-popover {
+  position: absolute;
+  z-index: 90;
+  display: none;
+  width: min(370px, calc(100vw - 28px));
+  border: 1px solid rgba(216,202,199,.96);
+  border-radius: 8px;
+  background: #fffdf9;
+  box-shadow: 0 20px 46px rgba(77,77,77,.22);
+  overflow: hidden;
+}
+.report-comment-popover.open { display: block; }
+.comment-popover-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  background: #f8f1ef;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+}
+.comment-target-snippet {
+  padding: 9px 12px 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+.report-comment-popover textarea {
+  width: calc(100% - 24px);
+  min-height: 96px;
+  margin: 10px 12px 8px;
+  padding: 10px;
+  resize: vertical;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.comment-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 0 12px 12px;
+}
+.comment-actions button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: var(--paper);
+  color: var(--brand-dark);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.comment-actions button.primary {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary);
+  color: var(--paper);
+}
+.comment-actions button.danger {
+  border-color: rgba(192,80,77,.35);
+  color: var(--brand-primary);
+  background: rgba(192,80,77,.08);
+}
+.comment-actions button:hover,
+.comment-actions button:focus { outline: none; box-shadow: 0 0 0 3px rgba(192,80,77,.12); }
+@media (max-width: 900px) {
+  .review-toolbar { top: auto; bottom: 14px; right: 14px; }
+  .review-status { top: auto; bottom: 62px; right: 14px; }
+}
+@media print {
+  .review-toolbar, .review-status, .report-comment-bubble, .report-comment-popover { display: none !important; }
+}
+/* End report comment layer */
+
+</style></head><body data-locale="es"><div class="top-rule"></div><div class="language-switcher" aria-label="Language switcher"><a href="Global_GnG_2026May_FGD_Report_CN.html" title="中文">中文</a><a href="Global_GnG_2026May_FGD_Report_EN.html" title="English">EN</a><a href="Global_GnG_2026May_FGD_Report_VN.html" title="Tiếng Việt">VN</a><a href="Global_GnG_2026May_FGD_Report_TH.html" title="ไทย">TH</a><a href="Global_GnG_2026May_FGD_Report_ID.html" title="Bahasa Indonesia">ID</a><a class="active" aria-current="page" href="Global_GnG_2026May_FGD_Report_ES.html" title="Español">ES</a><a href="Global_GnG_2026May_FGD_Report_PT.html" title="Português">PT</a></div><div class="review-toolbar" aria-label="Review mode"><button type="button" class="review-read active" data-label="read">阅读模式</button><button type="button" class="review-comment" data-label="comment">评论模式</button><span class="review-count" aria-live="polite">0</span></div><div class="review-status">评论模式：点击页面任意位置添加评论</div><header class="cover shell"><p class="eyebrow">MX / VN / ID Player FGD / Gold & Glory</p><h1>Informe FGD de GnG en tres mercados, mayo de 2026</h1><p class="lead">Basado en la recopilación de materiales FGD de jugadores en tres mercados: México, Vietnam e Indonesia, se centra principalmente en experiencias de combate relacionadas con 3C: cámara, operación, esquiva de personajes, bloqueo de enemigos, bloqueo de armas, posicionamiento de combate profesional e información de combate HUD. PvE, arte, social, etc. como observaciones complementarias.</p><div class="meta-row"><span>Versión integrada de tres mercados</span><span>Contiene evidencia de las palabras originales de los jugadores.</span><span>3C / Combat Focus</span></div></header><div class="nav-wrap"><nav class="nav" aria-label="报告导航"><a href="#background">Contexto del proyecto</a><a href="#conclusion">Conclusiones clave</a><a href="#comparison">Jugadores nuevos vs. veteranos</a><a href="#recommendations">Acciones específicas de feedback</a><a href="#appendix">Appendix</a></nav></div><main class="shell content"><article class="report-body"><h2 id="background"><span>1</span>Contexto del proyecto</h2><p>Este informe se basa en la compilación de materiales FGD de combate central Gold &amp; Glory/GnG en mayo de 2026, que cubren los tres mercados de México, Vietnam e Indonesia.<br>La atención se centra en la experiencia de combate 3C de la nueva versión: perspectiva de la cámara, control de operaciones, esquiva de personajes, bloqueo/apuntación automática del enemigo, bloqueo de armas, posicionamiento de combate profesional, HUD e información de combate.<br>PvE, arte temático, sonido, aspectos sociales y nuevos conceptos de personajes sirven como observaciones complementarias.</p><ul><li><strong>nuevo jugador</strong>: Comentarios del primer contacto de VN Group 1, ID Group 3 New User y MX Shooting para hacer referencia a los materiales del jugador para observar el atractivo, las barreras de incorporación y los costos de comprensión de la información de la nueva versión 3C.</li><li><strong>Jugador veterano incondicional</strong>: MX KOL/grupo de jugadores veteranos, VN Grupo 3, ID Grupo 1 Incondicional, utilizado para observar si se conservan la sensación, el límite de operación, la presión de la mazmorra, las debilidades profesionales y la profundidad de construcción de la versión anterior.</li><li><strong>Perder viejos jugadores</strong>: VN Grupo 2 jugadores veteranos/jugadores abandonados, ID Grupo 2 abandonados y comentarios relacionados con el retorno de jugadores veteranos de MX, que se utilizan para observar si la nueva versión puede atraer jugadores nuevamente y si se han reparado los principales obstáculos de abandono.</li></ul><h2 id="conclusion"><span>2</span>Conclusiones clave</h2><p>La nueva versión de 3C de GnG tiene un claro atractivo para los nuevos usuarios. Los jugadores reconocen el tema de fantasía oscura/medieval, la colaboración en equipo 3 contra 3, la división profesional del trabajo, el desempeño de habilidades y la retroalimentación parcial del combate. Es más probable que los nuevos jugadores se sientan atraídos por "se ve bien, es fácil de usar y se puede jugar con amigos"; Los jugadores veteranos y los jugadores principales están más preocupados por si la tensión de la mazmorra, el límite de operación, las debilidades profesionales y la profundidad del equipo/construcción de la versión anterior todavía están ahí.</p><p>Los nuevos jugadores se ven atrapados principalmente por "presiones poco suaves y bloqueos imprecisos"; Los jugadores veteranos están principalmente preocupados por un soporte fuerte y lentes excesivamente anchas que debilitan el límite superior de operación, la tensión de las mazmorras y las debilidades profesionales.</p><p>El atractivo del nivel de combate ha sido reconocido por los usuarios, especialmente la nueva versión de 3C, colaboración 3v3, acciones de habilidad y división profesional del trabajo; sin embargo, el ciclo cerrado completo de búsqueda, ataque y retirada aún no se ha verificado bajo el nuevo marco 3C, y aún debe confirmarse mediante competencias internas ajustadas en función de los comentarios de FGD y pruebas posteriores con jugadores veteranos.</p><h2 id="comparison"><span>3</span>Jugadores nuevos vs. veteranos</h2><p>Resumen: Las principales motivaciones de los nuevos jugadores son temas atractivos, fáciles de probar, poder formar equipo con amigos, apariencia y habilidades atractivas de los personajes; Las principales motivaciones de los jugadores veteranos son la memoria de la versión antigua, el límite de operaciones, la tensión de la mazmorra, las debilidades profesionales, la profundidad del equipo/edificio y el juego comunitario.</p><p>Obstáculos principales: los nuevos jugadores están atascados y no pueden entender el objetivo, hay demasiados botones pequeños, las habilidades y las reglas de bloqueo del enemigo no están claras, y la información de amigos/enemigos/HP/mapas es confusa; A los jugadores veteranos les preocupa que la cámara sea demasiado ancha, que la tecnología auxiliar fuerte debilite, que el bloqueo universal de armas debilite la identidad profesional y que las profesiones de largo alcance sean demasiado seguras.</p><div class="table-frame"><table><thead><tr><th>Dimensiones</th><th>nuevo jugador</th><th>viejo jugador</th><th>Comentarios del área</th></tr></thead><tbody><tr><td>Preferencia de lentes</td><td><span class="attitude attitude-neutral-positive">neutral a positivo</span>Siempre que puedas ver claramente el entorno, algunos jugadores aceptan lentes gran angular.</td><td><span class="attitude attitude-neutral-negative">neutro a negativo</span>No debe ser demasiado ancho. Es necesario conservar la sensación de opresión, emboscada y acercamiento del personaje.</td><td>Es más probable que los nuevos jugadores acepten ángulos de visión amplios; Los jugadores veteranos prefieren mantener la presión de la versión anterior.</td></tr><tr><td>Fijar al enemigo/objetivo automático</td><td><span class="attitude attitude-neutral">neutral</span>Se necesita ayuda, pero debes ser inteligente y no puedes fijar monstruos u objetivos equivocados al azar.</td><td><span class="attitude attitude-negative">negativo</span>Preocupado por reducir los límites operativos, lo que requiere la selección manual de objetivos</td><td>Se puede brindar asistencia, pero el jugador debe poder cambiar el objetivo en cualquier momento y el sistema no puede redirigirlo a la fuerza.</td></tr><tr><td>esquivar personaje</td><td><span class="attitude attitude-neutral-positive">neutral a positivo</span>Debe ser fácil de presionar, la distancia debe ser clara y el enfriamiento debe ser fácil de entender.</td><td><span class="attitude attitude-neutral-positive">neutral a positivo</span>Deben distinguirse por ocupación para evitar que las ocupaciones remotas sean demasiado seguras.</td><td>Todo el mundo está de acuerdo en el valor de esquivar personajes; el desacuerdo es cuánta seguridad debería dar, especialmente para las clases a distancia.</td></tr><tr><td>Bloque de armas</td><td><span class="attitude attitude-neutral">neutral</span>Necesita saber cuándo ocurre el éxito y qué recompensas se recibirán al lograrlo.</td><td><span class="attitude attitude-neutral-positive">neutral a positivo</span>Debería diferenciarse por arma/ocupación y no debería homogeneizarse en todas las profesiones.</td><td>Los jugadores veteranos se preocupan más por esto; Los nuevos jugadores también necesitan consejos más claros para tener éxito.</td></tr><tr><td>expectativas profesionales</td><td><span class="attitude attitude-neutral-positive">neutral a positivo</span>El posicionamiento de roles y las descripciones de habilidades deben colocarse al frente, y es mejor verlos en la selección o al comienzo.</td><td><span class="attitude attitude-neutral-negative">neutro a negativo</span>Debe haber fortalezas y debilidades claras, contrarelaciones y diferencias en la construcción.</td><td>Los nuevos jugadores primero deben comprender las profesiones; Los jugadores veteranos necesitan ver que las profesiones son realmente diferentes.</td></tr><tr><td>HUD e información de combate.</td><td><span class="attitude attitude-negative">negativo</span>Necesita HP claro, compañeros de equipo, enemigos, monstruos, objetivos, interacciones en el mapa.</td><td><span class="attitude attitude-neutral">neutral</span>El modo de alta presión reduce la información del enemigo, reteniendo lo desconocido y la tensión.</td><td>In the normal mode, make sure you can understand it first; en el modo difícil, puedes dar un poco menos de información para mantener la tensión.</td></tr><tr><td>efectos de sonido artísticos</td><td><span class="attitude attitude-positive">positivo</span>La buena apariencia, la fantasía oscura, los sonidos de habilidad y la retroalimentación de los aciertos pueden aumentar el interés.</td><td><span class="attitude attitude-neutral-positive">neutral a positivo</span>La atmósfera debería ser más opresiva y parecida a una mazmorra, y el sonido no debería oscurecer la información clave.</td><td>Las imágenes y los sonidos son puntos extra, pero no pueden sacrificarse a expensas de ver claramente a los enemigos y escuchar las amenazas.</td></tr><tr><td>Expectativas PvE (suplementario)</td><td><span class="attitude attitude-neutral-negative">neutro a negativo</span>Es fácil jugar sin comprender los objetivos, rutas, eventos, zonas seguras y motivos del fracaso.</td><td><span class="attitude attitude-neutral-negative">neutro a negativo</span>Puede entender las reglas básicas, pero siente que el juego es simple, sencillo, poco divertido y le falta motivación para volver a jugar.</td><td>PvE es primero una observación complementaria; si entras en la experiencia de principiante, el umbral de comprensión se convertirá en una cuestión básica.</td></tr></tbody></table></div></article><section class="evidence" id="recommendations"><div class="section-title"><p class="section-kicker">Evidence-backed product actions</p><h2><span>4</span>Acciones específicas de feedback (confirme la conclusión de la revisión final antes del 15/05)</h2><div class="evidence-meta"><span><b>8</b> frecuencia alta</span><span><b>5</b> SI</span><span><b>1</b> baja frecuencia</span></div></div><div class="feedback-table-frame"><table class="feedback-table"><thead><tr><th>módulo de retroalimentación</th><th>Frecuencia de mención<br>Proporción de menciones de jugadores</th><th>punto de retroalimentación</th><th>Siguiente paso</th><th>Palabras originales del jugador.</th><th>FOTO DE I+D</th><th>operaciones<br>PIC</th></tr></thead><tbody><tr><td><span class="module">lente/campo de visión</span></td><td><span class="freq high">alto</span><span class="coverage"><span>Nuevo jugador 7/12</span><span>Jugador veterano incondicional 10/12</span><span>Perdiendo viejos jugadores 8/11</span></span></td><td class="point">La lente ancha puede mejorar la información de observación para los nuevos jugadores, pero los jugadores experimentados piensan que debilita la presión cercana, la sensación de la versión antigua y la tensión de la mazmorra.</td><td class="action"><span class="next-tag">Tendencia: Principalmente jugadores veteranos, sin dejar de cubrir a jugadores nuevos</span>No ajustar el ángulo de cámara principal. En su lugar, optimizar la configuración de cámara agregando opciones separadas para el movimiento horizontal y vertical, de modo que los jugadores puedan personalizarlas. Al mismo tiempo, reducir la proporción de terreno con diferencias de altura en los niveles para evitar que los jugadores tengan que arrastrar la cámara vertical con demasiada frecuencia y afectar la experiencia de combate.</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: Prefiere que la lente esté en el punto medio entre la vieja y la nueva, o quedarse con la lente vieja porque está acostumbrado.</p><p class="quote-line original">Texto original en inglés: "Preferiría un punto medio entre ambos, o tener el antiguo ya que estoy acostumbrado".</p><p class="quote-line src">Fuente: MX R30_GNG.md, línea 108</p><p class="quote-line cn">Traducción al chino: una lente más amplia mejora la accesibilidad, pero debilita la tensión para los jugadores veteranos.</p><p class="quote-line original">Texto original en inglés: "Una cámara más amplia mejora la accesibilidad pero debilita la tensión para los jugadores experimentados".</p><p class="quote-line src">Fuente: Resumen de VN Session1 y 2.docx, líneas 18-21</p><p class="quote-line cn">Traducción al chino: Los jugadores incondicionales están más preocupados por que la lente esté demasiado lejos y por la pérdida de lentes y sensaciones antiguas, mientras que los jugadores perdidos/nuevos aceptan más las lentes altas/anchas.</p><p class="quote-line original">Texto original en inglés: “Los jugadores incondicionales retenidos son más sensibles a que la cámara esté demasiado lejos… Los jugadores abandonados son más abiertos… Los nuevos usuarios son los más abiertos”.</p><p class="quote-line src">Fuente: Hoja maestra de ID, fila 2 del resumen de ID</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Fijar al enemigo/objetivo automático</span></td><td><span class="freq high">alto</span><span class="coverage"><span>Nuevo jugador 8/12</span><span>Jugador veterano incondicional 8/12</span><span>Perdiendo viejos jugadores 8/11</span></span></td><td class="point">El bloqueo automático de enemigos cambiará incorrectamente entre monstruos, enemigos, compañeros de equipo y habilidades remotas, lo que hará que los jugadores pierdan el derecho a apuntar.</td><td class="action"><span class="next-tag">Tendencia: Tener en cuenta a los jugadores nuevos y antiguos</span>Para la optimización relacionada con el bloqueo, consulte el elemento de puntería de habilidad remota; en la configuración, se abren configuraciones de operación más detalladas, como objetivo de bloqueo prioritario/entrada prioritaria del joystick izquierdo/entrada prioritaria de lente.</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: el objetivo automático dirige la cámara a enemigos aleatorios en lugar del objetivo que el jugador quiere atacar.</p><p class="quote-line original">Texto original en inglés: "El objetivo automático dirige la cámara a un enemigo aleatorio en lugar del que deseas".</p><p class="quote-line src">Fuente: MX R30_GNG.md, línea 196</p><p class="quote-line cn">Traducción al chino: Las cámaras y los bloqueos enemigos eliminan la iniciativa de los jugadores y se convierten en un riesgo para el regreso de los jugadores veteranos.</p><p class="quote-line original">Texto original en inglés: "El bloqueo de cámara/objetivo elimina la agencia del jugador y se convierte en un riesgo de retorno para los jugadores veteranos".</p><p class="quote-line src">Fuente: VN GNG_3C_FGD_Report_EN.docx, líneas 13-16</p><p class="quote-line cn">Traducción al chino: El problema no es simplemente activar o desactivar el bloqueo automático, sino que diferentes profesiones y diferentes habilidades requieren una lógica de bloqueo diferente.</p><p class="quote-line original">Texto original en inglés: "La cuestión no es simplemente 'activar o desactivar el bloqueo automático'; diferentes clases y habilidades necesitan una lógica de bloqueo diferente".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 6 del resumen de identificación</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">HUD/Información de combate</span></td><td><span class="freq high">alto</span><span class="coverage"><span>Nuevo jugador 9/12</span><span>Jugador veterano incondicional 6/12</span><span>Perdiendo viejos jugadores 7/11</span></span></td><td class="point">En 3v3, el nivel de amigo y enemigo, el estado del compañero de equipo, los HP del monstruo/jugador, los números de daño y la información del objetivo no son lo suficientemente claros.</td><td class="action"><span class="next-tag">Tendencia: Principalmente jugadores nuevos, teniendo en cuenta a los jugadores veteranos.</span>Se optimizará el estilo de la barra de salud; se agregará un nuevo estilo de barra de sangre a los monstruos Boss; se promoverán como tareas importantes la prominencia del personaje en la escena y la identificación de amigos y enemigos; se distinguirán los efectos sonoros de amigos y enemigos; se considerarán ajustados los avisos de salud baja o se abrirán configuraciones para permitir que los jugadores veteranos debiliten el rendimiento; la retroalimentación de efectos de sonido se enriquecerá aún más; Las cuestiones clave se discutirán por separado.</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: es difícil distinguir a los amigos de los enemigos, lo que hace que el juego sea frustrante.</p><p class="quote-line original">Texto original en inglés: "Era difícil distinguir entre amigos y enemigos y eso hace que el juego sea frustrante".</p><p class="quote-line src">Fuente: MX R30_GNG.md, líneas 221-222</p><p class="quote-line cn">Traducción al chino: los nuevos jugadores necesitan información más clara sobre HP, equipo, enemigos y monstruos.</p><p class="quote-line original">Texto original en inglés: "Los nuevos jugadores necesitan información más clara sobre HP/equipo/enemigo/monstruo".</p><p class="quote-line src">Fuente: VN GNG_3C_FGD_Report_EN.docx, línea 5</p><p class="quote-line cn">Traducción al chino: se necesitan trazos o marcas más claras para distinguir entre amigos y enemigos, y el número de daño es demasiado pequeño bajo la lente gran angular.</p><p class="quote-line original">Texto original en inglés: "La distinción entre enemigo y compañero de equipo necesita contornos o marcadores más claros. Las cifras de daño pueden ser demasiado pequeñas bajo una cámara más amplia".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 11 del resumen de identificación</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Acción/Entrada Respuesta</span></td><td><span class="freq high">alto</span><span class="coverage"><span>Nuevo jugador 9/12</span><span>Jugador veterano incondicional 7/12</span><span>Perdiendo viejos jugadores 7/11</span></span></td><td class="point">Los botones pequeños, demasiados botones, toques accidentales, ataques retrasados ​​y no activación de habilidades destruirán directamente la sensación de control en el terminal móvil.</td><td class="action"><span class="next-tag">Tendencia: nuevos jugadores</span>Es necesario corregir el error que indica que la entrada de paso estática no es válida; al correr y detenerse, considere reducir aún más la distancia de esquiva del personaje; agregue protección contra caídas al borde de la plataforma alta; el número de claves se considerará simplificado/eliminado.</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: el ataque tiene un retraso de 1 a 2 segundos y el oponente parece responder de inmediato.</p><p class="quote-line original">Texto original en inglés: "Retraso de 1 a 2 segundos para los ataques mientras el otro personaje tenía respuesta instantánea".</p><p class="quote-line src">Fuente: MX BrawlStars.md, línea 54</p><p class="quote-line cn">Traducción al chino: el combate parece lento debido al retraso, el tiempo de reutilización prolongado y la respuesta de movimiento.</p><p class="quote-line original">Texto original en inglés: "El combate se siente lento debido a la demora, los largos tiempos de reutilización y la respuesta del movimiento".</p><p class="quote-line src">Fuente: Resumen de sesiones 1 y 2 de VN.docx, líneas 333-336</p><p class="quote-line cn">Traducción al chino: los nuevos jugadores deben aprender a esquivar personajes, bloquear armas, habilidades profesionales, bloquear, cámara y otras operaciones al mismo tiempo.</p><p class="quote-line original">Texto original en inglés: "Los nuevos usuarios sienten que el juego tiene muchas acciones que aprender: esquivar, parar, habilidades de clase, fijar, cámara".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 10 del resumen de identificación</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">esquivar personaje</span></td><td><span class="freq high">alto</span><span class="coverage"><span>Nuevo jugador 8/12</span><span>Jugador veterano incondicional 8/12</span><span>Perdiendo viejos jugadores 7/11</span></span></td><td class="point">Se reconocen las direcciones de esquiva de los personajes, pero el alcance, el tiempo de reutilización, la accesibilidad de los botones y las diferencias de clase siguen sin estar claros.</td><td class="action">Confirmar la revisión final antes del 15/05</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: el tiempo de reutilización para esquivar del personaje es largo, la distancia es corta y la expresión de la habilidad es insuficiente.</p><p class="quote-line original">Texto original en inglés: "Rodar/correr tiene un tiempo de reutilización largo, un alcance corto y una profundidad de habilidad baja".</p><p class="quote-line src">Fuente: VN Session1&amp;2 resumen.docx, líneas 375-378</p><p class="quote-line cn">Traducción al chino: la retroalimentación general sobre la esquiva de personajes en los tres grupos es positiva y se considera que puede usarse para habilidades de persecución, escape y evasión.</p><p class="quote-line original">Texto original en inglés: "Dodge/Dash recibe comentarios positivos en todos los grupos. Se considera útil para perseguir, escapar y evitar habilidades".</p><p class="quote-line src">Fuente: Hoja maestra de ID, fila 8 del resumen de ID</p><p class="quote-line cn">Traducción al chino: a los jugadores veteranos les gustan las animaciones en ejecución y los ataques continuos, pero las animaciones engorrosas harán que las ganancias de esquiva del personaje sean inestables.</p><p class="quote-line original">Texto original en inglés: "Le gusta parar y que los ataques sean consecutivos. Le gusta la animación de carrera".</p><p class="quote-line src">Fuente: MX R30_GNG.md, línea 92</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Apuntar con habilidad remota</span></td><td><span class="freq high">alto</span><span class="coverage"><span>Nuevo jugador 7/12</span><span>Jugador veterano incondicional 8/12</span><span>Perdiendo viejos jugadores 7/11</span></span></td><td class="point">Wizard/Mage/Oracle se centra en exponer problemas de focalización de habilidades remotas, adsorción del terreno, bloqueo de obstáculos y interferencias de bloqueo automático.</td><td class="action"><span class="next-tag">Tendencia: Común a jugadores nuevos y antiguos.</span>Fortalecer la eficiencia del golpe de las habilidades de largo alcance; encienda el interruptor de bloqueo automático; optimizar la estrategia de búsqueda de objetivos, como reducir el peso de los monstruos; encienda el interruptor de adsorción de habilidades; reducir la proporción de terreno con diferencias de nivel altas y bajas y reducir los requisitos para la lucha; aumente la optimización de la selección de puntos de terreno complejos, consulte Punto muerto.</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: Apuntar y golpear a los enemigos es demasiado complicado, especialmente el ataque cruzado de Prophet; Golpear al mismo enemigo dos veces es difícil, principalmente debido a la torpeza de la cámara.</p><p class="quote-line original">Texto original en inglés: "Golpear dos veces al mismo enemigo es demasiado difícil, principalmente debido a la torpe cámara".</p><p class="quote-line src">Fuente: MX R30_GNG.md, línea 241</p><p class="quote-line cn">Traducción al chino: La habilidad carece de indicación clara de dirección/alcance.</p><p class="quote-line original">Texto original en inglés: "La puntería de habilidad carece de indicadores claros de dirección/alcance".</p><p class="quote-line src">Fuente: Resumen de sesiones 1 y 2 de VN.docx, líneas 358-361</p><p class="quote-line cn">Traducción al chino: La focalización en habilidades a distancia es un problema recurrente en los tres grupos, especialmente en Wizard y Oracle.</p><p class="quote-line original">Texto original en inglés: "La puntería con habilidades a distancia es uno de los problemas más claros entre grupos. Wizard y Oracle se mencionan repetidamente".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 5 del resumen de identificación</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Bloque de armas</span></td><td><span class="freq high">alto</span><span class="coverage"><span>Nuevo jugador 6/12</span><span>Jugador veterano incondicional 8/12</span><span>Perdiendo viejos jugadores 6/11</span></span></td><td class="point">El bloqueo de armas puede agregar profundidad, pero el bloqueo de armas universal debilita las armas, las clases y los valores de emboscada, y los nuevos jugadores no conocen las condiciones y los beneficios del éxito.</td><td class="action"><span class="next-tag">Tendencia: jugadores veteranos</span>El TTK se comprimirá/equilibrará, lo que reducirá el TTK general y aumentará el TTK de las batallas multijugador contra un solo jugador; Los objetivos del diseño son debilitar el combate, la magia, la cría de animales y fortalecer la contribución de un solo jugador.</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: el bloqueo de armas de GnG lo hace tan emocionante como contraatacar en Dragon Ball Legends.</p><p class="quote-line original">Texto original en inglés: "La parada GnG me hace sentir tan emocionado como cuando hice un contraataque en DB Legends".</p><p class="quote-line src">Fuente: MX R30_GNG.md, línea 57</p><p class="quote-line cn">Traducción al chino: El bloqueo universal de armas debilita el estatus de clase y de arma.</p><p class="quote-line original">Texto original en inglés: "El bloqueo universal debilita la identidad de arma/clase".</p><p class="quote-line src">Fuente: Resumen de sesiones 1 y 2 de VN.docx, líneas 586-589</p><p class="quote-line cn">Traducción al chino: este sistema puede agregar profundidad, pero si todas las clases obtienen herramientas defensivas similares, generará confusión y aplanamiento de las características de las clases.</p><p class="quote-line original">Texto original en inglés: "El sistema añade profundidad, pero corre el riesgo de volverse confuso o aplanar la identidad de clase si todas las clases obtienen herramientas de defensa similares".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 9 del resumen de identificación</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Equilibrio carrera/rol</span></td><td><span class="freq high">alto</span><span class="coverage"><span>Nuevo jugador 7/12</span><span>Jugador veterano incondicional 9/12</span><span>Perdiendo viejos jugadores 7/11</span></span></td><td class="point">La división profesional del trabajo en 3v3 es atractiva, pero la fuerza, la dificultad operativa y la seguridad del Guerrero, Mago/Mago y Oráculo/Sacerdote son inestables.</td><td class="action"><span class="next-tag">Tendencia: Común a jugadores nuevos y antiguos.</span>Se reparará la penetración de la pared; se optimizará la selección y adsorción de puntos de habilidad; La personalización del HUD se puede ajustar en la guía para principiantes.</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: El equipo que gestione mejor a Mage siempre ganará.</p><p class="quote-line original">Texto original en inglés: “El equipo que maneje mejor al Mago siempre ganará”.</p><p class="quote-line src">Fuente: MX Free Fire jugadores.md, línea 102</p><p class="quote-line cn">Traducción al chino: Wizard y Oracle corren el riesgo de sufrir OP entre los jugadores veteranos.</p><p class="quote-line original">Texto original en inglés: "Wizard y Oracle muestran riesgo de OP entre los jugadores veteranos".</p><p class="quote-line src">Fuente: VN GNG_3C_FGD_Report_EN.docx, líneas 21-24</p><p class="quote-line cn">Traducción al chino: El guerrero puede servir como modelo para una clase amigable para los novatos, pero debe proteger la certeza de los golpes cuerpo a cuerpo.</p><p class="quote-line original">Texto original en inglés: "El guerrero puede ser el punto de referencia para el combate fácil de usar para los nuevos usuarios, pero se debe proteger la certeza cuerpo a cuerpo".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 12 del resumen de identificación</p></td><td>zhuojie</td><td>huangyu</td></tr><tr><td><span class="module">Comentarios/animación del golpe</span></td><td><span class="freq mid">medio</span><span class="coverage"><span>Nuevo jugador 5/12</span><span>Jugador veterano incondicional 6/12</span><span>Perdiendo viejos jugadores 5/11</span></span></td><td class="point">Los golpes, las vibraciones y la sincronización de audio y vídeo son ventajas, pero los golpes cuerpo a cuerpo con espada, los ataques fuertes, los impactos de bloqueo de armas y los movimientos rígidos todavía no tienen el peso suficiente.</td><td class="action">Confirmar la revisión final antes del 15/05</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: Como Caballero, la respuesta de la espada no es obvia, no es como si el personaje realmente estuviera usando la espada.</p><p class="quote-line original">Texto original en inglés: "Cuando jugaba como el Caballero, no sentía la respuesta de la espada".</p><p class="quote-line src">Fuente: MX Free Fire jugadores.md, línea 166</p><p class="quote-line cn">Traducción al chino: los comentarios de éxito carecen de peso.</p><p class="quote-line original">Texto original en inglés: "La respuesta de impacto carece de peso".</p><p class="quote-line src">Fuente: Resumen de sesiones 1 y 2 de VN.docx, líneas 404-407</p><p class="quote-line cn">Traducción al chino: Es necesario fortalecer la respuesta al golpe, el efecto de quema, el impacto de bloqueo del arma, la vibración y la retroalimentación del daño.</p><p class="quote-line original">Texto original en inglés: "La reacción de golpe, el efecto de quemadura, el impacto de parada, la vibración y la retroalimentación de daño deben ser más fuertes".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 15 del resumen de identificación</p></td><td>zhuojie</td><td>huangyu</td></tr><tr><td><span class="module">Legibilidad del arte/medio ambiente</span></td><td><span class="freq mid">medio</span><span class="coverage"><span>Nuevo jugador 6/12</span><span>Jugador veterano incondicional 5/12</span><span>Perdiendo viejos jugadores 5/11</span></span></td><td class="point">Los temas de fantasía oscura son atractivos, pero las imágenes oscuras, el bajo contraste, la transparencia/moho de las paredes y la iluminación inconsistente del entorno de los personajes pueden perjudicar el juicio en el combate.</td><td class="action">Confirmar la revisión final antes del 15/05</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: La nueva cámara hace que el juego sea más complejo y frustrante, el mapa ahora está tan oscuro que es difícil distinguir entre amigos y enemigos.</p><p class="quote-line original">Texto original en inglés: "El juego ahora es demasiado oscuro y es difícil distinguir entre amigos y enemigos".</p><p class="quote-line src">Fuente: MX R30_GNG.md, línea 182</p><p class="quote-line cn">Traducción al chino: las mazmorras y los mapas son oscuros, tienen pocos detalles o son difíciles de leer.</p><p class="quote-line original">Texto original en inglés: "Las mazmorras y los mapas son oscuros, tienen poco detalle o son difíciles de leer".</p><p class="quote-line src">Fuente: Resumen de sesiones 1 y 2 de VN.docx, líneas 473-476</p><p class="quote-line cn">Traducción al chino: los comentarios en indonesio no tienen que ver más con el estilo artístico, sino más bien con la legibilidad en combate.</p><p class="quote-line original">Texto original en inglés: "Los comentarios de Indonesia tienen menos que ver con la dirección de arte y más con la legibilidad del combate".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 15 del resumen de identificación</p></td><td>chengong</td><td>huangyu</td></tr><tr><td><span class="module">Efectos de sonido/información de combate.</span></td><td><span class="freq mid">medio</span><span class="coverage"><span>Nuevo jugador 5/12</span><span>Jugador veterano incondicional 5/12</span><span>Perdiendo viejos jugadores 5/11</span></span></td><td class="point">Los efectos de sonido son generalmente positivos, pero en las batallas multijugador, las habilidades del enemigo, la dirección de los pasos, la distancia y las capas de sonido de uno mismo/compañero de equipo/enemigo no son lo suficientemente claros.</td><td class="action">Confirmar la revisión final antes del 15/05</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: la voz del mago bloqueará otros sonidos, lo que hará que algunas habilidades enemigas sean inaudibles.</p><p class="quote-line original">Texto original en inglés: "Algunos sonidos del mago bloquean otros sonidos, lo que hace que no escuche algunas habilidades enemigas".</p><p class="quote-line src">Fuente: MX R30_GNG.md, línea 252</p><p class="quote-line cn">Traducción al chino: Los pasos son difíciles de localizar según la dirección o la distancia.</p><p class="quote-line original">Texto original en inglés: "Los pasos pueden ser difíciles de localizar o distinguir por el lado o la distancia".</p><p class="quote-line src">Fuente: Resumen de sesiones 1 y 2 de VN.docx, líneas 489-492</p><p class="quote-line cn">Traducción al chino: en 3v3, cuando varias personas usan habilidades al mismo tiempo, los efectos de sonido serán demasiado densos y los efectos de sonido de las habilidades amigas y enemigas serán más fáciles de distinguir.</p><p class="quote-line original">Texto original en inglés: "3v3 puede volverse demasiado ruidoso cuando se lanzan muchas habilidades al mismo tiempo. Los sonidos de las habilidades de aliados/enemigos deberían ser más fáciles de distinguir".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 16 del resumen de identificación</p></td><td>zhuojie</td><td>huangyu</td></tr><tr><td><span class="module">PvE / Mapas / Modos (Suplementario)</span></td><td><span class="freq mid">medio</span><span class="coverage"><span>Nuevo jugador 5/12</span><span>Jugador veterano incondicional 4/12</span><span>Perdiendo viejos jugadores 5/11</span></span></td><td class="point">Los problemas del PvE se concentran en dos niveles: los nuevos jugadores no pueden entender los objetivos, rutas, eventos, zonas seguras y razones del fracaso; Los jugadores veteranos pueden entender las reglas básicas, pero encuentran el juego simple, único, poco divertido y carecen de motivación para volver a jugar.</td><td class="action">Confirmar la revisión final antes del 15/05</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: PvE es demasiado fácil y puede que no tenga valor de repetición.</p><p class="quote-line original">Texto original en inglés: "PvE es demasiado fácil y puede que no genere valor de repetición".</p><p class="quote-line src">Fuente: Resumen de sesiones 1 y 2 de VN.docx, líneas 711-714</p><p class="quote-line cn">Traducción al chino: si PvE es una experiencia nueva o contenido lanzado recientemente, se convertirá en un obstáculo básico para la comprensión.</p><p class="quote-line original">Texto original en inglés: "Si PVE es parte del contenido de incorporación o lanzamiento, esto se convierte en un obstáculo fundamental para la comprensión".</p><p class="quote-line src">Fuente: Hoja maestra de ID, fila 17 del resumen de ID</p><p class="quote-line cn">Traducción al chino: debe haber un mensaje antes de que el jefe ataque, como saltar o agacharse para evitarlo.</p><p class="quote-line original">Texto original en inglés: "Debería haber mensajes notificando cuando el jefe va a atacar".</p><p class="quote-line src">Fuente: MX R30_GNG.md, línea 277</p></td><td>denghao</td><td>huangyu</td></tr><tr><td><span class="module">Comunicación social/de equipo</span></td><td><span class="freq mid">medio</span><span class="coverage"><span>Nuevo jugador 5/12</span><span>Jugador veterano incondicional 4/12</span><span>Perdiendo viejos jugadores 4/11</span></span></td><td class="point">La diversión del 3v3 depende de la colaboración, pero la insuficiencia de mensajes rápidos, posicionamiento de los compañeros de equipo y comunicación táctica limitarán el límite superior del juego en equipo.</td><td class="action">Confirmar la revisión final antes del 15/05</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: Necesita jugar con amigos para divertirse.</p><p class="quote-line original">Texto original en inglés: "Menciona que necesita jugar con amigos para poder divertirse".</p><p class="quote-line src">Fuente: MX Free Fire jugadores.md, línea 216</p><p class="quote-line cn">Traducción al chino: soporte de comunicación del equipo limitado, requiere chat/ping rápido e indicaciones de ubicación de los compañeros de equipo.</p><p class="quote-line original">Texto original en inglés: "El soporte de comunicación del equipo es limitado. Agregue chat/ping rápido y señales de posición de los compañeros de equipo".</p><p class="quote-line src">Fuente: Resumen de sesiones 1 y 2 de VN.docx, líneas 408-411</p></td><td>zhuojie</td><td>huangyu</td></tr><tr><td><span class="module">Nuevos conceptos de personajes (suplementarios)</span></td><td><span class="freq low">Bajo</span><span class="coverage"><span>Nuevo jugador 3/12</span><span>Jugador veterano incondicional 3/12</span><span>Perdiendo viejos jugadores 2/11</span></span></td><td class="point">El nuevo concepto de personaje es en general positivo y los jugadores esperan con ansias el nuevo personaje. Orden de preferencia: ID es Ronin &gt; Chopstick Bun &gt; Muay / Cat / Cowboy Wizard / Elf &gt; Wuchang &gt; Oracle; #4/#6/#7 en VN son más interesantes.</td><td class="action">Confirmar la revisión final antes del 15/05</td><td class="quote-cell"><p class="quote-line cn">Traducción al chino: Los conceptos 4, 6 y 7 generan mayor interés.</p><p class="quote-line original">Texto original en inglés: "Los conceptos 4, 6 y 7 generaron un mayor interés".</p><p class="quote-line src">Fuente: Resumen de sesiones 1 y 2 de VN.docx, líneas 719-722</p><p class="quote-line cn">Traducción al chino: el orden de preferencia en indonesio es Ronin (4.67/5) &gt; Chopstick Bun (4.50/5) &gt; Muay / Cat / Cowboy Wizard / Elf (4.17/5) &gt; Wuchang (4.00/5) &gt; Oracle (3.67/5).</p><p class="quote-line original">Texto original en inglés: "En general, las señales de identificación más fuertes son Ronin y Chopstick Bun. Cat y Muay tienen un atractivo de nicho más agudo".</p><p class="quote-line src">Fuente: Hoja maestra de identificación, fila 18 del resumen de identificación</p></td><td>zhuojie</td><td>huangyu</td></tr></tbody></table></div></section><article class="report-body appendix-body"><h2 id="appendix"><span>A</span>Apéndice: Resumen de datos de puntuación</h2><h3 id="a-1-3c-操作体验评分">A.1 Puntuación de experiencia operativa 3C</h3><div class="table-frame"><table class="heatmap-table"><thead><tr><th>Dimensiones</th><th>Puntaje integral</th><th>nuevo jugador</th><th>Jugador veterano incondicional</th><th>Perder viejos jugadores</th><th>Observación</th></tr></thead><tbody><tr><td>Experiencia general/de combate</td><td class="score-cell score-ok"><b>3.82</b></td><td class="score-cell score-ok"><b>4.07</b></td><td class="score-cell score-watch"><b>3.34</b></td><td class="score-cell score-ok"><b>4.09</b></td><td>El interés general de los nuevos jugadores y de los antiguos jugadores perdidos no es bajo; Los viejos jugadores incondicionales son más exigentes.</td></tr><tr><td>lente</td><td class="score-cell score-watch"><b>3.43</b></td><td class="score-cell score-ok"><b>3.92</b></td><td class="score-cell score-low"><b>2.83</b></td><td class="score-cell score-ok"><b>3.54</b></td><td>Los jugadores veteranos incondicionales son los más bajos. Les preocupa principalmente que la lente sea demasiado ancha y debilite la sensación de presión y la sensación de la versión anterior.</td></tr><tr><td>Fijar al enemigo/objetivo automático</td><td class="score-cell score-low"><b>2.97</b></td><td class="score-cell score-watch"><b>3.15</b></td><td class="score-cell score-watch"><b>3.00</b></td><td class="score-cell score-low"><b>2.73</b></td><td>Ninguna de las tres categorías son puntos fuertes. La pérdida de jugadores veteranos es la más baja y es el elemento de riesgo el que debe explicarse y repararse primero.</td></tr><tr><td>Operación/Combate</td><td class="score-cell score-watch"><b>3.48</b></td><td class="score-cell score-ok"><b>3.65</b></td><td class="score-cell score-watch"><b>3.34</b></td><td class="score-cell score-watch"><b>3.46</b></td><td>Los nuevos jugadores están claramente diferenciados: los nuevos jugadores VN tienen puntuaciones de control bajas, mientras que los nuevos jugadores ID tienen puntuaciones de control altas.</td></tr><tr><td>esquivar personaje</td><td class="score-cell score-ok"><b>3.76</b></td><td class="score-cell score-watch"><b>3.32</b></td><td class="score-cell score-strong"><b>4.17</b></td><td class="score-cell score-ok"><b>3.82</b></td><td>Las bajas puntuaciones de los nuevos jugadores provienen principalmente de VN Character Dodge 2.3; Los jugadores veteranos reconocen más el valor de esquivar el carácter, pero están preocupados por las diferencias profesionales.</td></tr><tr><td>Bloque de armas</td><td class="score-cell score-strong"><b>4.14</b></td><td class="score-cell score-strong"><b>4.50</b></td><td class="score-cell score-strong"><b>4.17</b></td><td class="score-cell score-ok"><b>3.91</b></td><td>La profundidad de la acción es generalmente positiva.</td></tr><tr><td>Impacto/retroalimentación visual</td><td class="score-cell score-ok"><b>3.59</b></td><td class="score-cell score-ok"><b>3.74</b></td><td class="score-cell score-ok"><b>3.50</b></td><td class="score-cell score-ok"><b>3.55</b></td><td>Básicamente de neutral a positivo, pero aún necesita una respuesta más clara sobre golpes, golpes y daños.</td></tr><tr><td>Efectos sonoros</td><td class="score-cell score-ok"><b>3.94</b></td><td class="score-cell score-strong"><b>4.25</b></td><td class="score-cell score-ok"><b>3.84</b></td><td class="score-cell score-ok"><b>3.73</b></td><td>Los nuevos jugadores son los más positivos; Los jugadores veteranos se preocupan más por las habilidades, los pasos y los niveles de distancia de enemigos y amigos en las batallas multijugador.</td></tr></tbody></table></div><h3 id="a-2-模式体验评分-id-问卷">A.2 Calificación de la experiencia modal (cuestionario de identificación)</h3><div class="table-frame"><table class="heatmap-table"><thead><tr><th>modelo</th><th>Puntaje integral</th><th>nuevo jugador</th><th>Jugador veterano incondicional</th><th>Perder viejos jugadores</th><th>Observación</th></tr></thead><tbody><tr><td>1v1</td><td class="score-cell score-ok"><b>4.05</b></td><td class="score-cell score-ok"><b>4.00</b></td><td class="score-cell score-strong"><b>4.33</b></td><td class="score-cell score-ok"><b>3.83</b></td><td>Los jugadores veteranos son los más receptivos al 1v1.</td></tr><tr><td>3v3</td><td class="score-cell score-strong"><b>4.67</b></td><td class="score-cell score-strong"><b>4.83</b></td><td class="score-cell score-strong"><b>4.67</b></td><td class="score-cell score-strong"><b>4.50</b></td><td>3v3 es un evento de alta puntuación entre los tres tipos de jugadores, lo que demuestra que la dirección de la batalla en equipo es atractiva.</td></tr><tr><td>Boss Co-op</td><td class="score-cell score-ok"><b>4.06</b></td><td class="score-cell score-strong"><b>4.50</b></td><td class="score-cell score-strong"><b>4.17</b></td><td class="score-cell score-ok"><b>3.50</b></td><td>Los nuevos jugadores prefieren imaginar mazmorras cooperativas, mientras que los antiguos jugadores tienen más probabilidades de encontrar el PvE demasiado simple o insuficiente para volver a jugar.</td></tr><tr><td>Overall Combat</td><td class="score-cell score-ok"><b>4.05</b></td><td class="score-cell score-strong"><b>4.33</b></td><td class="score-cell score-ok"><b>3.50</b></td><td class="score-cell score-strong"><b>4.33</b></td><td>Los jugadores veteranos incondicionales son más estrictos y las puntuaciones bajas se deben principalmente a preocupaciones sobre el control, la cámara y el bloqueo del enemigo.</td></tr></tbody></table></div><h3 id="a-3-职业与新角色偏好">A.3 Preferencias de carrera y nuevos roles</h3><div class="table-frame"><table class="heatmap-table"><thead><tr><th>proyecto</th><th>Puntaje integral</th><th>nuevo jugador</th><th>Jugador veterano incondicional</th><th>Perder viejos jugadores</th><th>Observación</th></tr></thead><tbody><tr><td>Warrior（VN）</td><td class="score-cell score-ok"><b>3.81</b></td><td class="score-cell score-ok"><b>3.8</b></td><td class="score-cell score-strong"><b>4.33</b></td><td class="score-cell score-watch"><b>3.2</b></td><td>Es fácil para los nuevos jugadores entender a Warrior; Perder jugadores veteranos hará que Warrior sea menos atractivo.</td></tr><tr><td>Mage（VN）</td><td class="score-cell score-ok"><b>3.76</b></td><td class="score-cell score-watch"><b>3.0</b></td><td class="score-cell score-strong"><b>4.33</b></td><td class="score-cell score-ok"><b>4.0</b></td><td>A los nuevos jugadores les resulta más difícil empezar y apuntar al mago; Los jugadores experimentados pueden comprender mejor su fuerza.</td></tr><tr><td>Oracle（VN）</td><td class="score-cell score-strong"><b>4.52</b></td><td class="score-cell score-strong"><b>4.3</b></td><td class="score-cell score-strong"><b>4.67</b></td><td class="score-cell score-strong"><b>4.6</b></td><td>Oracle está en la parte alta para los tres tipos de jugadores de VN, pero es necesario tener en cuenta el poder y la claridad de la información.</td></tr></tbody></table></div></article><footer class="page-footer">Generated from Global_GnG_2026May_FGD_Report_CN.md</footer></main>
+<script id="report-comment-script">
+(() => {
+  const locale = document.body.dataset.locale || document.documentElement.lang || 'zh-CN';
+  const labelSets = {
+    'zh-CN': { read: '阅读模式', comment: '评论模式', status: '评论模式：点击页面任意位置添加评论', count: n => n + '条', add: '新增评论', edit: '编辑评论', meta: n => '#' + n, target: '点击位置', placeholder: '写下评论...', publish: '确认发布', save: '保存', cancel: '取消', remove: '删除', confirmDelete: '删除这条评论？' },
+    en: { read: 'Read', comment: 'Comment', status: 'Comment mode: click anywhere to add a comment', count: n => n, add: 'New comment', edit: 'Edit comment', meta: n => '#' + n, target: 'Selected position', placeholder: 'Write a comment...', publish: 'Publish', save: 'Save', cancel: 'Cancel', remove: 'Delete', confirmDelete: 'Delete this comment?' },
+    vi: { read: 'Đọc', comment: 'Bình luận', status: 'Chế độ bình luận: nhấp vào bất kỳ vị trí nào để thêm bình luận', count: n => n, add: 'Bình luận mới', edit: 'Sửa bình luận', meta: n => '#' + n, target: 'Vị trí đã chọn', placeholder: 'Nhập bình luận...', publish: 'Đăng', save: 'Lưu', cancel: 'Hủy', remove: 'Xóa', confirmDelete: 'Xóa bình luận này?' },
+    th: { read: 'อ่าน', comment: 'คอมเมนต์', status: 'โหมดคอมเมนต์: คลิกตำแหน่งใดก็ได้เพื่อเพิ่มคอมเมนต์', count: n => n, add: 'คอมเมนต์ใหม่', edit: 'แก้ไขคอมเมนต์', meta: n => '#' + n, target: 'ตำแหน่งที่เลือก', placeholder: 'เขียนคอมเมนต์...', publish: 'โพสต์', save: 'บันทึก', cancel: 'ยกเลิก', remove: 'ลบ', confirmDelete: 'ลบคอมเมนต์นี้?' },
+    id: { read: 'Baca', comment: 'Komentar', status: 'Mode komentar: klik di mana saja untuk menambahkan komentar', count: n => n, add: 'Komentar baru', edit: 'Edit komentar', meta: n => '#' + n, target: 'Posisi dipilih', placeholder: 'Tulis komentar...', publish: 'Kirim', save: 'Simpan', cancel: 'Batal', remove: 'Hapus', confirmDelete: 'Hapus komentar ini?' },
+    es: { read: 'Lectura', comment: 'Comentarios', status: 'Modo comentarios: haz clic en cualquier lugar para comentar', count: n => n, add: 'Nuevo comentario', edit: 'Editar comentario', meta: n => '#' + n, target: 'Posición seleccionada', placeholder: 'Escribe un comentario...', publish: 'Publicar', save: 'Guardar', cancel: 'Cancelar', remove: 'Eliminar', confirmDelete: '¿Eliminar este comentario?' },
+    'pt-BR': { read: 'Leitura', comment: 'Comentários', status: 'Modo de comentários: clique em qualquer lugar para comentar', count: n => n, add: 'Novo comentário', edit: 'Editar comentário', meta: n => '#' + n, target: 'Posição selecionada', placeholder: 'Escreva um comentário...', publish: 'Publicar', save: 'Salvar', cancel: 'Cancelar', remove: 'Excluir', confirmDelete: 'Excluir este comentário?' }
+  };
+  const labels = labelSets[locale] || labelSets[locale.split('-')[0]] || labelSets['zh-CN'];
+  const API_ROOT = window.REPORT_COMMENT_API_ROOT || (location.protocol.startsWith('http') ? '/api/comments' : '');
+  const fileName = (location.pathname.split('/').pop() || document.title || 'report').replace(/.html?$/i, '');
+  const DOC_ID = window.REPORT_COMMENT_DOC_ID || fileName.replace(/_(CN|EN|VN|TH|ID|ES|PT)$/i, '');
+  const storageKey = 'fgd-report-comments:' + DOC_ID;
+  const ignoredSelector = '.review-toolbar, .review-status, .report-comment-popover, .report-comment-bubble, .language-switcher, .nav-wrap';
+  let comments = [];
+  let mode = 'read';
+  let draft = null;
+
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const body = document.body;
+  const readBtn = $('.review-read');
+  const commentBtn = $('.review-comment');
+  const countEl = $('.review-count');
+  const statusEl = $('.review-status');
+
+  readBtn.textContent = labels.read;
+  commentBtn.textContent = labels.comment;
+  statusEl.textContent = labels.status;
+
+  const popover = document.createElement('div');
+  popover.className = 'report-comment-popover';
+  popover.innerHTML = '<div class="comment-popover-head"><span class="comment-title"></span><span class="comment-meta"></span></div><div class="comment-target-snippet"></div><textarea></textarea><div class="comment-actions"><button type="button" class="danger comment-delete"></button><button type="button" class="comment-cancel"></button><button type="button" class="primary comment-save"></button></div>';
+  document.body.appendChild(popover);
+
+  const titleEl = $('.comment-title', popover);
+  const metaEl = $('.comment-meta', popover);
+  const snippetEl = $('.comment-target-snippet', popover);
+  const textarea = $('textarea', popover);
+  const deleteBtn = $('.comment-delete', popover);
+  const saveBtn = $('.comment-save', popover);
+  const cancelBtn = $('.comment-cancel', popover);
+  textarea.placeholder = labels.placeholder;
+  deleteBtn.textContent = labels.remove;
+  cancelBtn.textContent = labels.cancel;
+
+  function localLoad() {
+    try { return JSON.parse(localStorage.getItem(storageKey) || '[]'); }
+    catch { return []; }
+  }
+  function localSave() {
+    localStorage.setItem(storageKey, JSON.stringify(comments));
+  }
+  async function api(path = '', options = {}) {
+    if (!API_ROOT) throw new Error('no api');
+    const response = await fetch(API_ROOT + path, {
+      headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
+      ...options,
+    });
+    if (!response.ok) throw new Error('api ' + response.status);
+    if (response.status === 204) return null;
+    return response.json();
+  }
+  async function loadComments() {
+    try {
+      comments = API_ROOT ? await api('?doc=' + encodeURIComponent(DOC_ID)) : localLoad();
+    } catch {
+      comments = localLoad();
+    }
+    renderBubbles();
+  }
+  async function saveComment(comment) {
+    if (comment.id) {
+      const updated = { ...comment, doc: DOC_ID, locale, updatedAt: new Date().toISOString() };
+      try {
+        if (API_ROOT) {
+          const saved = await api('/' + encodeURIComponent(comment.id), { method: 'PUT', body: JSON.stringify(updated) });
+          comments = comments.map(item => item.id === comment.id ? saved : item);
+        } else {
+          comments = comments.map(item => item.id === comment.id ? updated : item);
+          localSave();
+        }
+      } catch {
+        comments = comments.map(item => item.id === comment.id ? updated : item);
+        localSave();
+      }
+    } else {
+      const created = { ...comment, doc: DOC_ID, locale, id: 'c_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7), createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+      try {
+        if (API_ROOT) comments.push(await api('', { method: 'POST', body: JSON.stringify(created) }));
+        else { comments.push(created); localSave(); }
+      } catch {
+        comments.push(created);
+        localSave();
+      }
+    }
+    renderBubbles();
+  }
+  async function deleteComment(id) {
+    try {
+      if (API_ROOT) await api('/' + encodeURIComponent(id) + '?doc=' + encodeURIComponent(DOC_ID), { method: 'DELETE' });
+    } catch {}
+    comments = comments.filter(item => item.id !== id);
+    localSave();
+    renderBubbles();
+  }
+
+  function cssPath(el) {
+    if (!el || el === document.body) return 'body';
+    const parts = [];
+    while (el && el.nodeType === 1 && el !== document.body) {
+      let part = el.tagName.toLowerCase();
+      if (el.id) { part += '#' + CSS.escape(el.id); parts.unshift(part); break; }
+      const parent = el.parentElement;
+      if (parent) {
+        const same = Array.from(parent.children).filter(child => child.tagName === el.tagName);
+        if (same.length > 1) part += ':nth-of-type(' + (same.indexOf(el) + 1) + ')';
+      }
+      parts.unshift(part);
+      el = parent;
+    }
+    return parts.join(' > ');
+  }
+  function getTarget(eventTarget) {
+    return eventTarget.closest('td, th, p, li, h1, h2, h3, .lead, .meta-row span, .section-title, article, section, main') || eventTarget;
+  }
+  function targetData(target, event) {
+    const rect = target.getBoundingClientRect();
+    const xRatio = rect.width ? (event.clientX - rect.left) / rect.width : 0.5;
+    const yRatio = rect.height ? (event.clientY - rect.top) / rect.height : 0.2;
+    return {
+      selector: cssPath(target),
+      anchorText: (target.innerText || target.textContent || '').trim().replace(/s+/g, ' ').slice(0, 160),
+      xRatio: Math.max(0, Math.min(1, xRatio)),
+      yRatio: Math.max(0, Math.min(1, yRatio)),
+      pageX: event.pageX,
+      pageY: event.pageY,
+    };
+  }
+  function locate(comment) {
+    let target = null;
+    try { target = comment.selector ? document.querySelector(comment.selector) : null; } catch {}
+    if (target) {
+      const rect = target.getBoundingClientRect();
+      return {
+        x: window.scrollX + rect.left + rect.width * (comment.xRatio ?? 0.96),
+        y: window.scrollY + rect.top + rect.height * (comment.yRatio ?? 0.12),
+      };
+    }
+    return { x: comment.pageX || 24, y: comment.pageY || 24 };
+  }
+  function updateCount() {
+    if (countEl) countEl.textContent = labels.count(comments.length);
+  }
+  function renderBubbles() {
+    document.querySelectorAll('.report-comment-bubble').forEach(node => node.remove());
+    updateCount();
+    comments.forEach((comment, index) => {
+      const point = locate(comment);
+      const bubble = document.createElement('button');
+      bubble.type = 'button';
+      bubble.className = 'report-comment-bubble';
+      bubble.textContent = String(index + 1);
+      bubble.title = comment.text || 'comment';
+      bubble.style.left = Math.max(8, point.x - 12) + 'px';
+      bubble.style.top = Math.max(8, point.y - 12) + 'px';
+      bubble.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        openEditor(comment, point.x, point.y);
+      });
+      document.body.appendChild(bubble);
+    });
+  }
+  function setMode(nextMode) {
+    mode = nextMode;
+    body.classList.toggle('comment-mode', mode === 'comment');
+    readBtn.classList.toggle('active', mode === 'read');
+    commentBtn.classList.toggle('active', mode === 'comment');
+    closeEditor();
+    renderBubbles();
+  }
+  function openEditor(comment, x, y) {
+    draft = comment;
+    const isEdit = Boolean(comment.id);
+    titleEl.textContent = isEdit ? labels.edit : labels.add;
+    metaEl.textContent = isEdit ? labels.meta(comments.findIndex(item => item.id === comment.id) + 1) : '';
+    snippetEl.textContent = comment.anchorText || labels.target;
+    textarea.value = isEdit ? (comment.text || '') : '';
+    deleteBtn.style.display = isEdit ? '' : 'none';
+    saveBtn.textContent = isEdit ? labels.save : labels.publish;
+    const maxLeft = window.scrollX + window.innerWidth - 390;
+    const maxTop = window.scrollY + window.innerHeight - 260;
+    popover.style.left = Math.min(maxLeft, Math.max(window.scrollX + 12, x + 12)) + 'px';
+    popover.style.top = Math.min(maxTop, Math.max(window.scrollY + 12, y + 12)) + 'px';
+    popover.classList.add('open');
+    textarea.focus();
+  }
+  function closeEditor() {
+    draft = null;
+    popover.classList.remove('open');
+  }
+
+  readBtn?.addEventListener('click', () => setMode('read'));
+  commentBtn?.addEventListener('click', () => setMode('comment'));
+  window.addEventListener('resize', renderBubbles);
+  window.addEventListener('scroll', () => { if (mode === 'comment') renderBubbles(); }, { passive: true });
+
+  document.addEventListener('mouseover', (event) => {
+    if (mode !== 'comment') return;
+    const target = getTarget(event.target);
+    if (!target || target.closest(ignoredSelector)) return;
+    target.classList.add('commentable-hover');
+  });
+  document.addEventListener('mouseout', (event) => {
+    const target = event.target.closest?.('.commentable-hover');
+    if (target) target.classList.remove('commentable-hover');
+  });
+  document.addEventListener('click', (event) => {
+    if (mode !== 'comment') return;
+    if (event.target.closest(ignoredSelector)) return;
+    const target = getTarget(event.target);
+    if (!target) return;
+    event.preventDefault();
+    const data = targetData(target, event);
+    openEditor(data, event.pageX, event.pageY);
+  });
+  saveBtn.addEventListener('click', async () => {
+    const text = textarea.value.trim();
+    if (!text || !draft) return;
+    await saveComment({ ...draft, text });
+    closeEditor();
+  });
+  cancelBtn.addEventListener('click', closeEditor);
+  deleteBtn.addEventListener('click', async () => {
+    if (!draft?.id) return;
+    if (confirm(labels.confirmDelete)) {
+      await deleteComment(draft.id);
+      closeEditor();
+    }
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeEditor();
+  });
+
+  loadComments();
+  setMode('read');
+})();
+</script>
+</body></html>

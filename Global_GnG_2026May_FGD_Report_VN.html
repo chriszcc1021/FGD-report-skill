@@ -1,0 +1,652 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Báo cáo nghiên cứu FGD ba thị trường GnG, tháng 5/2026</title><style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+    :root { --brand-primary:#C0504D; --brand-secondary:#997E5A; --brand-dark:#4D4D4D; --brand-medium:#7F7F7F; --brand-light:#BFBFBF; --brand-bg:#E9D7D3; --brand-bg-alt:#F5F0EE; --brand-white:#FFFFFF; --brand-black:#333333; --page:#F5F0EE; --paper:#FFFFFF; --ink:#333333; --body:#4D4D4D; --muted:#7F7F7F; --line:#d8cac7; --radius:8px; --shadow:0 10px 28px rgba(77,77,77,.10); --font-display:'EB Garamond','Noto Serif SC','Garamond','Georgia',serif; --font-body:'EB Garamond','Noto Serif SC','Garamond','Georgia',serif; }
+    @page { size:A4; margin:14mm 13mm; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; letter-spacing:0; }
+    body { margin:0; color:var(--body); font-family:var(--font-body); font-size:16px; line-height:1.68; background:var(--page); }
+    code { padding:1px 5px; border-radius:4px; background:var(--brand-bg-alt); color:var(--brand-primary); }
+    .top-rule { height:6px; background:var(--brand-primary); border-right:28vw solid var(--brand-secondary); }
+    .shell { width:min(1160px, calc(100% - 44px)); margin:0 auto; }
+    .cover { padding:34px 0 22px; border-bottom:1px solid var(--line); }
+    .eyebrow { margin:0 0 12px; color:var(--brand-primary); font-size:13px; font-weight:800; }
+    h1 { max-width:920px; margin:0; color:var(--ink); font-family:var(--font-display); font-size:42px; line-height:1.18; letter-spacing:0; }
+    .lead { max-width:920px; margin:16px 0 0; color:var(--brand-dark); font-size:18px; line-height:1.75; }
+    .meta-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+    .meta-row span { padding:7px 10px; border:1px solid var(--line); border-radius:999px; background:var(--paper); color:var(--brand-dark); font-size:13px; font-weight:700; }
+    .nav-wrap { position:sticky; top:0; z-index:10; background:rgba(245,240,238,.94); border-bottom:1px solid var(--line); backdrop-filter:blur(12px); }
+    .nav { width:min(1160px, calc(100% - 44px)); margin:0 auto; display:flex; gap:6px; overflow-x:auto; padding:10px 0; }
+    .nav a { flex:0 0 auto; padding:8px 10px; color:var(--brand-dark); border-radius:6px; font-size:14px; font-weight:700; text-decoration:none; }
+    .nav a:hover, .nav a:focus { color:var(--brand-primary); background:rgba(192,80,77,.10); outline:none; }
+    .content { padding:28px 0 56px; }
+    .report-body, .evidence { background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); }
+    .report-body { padding:30px 34px; }
+    .report-body h2, .evidence h2 { display:flex; align-items:center; gap:12px; margin:34px 0 16px; color:var(--ink); font-family:var(--font-display); font-size:26px; line-height:1.35; letter-spacing:0; padding-top:20px; border-top:1px solid var(--line); }
+    .report-body h2:first-child { margin-top:0; padding-top:0; border-top:0; }
+    .report-body h2 span, .evidence h2 span { display:inline-grid; place-items:center; width:34px; height:34px; flex:0 0 34px; border:1px solid rgba(192,80,77,.36); border-radius:50%; color:var(--brand-primary); background:rgba(192,80,77,.10); font-family:Consolas,'Cascadia Mono',monospace; font-size:14px; font-weight:900; }
+    .report-body h3 { margin:24px 0 8px; color:var(--brand-black); font-family:var(--font-display); font-size:19px; line-height:1.45; letter-spacing:0; }
+    .report-body p, .report-body li { color:var(--brand-dark); } .report-body p { margin:10px 0 0; } .report-body ul { margin:10px 0 0; padding-left:20px; } .report-body li { margin:6px 0; } strong { color:var(--ink); font-weight:900; }
+    .table-frame, .feedback-table-frame { margin:18px 0 6px; overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius); background:#fff; }
+    table { width:100%; min-width:760px; border-collapse:collapse; font-size:14px; line-height:1.55; background:#fff; }
+    th, td { padding:13px 14px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); text-align:left; vertical-align:top; word-break:break-word; }
+    th:last-child, td:last-child { border-right:0; } tbody tr:last-child td { border-bottom:0; }
+    th { color:var(--brand-black); background:var(--brand-bg-alt); font-weight:900; } tbody td:first-child { color:var(--brand-primary); font-weight:900; }
+    .evidence { margin-top:22px; padding:28px 30px 30px; }
+    .section-title { display:grid; grid-template-columns:1fr auto; gap:10px 20px; align-items:end; margin-bottom:18px; padding-bottom:16px; border-bottom:1px solid var(--line); }
+    .section-kicker { grid-column:1 / -1; margin:0; color:var(--brand-primary); font-size:12px; font-weight:900; text-transform:uppercase; }
+    .evidence h2 { margin:0; padding:0; border:0; } .evidence-meta { display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
+    .evidence-meta span { padding:7px 10px; border:1px solid var(--line); border-radius:999px; color:var(--brand-dark); background:#fff; font-size:13px; font-weight:800; }
+    .feedback-table { min-width:1450px; table-layout:fixed; font-size:13px; line-height:1.58; }
+    .feedback-table th:nth-child(1), .feedback-table td:nth-child(1) { width:112px; }
+    .feedback-table th:nth-child(2), .feedback-table td:nth-child(2) { width:78px; text-align:center; }
+    .feedback-table th:nth-child(3), .feedback-table td:nth-child(3) { width:260px; }
+    .feedback-table th:nth-child(4), .feedback-table td:nth-child(4) { width:160px; }
+    .feedback-table th:nth-child(5), .feedback-table td:nth-child(5) { width:72px; }
+    .feedback-table th:nth-child(6), .feedback-table td:nth-child(6) { width:768px; }
+    .feedback-table tbody tr:nth-child(even) td { background:#fbf8f7; }
+    .module { color:var(--brand-primary); font-size:14px; font-weight:900; }
+    .freq { display:inline-flex; min-width:38px; justify-content:center; padding:5px 9px; border-radius:999px; font-size:13px; font-weight:900; }
+    .freq.high { color:#C0504D; background:rgba(192,80,77,.12); } .freq.mid { color:#997E5A; background:rgba(153,126,90,.12); } .freq.low { color:#6F7782; background:rgba(127,127,127,.12); }
+    .point { color:var(--ink); font-size:14px; font-weight:900; } .action { border-left:3px solid var(--brand-secondary); background:#fffaf0; color:var(--brand-dark); } .regions { font-weight:800; line-height:1.7; white-space:normal; }
+    .quote-cell { background:#fbf8f7; } .quote-line { margin:0; color:var(--brand-dark); font-size:12.5px; line-height:1.65; } .quote-line + .quote-line { margin-top:5px; } .quote-line.cn { color:var(--brand-black); font-weight:700; } .quote-line.src { color:var(--muted); font-size:13px; }
+    .page-footer { margin:20px 0 44px; color:var(--muted); font-size:13px; text-align:right; }
+    @media (max-width:900px) { .shell, .nav { width:min(100% - 28px, 1160px); } h1 { font-size:32px; } .lead { font-size:16px; } .report-body, .evidence { padding:22px 18px; } .section-title { grid-template-columns:1fr; } .evidence-meta { justify-content:flex-start; } }
+    @media (max-width:560px) { body { font-size:15px; } h1 { font-size:28px; } .report-body h2, .evidence h2 { font-size:22px; } }
+    @media print { body { background:#fff; font-size:10pt; } .top-rule, .nav-wrap { display:none; } .shell { width:auto; margin:0; } .cover { padding-top:0; } .report-body, .evidence { box-shadow:none; } }
+
+    .score-summary { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:16px 0 18px; }
+    .score-card { border:1px solid var(--line); border-radius:8px; background:#fff; padding:12px 14px; }
+    .score-card h4 { margin:0 0 6px; font-size:16px; color:var(--brand-primary); }
+    .score-card p { margin:0; font-size:14px; line-height:1.55; }
+    .heatmap-table { min-width:1180px; table-layout:fixed; }
+    .heatmap-table th { white-space:nowrap; }
+    .heatmap-table th:nth-child(1), .heatmap-table td:nth-child(1) { width:145px; }
+    .heatmap-table th:nth-child(2), .heatmap-table td:nth-child(2),
+    .heatmap-table th:nth-child(3), .heatmap-table td:nth-child(3),
+    .heatmap-table th:nth-child(4), .heatmap-table td:nth-child(4),
+    .heatmap-table th:nth-child(5), .heatmap-table td:nth-child(5) { width:126px; text-align:center; }
+    .heatmap-table th:nth-child(6), .heatmap-table td:nth-child(6) { width:531px; }
+    .score-cell { font-weight:900; vertical-align:middle; }
+    .score-cell b { display:block; font-size:18px; line-height:1.1; }
+    .score-cell span { display:block; margin-top:4px; font-size:11.5px; font-weight:700; color:rgba(51,51,51,.72); white-space:nowrap; }
+    .score-low { background:#f6d4cf; color:#9b2c28; }
+    .score-watch { background:#f7e2bf; color:#805312; }
+    .score-ok { background:#e4edd7; color:#536a2f; }
+    .score-strong { background:#cfe5d7; color:#285b38; }
+    .score-na { background:#f5f0ee; color:var(--muted); }
+    .source-note { margin-top:8px; color:var(--muted); font-size:13px; }
+    @media(max-width:820px){ .score-summary { grid-template-columns:1fr; } }
+  
+    .feedback-table { min-width:1960px; table-layout:fixed; font-size:13px; line-height:1.58; }
+    .feedback-table th:nth-child(1), .feedback-table td:nth-child(1) { width:112px; }
+    .feedback-table th:nth-child(2), .feedback-table td:nth-child(2) { width:220px; text-align:left; }
+    .feedback-table th:nth-child(3), .feedback-table td:nth-child(3) { width:260px; }
+    .feedback-table th:nth-child(4), .feedback-table td:nth-child(4) { width:150px; }
+    .feedback-table th:nth-child(5), .feedback-table td:nth-child(5) { width:72px; }
+    .feedback-table th:nth-child(6), .feedback-table td:nth-child(6) { width:820px; }
+    .feedback-table th:nth-child(7), .feedback-table td:nth-child(7),
+    .feedback-table th:nth-child(8), .feedback-table td:nth-child(8) { width:90px; }
+    .coverage { display:block; margin-top:8px; color:var(--body); font-size:12px; line-height:1.55; font-weight:700; }
+    .coverage span { display:block; }
+    .report-body p strong { color:var(--brand-primary); }
+
+
+.report-body p strong { color: inherit; }
+.attitude { display: inline-flex; align-items: center; justify-content: center; margin-right: 6px; padding: 2px 8px; border-radius: 999px; font-size: 12px; line-height: 1.35; font-weight: 900; white-space: nowrap; }
+.attitude-positive { color: #2f6d3a; background: rgba(79,143,88,.14); border: 1px solid rgba(79,143,88,.30); }
+.attitude-neutral-positive { color: #5d7443; background: rgba(125,151,86,.16); border: 1px solid rgba(125,151,86,.32); }
+.attitude-neutral { color: #666; background: rgba(127,127,127,.14); border: 1px solid rgba(127,127,127,.28); }
+.attitude-neutral-negative { color: #8a6236; background: rgba(153,126,90,.16); border: 1px solid rgba(153,126,90,.34); }
+.attitude-negative { color: #a53a37; background: rgba(192,80,77,.14); border: 1px solid rgba(192,80,77,.34); }
+.feedback-table { width: 100%; min-width: 0; table-layout: fixed; font-size: 12px; line-height: 1.48; }
+.feedback-table th, .feedback-table td { padding: 10px 9px; }
+.feedback-table th:nth-child(1), .feedback-table td:nth-child(1) { width: 8%; }
+.feedback-table th:nth-child(2), .feedback-table td:nth-child(2) { width: 12%; text-align: left; }
+.feedback-table th:nth-child(3), .feedback-table td:nth-child(3) { width: 20%; }
+.feedback-table th:nth-child(4), .feedback-table td:nth-child(4) { width: 16%; }
+.feedback-table th:nth-child(5), .feedback-table td:nth-child(5) { width: 32%; }
+.feedback-table th:nth-child(6), .feedback-table td:nth-child(6),
+.feedback-table th:nth-child(7), .feedback-table td:nth-child(7) { width: 6%; }
+.feedback-table th:nth-child(2) { line-height: 1.25; }
+.feedback-table .module { font-size: 13px; }
+.feedback-table .freq { min-width: 30px; padding: 3px 7px; font-size: 11px; }
+.feedback-table .coverage { margin-top: 6px; font-size: 10.5px; line-height: 1.45; }
+.feedback-table .point, .feedback-table .action { font-size: 12px; line-height: 1.5; }
+.feedback-table .action {
+  color: #2f2924;
+  background: #fff5df;
+  font-weight: 760;
+  box-shadow: inset 3px 0 0 #9b7b48;
+}
+.feedback-table .action .next-tag {
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: #f1e2bf;
+  color: #6f4d1f;
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.feedback-table .quote-line { font-size: 10px; line-height: 1.45; }
+.feedback-table .quote-line + .quote-line { margin-top: 2px; }
+.feedback-table .quote-line.src { font-size: 9.8px; }
+
+
+/* Localized report controls */
+.language-switcher {
+  position: fixed;
+  top: 14px;
+  right: 18px;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: flex-end;
+  max-width: min(360px, calc(100vw - 32px));
+  padding: 6px;
+  border: 1px solid rgba(216,202,199,.92);
+  border-radius: 999px;
+  background: rgba(250,247,245,.94);
+  box-shadow: 0 8px 24px rgba(77,77,77,.10);
+  backdrop-filter: blur(10px);
+}
+.language-switcher a {
+  min-width: 34px;
+  padding: 5px 8px;
+  border-radius: 999px;
+  color: var(--brand-dark);
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.language-switcher a:hover,
+.language-switcher a:focus {
+  color: var(--brand-primary);
+  background: rgba(192,80,77,.10);
+  outline: none;
+}
+.language-switcher a.active {
+  color: #fff;
+  background: var(--brand-primary);
+  box-shadow: 0 4px 12px rgba(192,80,77,.22);
+}
+.feedback-table thead th:nth-child(4) {
+  background: #f4ead7 !important;
+}
+.feedback-table tbody td.action,
+.feedback-table tbody tr:nth-child(odd) td.action,
+.feedback-table tbody tr:nth-child(even) td.action {
+  background: #fff6e4 !important;
+}
+body[data-locale="en"],
+body[data-locale="vi"],
+body[data-locale="id"],
+body[data-locale="es"],
+body[data-locale="pt-BR"] {
+  word-break: normal;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+body[data-locale="th"] {
+  line-height: 1.82;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+body[data-locale="th"] .lead,
+body[data-locale="th"] .report-body,
+body[data-locale="th"] .feedback-table,
+body[data-locale="th"] .heatmap-table {
+  line-height: 1.76;
+}
+body[data-locale="vi"] .feedback-table,
+body[data-locale="es"] .feedback-table,
+body[data-locale="pt-BR"] .feedback-table {
+  font-size: 11.5px;
+}
+body[data-locale="id"] .feedback-table,
+body[data-locale="en"] .feedback-table {
+  font-size: 11.8px;
+}
+@media (max-width: 900px) {
+  .language-switcher { position: sticky; top: 8px; margin: 8px 14px 0 auto; }
+}
+@media print {
+  .language-switcher { display: none; }
+}
+
+
+
+
+
+
+/* Report comment layer */
+.review-toolbar {
+  position: fixed;
+  top: 56px;
+  right: 18px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid rgba(216,202,199,.92);
+  border-radius: 999px;
+  background: rgba(250,247,245,.97);
+  box-shadow: 0 10px 28px rgba(77,77,77,.12);
+  backdrop-filter: blur(10px);
+}
+.review-toolbar button {
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: transparent;
+  color: var(--brand-dark);
+  font: inherit;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 900;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.review-toolbar button:hover,
+.review-toolbar button:focus {
+  color: var(--brand-primary);
+  background: rgba(192,80,77,.10);
+  outline: none;
+}
+.review-toolbar button.active {
+  color: var(--paper);
+  background: var(--brand-primary);
+  box-shadow: 0 4px 12px rgba(192,80,77,.24);
+}
+.review-count {
+  min-width: 28px;
+  padding: 0 7px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  text-align: center;
+}
+.review-status {
+  position: fixed;
+  right: 18px;
+  top: 100px;
+  z-index: 59;
+  display: none;
+  max-width: 280px;
+  padding: 7px 11px;
+  border: 1px solid rgba(153,126,90,.30);
+  border-radius: 999px;
+  background: #fff8e8;
+  color: #64451b;
+  box-shadow: 0 8px 20px rgba(77,77,77,.08);
+  font-size: 12px;
+  font-weight: 850;
+}
+body.comment-mode .review-status { display: block; }
+body.comment-mode .commentable-hover {
+  outline: 2px solid rgba(192,80,77,.24);
+  outline-offset: 2px;
+  cursor: crosshair;
+}
+.report-comment-bubble {
+  position: absolute;
+  z-index: 55;
+  display: none;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 7px;
+  border: 1px solid rgba(250,247,245,.86);
+  border-radius: 999px;
+  background: var(--brand-primary);
+  color: var(--paper);
+  box-shadow: 0 8px 18px rgba(77,77,77,.20);
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  transform: translateZ(0);
+}
+body.comment-mode .report-comment-bubble { display: block; }
+.report-comment-bubble:hover { transform: translateY(-1px); }
+.report-comment-popover {
+  position: absolute;
+  z-index: 90;
+  display: none;
+  width: min(370px, calc(100vw - 28px));
+  border: 1px solid rgba(216,202,199,.96);
+  border-radius: 8px;
+  background: #fffdf9;
+  box-shadow: 0 20px 46px rgba(77,77,77,.22);
+  overflow: hidden;
+}
+.report-comment-popover.open { display: block; }
+.comment-popover-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  background: #f8f1ef;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+}
+.comment-target-snippet {
+  padding: 9px 12px 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+.report-comment-popover textarea {
+  width: calc(100% - 24px);
+  min-height: 96px;
+  margin: 10px 12px 8px;
+  padding: 10px;
+  resize: vertical;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.55;
+}
+.comment-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 0 12px 12px;
+}
+.comment-actions button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: var(--paper);
+  color: var(--brand-dark);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.comment-actions button.primary {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary);
+  color: var(--paper);
+}
+.comment-actions button.danger {
+  border-color: rgba(192,80,77,.35);
+  color: var(--brand-primary);
+  background: rgba(192,80,77,.08);
+}
+.comment-actions button:hover,
+.comment-actions button:focus { outline: none; box-shadow: 0 0 0 3px rgba(192,80,77,.12); }
+@media (max-width: 900px) {
+  .review-toolbar { top: auto; bottom: 14px; right: 14px; }
+  .review-status { top: auto; bottom: 62px; right: 14px; }
+}
+@media print {
+  .review-toolbar, .review-status, .report-comment-bubble, .report-comment-popover { display: none !important; }
+}
+/* End report comment layer */
+
+</style></head><body data-locale="vi"><div class="top-rule"></div><div class="language-switcher" aria-label="Language switcher"><a href="Global_GnG_2026May_FGD_Report_CN.html" title="中文">中文</a><a href="Global_GnG_2026May_FGD_Report_EN.html" title="English">EN</a><a class="active" aria-current="page" href="Global_GnG_2026May_FGD_Report_VN.html" title="Tiếng Việt">VN</a><a href="Global_GnG_2026May_FGD_Report_TH.html" title="ไทย">TH</a><a href="Global_GnG_2026May_FGD_Report_ID.html" title="Bahasa Indonesia">ID</a><a href="Global_GnG_2026May_FGD_Report_ES.html" title="Español">ES</a><a href="Global_GnG_2026May_FGD_Report_PT.html" title="Português">PT</a></div><div class="review-toolbar" aria-label="Review mode"><button type="button" class="review-read active" data-label="read">阅读模式</button><button type="button" class="review-comment" data-label="comment">评论模式</button><span class="review-count" aria-live="polite">0</span></div><div class="review-status">评论模式：点击页面任意位置添加评论</div><header class="cover shell"><p class="eyebrow">MX / VN / ID Player FGD / Gold & Glory</p><h1>Báo cáo nghiên cứu FGD ba thị trường GnG, tháng 5/2026</h1><p class="lead">Dựa trên việc tổng hợp tài liệu FGD từ người chơi ở ba thị trường: Mexico, Việt Nam và Indonesia, nó chủ yếu tập trung vào trải nghiệm chiến đấu liên quan đến 3C: camera, thao tác, né tránh nhân vật, khóa kẻ thù, chặn vũ khí, định vị chiến đấu chuyên nghiệp và thông tin chiến đấu HUD. PvE, nghệ thuật, xã hội, v.v. là những quan sát bổ sung.</p><div class="meta-row"><span>Phiên bản tích hợp ba thị trường</span><span>Chứa bằng chứng về lời nói gốc của người chơi</span><span>3C / Combat Focus</span></div></header><div class="nav-wrap"><nav class="nav" aria-label="报告导航"><a href="#background">Bối cảnh dự án</a><a href="#conclusion">Kết luận chính</a><a href="#comparison">Người chơi mới vs. kỳ cựu</a><a href="#recommendations">Hành động phản hồi cụ thể</a><a href="#appendix">Appendix</a></nav></div><main class="shell content"><article class="report-body"><h2 id="background"><span>1</span>Bối cảnh dự án</h2><p>Báo cáo này dựa trên việc tổng hợp tài liệu FGD chiến đấu cốt lõi của Gold &amp; Glory / GnG vào tháng 5 năm 2026, bao gồm ba thị trường Mexico, Việt Nam và Indonesia.<br>Trọng tâm là trải nghiệm chiến đấu 3C của phiên bản mới: góc nhìn camera, điều khiển thao tác, né tránh nhân vật, khóa kẻ thù/tự động nhắm, chặn vũ khí, định vị chiến đấu chuyên nghiệp, HUD và thông tin chiến đấu.<br>PvE, nghệ thuật chủ đề, âm thanh, xã hội và các khái niệm nhân vật mới đóng vai trò quan sát bổ sung.</p><ul><li><strong>người chơi mới</strong>: Phản hồi đầu tiên liên hệ từ VN Group 1, ID Group 3 Người dùng mới và MX Shooting để tham khảo tài liệu dành cho người chơi để quan sát sự hấp dẫn, rào cản gia nhập và chi phí hiểu thông tin của phiên bản 3C mới.</li><li><strong>Game thủ kỳ cựu Hardcore</strong>: MX KOL/nhóm người chơi cũ, VN Group 3, ID Group 1 Hardcore, dùng để quan sát xem cảm giác phiên bản cũ, giới hạn thao tác, áp lực hầm ngục, điểm yếu nghề nghiệp và độ sâu xây dựng có được giữ lại hay không.</li><li><strong>Mất cầu thủ cũ</strong>: Phản hồi liên quan đến người chơi cũ/người chơi bị rời bỏ của Nhóm 2 VN, ID Nhóm 2 bị khuấy động và MX của người chơi cũ phản hồi liên quan đến việc quay lại, được sử dụng để quan sát xem phiên bản mới có thể thu hút người chơi trở lại hay không và liệu các trở ngại chính khi rời bỏ đã được sửa chữa hay chưa.</li></ul><h2 id="conclusion"><span>2</span>Kết luận chính</h2><p>Phiên bản 3C mới của GnG có sức hấp dẫn rõ ràng đối với người dùng mới. Người chơi nhận ra chủ đề giả tưởng đen tối/thời trung cổ, hợp tác nhóm 3v3, phân công lao động chuyên nghiệp, hiệu suất kỹ năng và phản hồi một phần khi chiến đấu. Người chơi mới dễ bị thu hút bởi "nó trông đẹp, dễ sử dụng và có thể chơi cùng bạn bè"; Những người chơi cũ và người chơi cốt lõi quan tâm nhiều hơn đến việc liệu độ căng của ngục tối, giới hạn hoạt động, điểm yếu về chuyên môn và độ sâu trang bị/xây dựng của phiên bản cũ có còn hay không.</p><p>Người chơi mới chủ yếu mắc kẹt do “nhấn không êm và khóa không chính xác”; Những người chơi cũ chủ yếu lo lắng về sự hỗ trợ mạnh mẽ và ống kính quá rộng làm suy yếu giới hạn hoạt động trên, độ căng trong ngục tối và các điểm yếu về chuyên môn.</p><p>Sự hấp dẫn của cấp độ chiến đấu đã được người dùng ghi nhận, đặc biệt là phiên bản mới 3C, cộng tác 3v3, hành động kỹ năng và phân công lao động chuyên nghiệp; tuy nhiên, vòng khép kín hoàn chỉnh về tìm kiếm, tấn công và rút lui vẫn chưa được xác minh trong khuôn khổ 3C mới và vẫn cần được xác nhận thông qua các cuộc thi nội bộ được điều chỉnh dựa trên phản hồi của FGD và các thử nghiệm tiếp theo với những người chơi cũ.</p><h2 id="comparison"><span>3</span>So sánh giữa người chơi mới và người chơi cũ</h2><p>Tóm tắt: Động lực cốt lõi của người chơi mới là chủ đề đẹp mắt, dễ thử, có thể lập nhóm với bạn bè, ngoại hình và kỹ năng nhân vật hấp dẫn; Động lực cốt lõi của người chơi cũ là bộ nhớ phiên bản cũ, giới hạn hoạt động, độ căng của ngục tối, điểm yếu về chuyên môn, chiều sâu trang bị/công trình và lối chơi cộng đồng.</p><p>Trở ngại chính: Người chơi mới bị kẹt và không hiểu được mục tiêu, có quá nhiều nút bấm nhỏ, quy tắc khóa kỹ năng và kẻ địch không rõ ràng và thông tin bạn/địch/HP/bản đồ khó hiểu; Những người chơi kỳ cựu lo lắng về camera quá rộng, công nghệ làm suy yếu phụ trợ mạnh, vũ khí phổ thông chặn làm suy yếu bản sắc nghề nghiệp và các nghề tầm xa quá an toàn.</p><div class="table-frame"><table><thead><tr><th>Kích thước</th><th>người chơi mới</th><th>người chơi cũ</th><th>Nhận xét khu vực</th></tr></thead><tbody><tr><td>Tùy chọn ống kính</td><td><span class="attitude attitude-neutral-positive">trung tính đến tích cực</span>Miễn là bạn có thể nhìn rõ xung quanh, một số người chơi chấp nhận ống kính rộng</td><td><span class="attitude attitude-neutral-negative">trung lập đến tiêu cực</span>Nó không nên quá rộng. Cần giữ lại cảm giác áp bức, phục kích và cận cảnh nhân vật.</td><td>Người chơi mới có xu hướng chấp nhận góc nhìn rộng hơn; Người chơi cũ thích giữ lại áp lực sát nút của phiên bản cũ.</td></tr><tr><td>Khóa mục tiêu kẻ thù/tự động</td><td><span class="attitude attitude-neutral">trung lập</span>Cần có sự hỗ trợ nhưng bạn phải thông minh và không thể tùy tiện khóa quái vật hoặc sai mục tiêu.</td><td><span class="attitude attitude-negative">tiêu cực</span>Lo lắng về việc giảm giới hạn hoạt động, yêu cầu lựa chọn mục tiêu thủ công</td><td>Có thể cung cấp hỗ trợ, nhưng người chơi phải có thể thay đổi mục tiêu bất cứ lúc nào và không thể bị hệ thống buộc phải chuyển hướng.</td></tr><tr><td>né tránh nhân vật</td><td><span class="attitude attitude-neutral-positive">trung tính đến tích cực</span>Nó cần phải dễ bấm, khoảng cách rõ ràng và làm mát dễ hiểu.</td><td><span class="attitude attitude-neutral-positive">trung tính đến tích cực</span>Chúng nên được phân biệt theo nghề nghiệp để tránh khiến những nghề nghiệp ở xa trở nên quá an toàn.</td><td>Mọi người đều đồng ý về giá trị của việc né tránh nhân vật; sự bất đồng là mức độ bảo mật mà nó sẽ cung cấp, đặc biệt là đối với các lớp học tầm xa.</td></tr><tr><td>Khối vũ khí</td><td><span class="attitude attitude-neutral">trung lập</span>Cần biết khi nào thành công xảy ra và phần thưởng nào sẽ nhận được khi thành công</td><td><span class="attitude attitude-neutral-positive">trung tính đến tích cực</span>Nó phải được phân biệt theo vũ khí/nghề nghiệp và không nên đồng nhất giữa tất cả các ngành nghề.</td><td>Những người chơi cũ quan tâm nhiều hơn đến điều này; người chơi mới cũng cần những lời khuyên rõ ràng hơn để thành công.</td></tr><tr><td>kỳ vọng nghề nghiệp</td><td><span class="attitude attitude-neutral-positive">trung tính đến tích cực</span>Vị trí vai trò và mô tả kỹ năng nên được đặt ở phía trước và tốt nhất nên xem chúng khi lựa chọn hoặc bắt đầu.</td><td><span class="attitude attitude-neutral-negative">trung lập đến tiêu cực</span>Phải có điểm mạnh, điểm yếu, mối quan hệ đối kháng và khác biệt rõ ràng trong cách xây dựng</td><td>Người mới chơi cần hiểu rõ các nghề trước; Người chơi cũ cần phải thấy rằng các ngành nghề thực sự khác nhau.</td></tr><tr><td>HUD và thông tin chiến đấu</td><td><span class="attitude attitude-negative">tiêu cực</span>Cần rõ HP, đồng đội, địch, quái, mục tiêu, tương tác bản đồ</td><td><span class="attitude attitude-neutral">trung lập</span>Chế độ áp suất cao làm giảm thông tin của kẻ thù, giữ lại những điều chưa biết và căng thẳng</td><td>Ở chế độ bình thường, trước tiên hãy đảm bảo bạn có thể hiểu được nó; ở chế độ khó, bạn có thể cung cấp ít thông tin hơn một chút để duy trì sự căng thẳng.</td></tr><tr><td>Hiệu ứng âm thanh nghệ thuật</td><td><span class="attitude attitude-positive">tích cực</span>Ngoại hình đẹp, tưởng tượng đen tối, âm thanh kỹ năng và phản hồi đánh có thể làm tăng sự quan tâm</td><td><span class="attitude attitude-neutral-positive">trung tính đến tích cực</span>Bầu không khí phải giống như ngục tối và ngột ngạt hơn, đồng thời âm thanh không được che khuất thông tin quan trọng.</td><td>Hình ảnh và âm thanh là điểm thưởng, nhưng chúng không thể bị hy sinh để có thể nhìn rõ kẻ thù và nghe thấy những lời đe dọa.</td></tr><tr><td>Kỳ vọng PvE (Bổ sung)</td><td><span class="attitude attitude-neutral-negative">trung lập đến tiêu cực</span>Rất dễ chơi mà không hiểu mục tiêu, lộ trình, sự kiện, vùng an toàn và lý do thất bại.</td><td><span class="attitude attitude-neutral-negative">trung lập đến tiêu cực</span>Có thể hiểu luật chơi cơ bản, nhưng cảm thấy lối chơi đơn giản, đơn lẻ, kém vui và thiếu động lực để chơi lại</td><td>PvE là quan sát bổ sung đầu tiên; nếu bạn bước vào trải nghiệm mới, ngưỡng hiểu biết sẽ trở thành một vấn đề cơ bản.</td></tr></tbody></table></div></article><section class="evidence" id="recommendations"><div class="section-title"><p class="section-kicker">Evidence-backed product actions</p><h2><span>4</span>Hành động phản hồi cụ thể (khẳng định kết luận sửa đổi cuối cùng trước ngày 15/5)</h2><div class="evidence-meta"><span><b>8</b> tần số cao</span><span><b>5</b> NẾU NHƯ</span><span><b>1</b> tần số thấp</span></div></div><div class="feedback-table-frame"><table class="feedback-table"><thead><tr><th>mô-đun phản hồi</th><th>Tần suất đề cập<br>Tỷ lệ đề cập đến người chơi</th><th>điểm phản hồi</th><th>Bước tiếp theo</th><th>Lời nói ban đầu của người chơi</th><th>PIC R&amp;D</th><th>hoạt động<br>PIC</th></tr></thead><tbody><tr><td><span class="module">ống kính/trường nhìn</span></td><td><span class="freq high">cao</span><span class="coverage"><span>Người chơi mới 12/7</span><span>Game thủ kỳ cựu Hardcore 12/10</span><span>Mất đi cầu thủ cũ 11/8</span></span></td><td class="point">Ống kính rộng có thể cải thiện thông tin quan sát cho người chơi mới, nhưng những người chơi có kinh nghiệm cho rằng nó làm giảm áp lực ở cự ly gần, cảm giác phiên bản cũ và độ căng thẳng của ngục tối.</td><td class="action"><span class="next-tag">Xu hướng: Ưu tiên người chơi cũ, đồng thời hỗ trợ người chơi mới</span>Không điều chỉnh góc camera hiện tại. Thay vào đó, tối ưu phần thiết lập camera bằng cách thêm tùy chọn riêng cho chuyển động camera theo chiều ngang và chiều dọc để người chơi tự tùy chỉnh. Đồng thời giảm tỷ lệ địa hình chênh lệch cao thấp trong màn chơi, tránh việc người chơi phải kéo camera theo chiều dọc quá thường xuyên và ảnh hưởng đến trải nghiệm chiến đấu.</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Anh ấy thích đặt ống kính ở điểm giữa giữa cái cũ và cái mới, hoặc giữ lại cái ống kính cũ vì anh ấy đã quen rồi.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Tôi thích điểm giữa giữa cả hai hoặc có điểm cũ vì tôi đã quen với nó."</p><p class="quote-line src">Nguồn: MX R30_GNG.md, dòng 108</p><p class="quote-line cn">Bản dịch tiếng Trung: Ống kính rộng hơn giúp cải thiện khả năng tiếp cận nhưng làm giảm bớt căng thẳng cho những người chơi kỳ cựu.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Camera rộng hơn cải thiện khả năng tiếp cận nhưng làm giảm căng thẳng cho những người chơi có kinh nghiệm."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 18-21</p><p class="quote-line cn">Bản dịch tiếng Trung: Những người chơi chuyên nghiệp quan tâm nhiều hơn đến việc ống kính quá xa cũng như việc mất đi cảm giác và ống kính cũ, trong khi những người chơi mới/bị mất lại chấp nhận ống kính cao/rộng hơn.</p><p class="quote-line original">Văn bản gốc tiếng Anh: “Những người chơi được giữ lại ở hạng Hardcore nhạy cảm hơn với việc camera ở quá xa… Những người chơi bị loại bỏ sẽ cởi mở hơn… Người dùng mới là những người cởi mở nhất.”</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 2</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Khóa mục tiêu kẻ thù/tự động</span></td><td><span class="freq high">cao</span><span class="coverage"><span>Người chơi mới 12/8</span><span>Game thủ kỳ cựu Hardcore 12/8</span><span>Mất đi cầu thủ cũ 11/8</span></span></td><td class="point">Tự động khóa kẻ thù sẽ chuyển đổi không chính xác giữa quái, kẻ thù, đồng đội và kỹ năng từ xa, khiến người chơi mất quyền nhắm mục tiêu.</td><td class="action"><span class="next-tag">Xu hướng: Có tính đến người chơi mới và cũ</span>Để tối ưu hóa liên quan đến khóa, hãy xem mục nhắm mục tiêu kỹ năng từ xa; trong cài đặt, các cài đặt vận hành chi tiết hơn như mục tiêu khóa ưu tiên/đầu vào cần điều khiển bên trái ưu tiên/đầu vào ống kính ưu tiên sẽ được mở.</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Auto-aim hướng camera tới kẻ thù ngẫu nhiên thay vì mục tiêu mà người chơi muốn tấn công.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Chế độ tự động nhắm hướng camera tới kẻ thù ngẫu nhiên thay vì kẻ thù bạn muốn."</p><p class="quote-line src">Nguồn: MX R30_GNG.md, dòng 196</p><p class="quote-line cn">Bản dịch tiếng Trung: Camera và khóa kẻ thù làm mất đi sự chủ động của người chơi và trở thành mối nguy cho người chơi cũ quay trở lại.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Khóa camera/mục tiêu sẽ loại bỏ quyền tự quyết của người chơi và trở thành rủi ro quay trở lại đối với người chơi cũ."</p><p class="quote-line src">Nguồn: VN GNG_3C_FGD_Report_EN.docx, dòng 13-16</p><p class="quote-line cn">Bản dịch tiếng Trung: Vấn đề không chỉ đơn giản là bật/tắt tính năng tự động khóa mà là các ngành nghề và kỹ năng khác nhau đòi hỏi logic khóa khác nhau.</p><p class="quote-line original">Văn bản gốc tiếng Anh: “Vấn đề không chỉ đơn giản là ‘bật/tắt tự động khóa’; các lớp và kỹ năng khác nhau cần logic khóa khác nhau.”</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 6</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">HUD/Thông tin chiến đấu</span></td><td><span class="freq high">cao</span><span class="coverage"><span>Người chơi mới 12/9</span><span>Game thủ kỳ cựu Hardcore 12/6</span><span>Mất đi cầu thủ cũ 11/7</span></span></td><td class="point">Trong 3v3, cấp độ bạn và thù, trạng thái đồng đội, HP quái vật/người chơi, số sát thương và thông tin mục tiêu không đủ rõ ràng.</td><td class="action"><span class="next-tag">Xu hướng: Chủ yếu là người chơi mới, có tính đến người chơi cũ</span>Phong cách thanh sức khỏe sẽ được tối ưu hóa; phong cách thanh máu mới sẽ được thêm vào quái vật Boss; sự nổi bật của nhân vật trong bối cảnh và việc xác định bạn và thù sẽ được coi là nhiệm vụ quan trọng; hiệu ứng âm thanh của bạn và thù sẽ được phân biệt; lời nhắc về sức khỏe thấp sẽ được xem xét điều chỉnh hoặc cài đặt sẽ được mở để cho phép những người chơi kỳ cựu làm suy yếu thành tích; phản hồi hiệu ứng âm thanh sẽ được phong phú hơn nữa; các vấn đề chính sẽ được thảo luận riêng.</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Thật khó để phân biệt bạn bè với kẻ thù, điều này khiến trò chơi trở nên khó chịu.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Thật khó để phân biệt bạn và thù và điều đó khiến trò chơi trở nên khó chịu."</p><p class="quote-line src">Nguồn: MX R30_GNG.md, dòng 221-222</p><p class="quote-line cn">Bản dịch tiếng Trung: Người chơi mới cần thông tin rõ ràng hơn về HP, đội, kẻ thù và quái vật.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Người chơi mới cần thông tin về HP/đội/kẻ thù/quái vật rõ ràng hơn."</p><p class="quote-line src">Nguồn: VN GNG_3C_FGD_Report_EN.docx, dòng 5</p><p class="quote-line cn">Bản dịch tiếng Trung: Cần có nét hoặc dấu hiệu rõ ràng hơn để phân biệt bạn và thù, và số sát thương quá nhỏ dưới ống kính góc rộng.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Sự phân biệt kẻ thù / đồng đội cần có đường viền hoặc điểm đánh dấu rõ ràng hơn. Số lượng sát thương có thể quá nhỏ dưới góc nhìn rộng hơn."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 11</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Phản hồi hành động/đầu vào</span></td><td><span class="freq high">cao</span><span class="coverage"><span>Người chơi mới 12/9</span><span>Game thủ kỳ cựu Hardcore 12/7</span><span>Mất đi cầu thủ cũ 11/7</span></span></td><td class="point">Các nút nhỏ, quá nhiều nút, vô tình chạm vào, tấn công chậm và không kích hoạt kỹ năng sẽ trực tiếp phá hủy cảm giác điều khiển trên thiết bị đầu cuối di động.</td><td class="action"><span class="next-tag">Xu hướng: người chơi mới</span>Cần phải sửa lỗi việc chạy sang bước đầu vào tĩnh không hợp lệ; khi chạy và dừng lại, hãy cân nhắc việc giảm thêm khoảng cách né tránh của nhân vật; thêm khả năng chống rơi vào mép của bệ cao; số lượng khóa sẽ được coi là đơn giản hóa/loại bỏ.</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Đòn tấn công có độ trễ 1-2 giây và đối thủ dường như phản ứng ngay lập tức.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Độ trễ 1-2 giây cho các cuộc tấn công trong khi nhân vật kia có phản ứng tức thời."</p><p class="quote-line src">Nguồn: MX BrawlStars.md, dòng 54</p><p class="quote-line cn">Bản dịch tiếng Trung: Trận chiến có vẻ chậm do độ trễ, thời gian hồi chiêu lâu và phản ứng di chuyển.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Chiến đấu có cảm giác chậm do độ trễ, thời gian hồi chiêu dài và phản ứng di chuyển."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 333-336</p><p class="quote-line cn">Bản dịch tiếng Trung: Người chơi mới cần học nhân vật né tránh, chặn vũ khí, kỹ năng chuyên nghiệp, khóa, camera và các thao tác khác cùng một lúc.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Người dùng mới cảm thấy trò chơi có nhiều hành động để học: né tránh, đỡ đòn, kỹ năng đẳng cấp, khóa mục tiêu, camera."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 10</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">né tránh nhân vật</span></td><td><span class="freq high">cao</span><span class="coverage"><span>Người chơi mới 12/8</span><span>Game thủ kỳ cựu Hardcore 12/8</span><span>Mất đi cầu thủ cũ 11/7</span></span></td><td class="point">Hướng né tránh của nhân vật được nhận dạng, nhưng phạm vi, thời gian hồi chiêu, khả năng truy cập nút và sự khác biệt giữa các lớp vẫn chưa rõ ràng.</td><td class="action">Xác nhận sửa đổi cuối cùng trước ngày 15/5</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Thời gian hồi chiêu né tránh của nhân vật dài, khoảng cách ngắn và biểu hiện kỹ năng không đủ.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Cuộn/phóng có thời gian hồi chiêu dài, tầm đánh ngắn và độ sâu kỹ năng thấp."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 375-378</p><p class="quote-line cn">Bản dịch tiếng Trung: Phản hồi tổng thể về việc né tránh nhân vật trong ba nhóm là tích cực và người ta cho rằng nó có thể được sử dụng cho các kỹ năng truy đuổi, trốn thoát và né tránh.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Dodge/Dash nhận được phản hồi tích cực từ tất cả các nhóm. Nó được coi là hữu ích cho các kỹ năng truy đuổi, trốn thoát và né tránh."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 8</p><p class="quote-line cn">Bản dịch tiếng Trung: Người chơi cũ thích hoạt ảnh chạy và tấn công liên tục, nhưng hoạt ảnh rườm rà sẽ khiến khả năng né tránh của nhân vật không ổn định.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Thích đỡ đòn và cách tấn công liên tiếp. Thích hoạt hình đang chạy."</p><p class="quote-line src">Nguồn: MX R30_GNG.md, dòng 92</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Nhắm kỹ năng từ xa</span></td><td><span class="freq high">cao</span><span class="coverage"><span>Người chơi mới 12/7</span><span>Game thủ kỳ cựu Hardcore 12/8</span><span>Mất đi cầu thủ cũ 11/7</span></span></td><td class="point">Pháp sư / Pháp sư / Oracle tập trung vào việc vạch trần các vấn đề về nhắm mục tiêu kỹ năng từ xa, hấp phụ địa hình, chặn chướng ngại vật và can thiệp tự động khóa.</td><td class="action"><span class="next-tag">Xu hướng: Phổ biến đối với người chơi mới và cũ</span>Tăng cường hiệu quả đánh của các kỹ năng tầm xa; bật công tắc khóa tự động; tối ưu hóa chiến lược tìm kiếm mục tiêu, chẳng hạn như giảm trọng lượng của quái vật; bật công tắc hấp thụ kỹ năng; giảm tỷ lệ địa hình có cấp độ chênh lệch cao thấp, giảm yêu cầu chiến đấu; tăng cường tối ưu hóa việc chọn điểm địa hình phức tạp, tham khảo Deadlock.</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Việc nhắm và đánh kẻ thù quá phức tạp, đặc biệt là đòn tấn công chéo của Prophet; Đánh cùng một kẻ thù hai lần là điều khó khăn, chủ yếu là do camera vụng về.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Đánh cùng một kẻ thù hai lần là quá khó, chủ yếu là do chiếc máy ảnh cồng kềnh."</p><p class="quote-line src">Nguồn: MX R30_GNG.md, dòng 241</p><p class="quote-line cn">Bản dịch tiếng Trung: Kỹ năng thiếu chỉ dẫn hướng/phạm vi rõ ràng.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Kỹ năng nhắm mục tiêu thiếu các chỉ số định hướng/phạm vi rõ ràng."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 358-361</p><p class="quote-line cn">Bản dịch tiếng Trung: Nhắm mục tiêu kỹ năng tầm xa là một vấn đề thường xuyên xảy ra ở cả ba nhóm, đặc biệt là Wizard và Oracle.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Mục tiêu kỹ năng tầm xa là một trong những vấn đề rõ ràng nhất giữa các nhóm. Wizard và Oracle được nhắc đến nhiều lần."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 5</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Khối vũ khí</span></td><td><span class="freq high">cao</span><span class="coverage"><span>Người chơi mới 12/6</span><span>Game thủ kỳ cựu Hardcore 12/8</span><span>Mất đi cầu thủ cũ 11/6</span></span></td><td class="point">Chặn vũ khí có thể tăng thêm chiều sâu, nhưng chặn vũ khí phổ quát làm suy yếu vũ khí, lớp học và giá trị phục kích, đồng thời người chơi mới không biết các điều kiện và lợi ích thành công.</td><td class="action"><span class="next-tag">Xu hướng: người chơi kỳ cựu</span>TTK sẽ được nén/cân bằng, giảm TTK tổng thể đồng thời tăng TTK của các trận chiến nhiều người chơi với một người chơi; làm suy yếu khả năng chiến đấu, phép thuật, chăn nuôi và tăng cường đóng góp cho phần chơi đơn là mục tiêu thiết kế.</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Khả năng chặn vũ khí của GnG khiến anh ta trở nên thú vị như phản công trong Dragon Ball Legends.</p><p class="quote-line original">Nguyên văn tiếng Anh: "GnG đỡ đòn khiến tôi cảm thấy phấn khích như khi tôi phản công DB Legends."</p><p class="quote-line src">Nguồn: MX R30_GNG.md, dòng 57</p><p class="quote-line cn">Bản dịch tiếng Trung: Chặn vũ khí phổ quát làm suy yếu đẳng cấp và địa vị vũ khí.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Khối phổ quát làm suy yếu bản sắc vũ khí/lớp."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 586-589</p><p class="quote-line cn">Bản dịch tiếng Trung: Hệ thống này có thể tăng thêm chiều sâu, nhưng nếu tất cả các lớp đều có công cụ phòng thủ giống nhau sẽ dẫn đến sự nhầm lẫn và làm phẳng đặc điểm của lớp.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Hệ thống tăng thêm chiều sâu, nhưng có nguy cơ trở nên khó hiểu hoặc làm phẳng bản sắc giai cấp nếu mọi lớp đều có các công cụ phòng thủ tương tự."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 9</p></td><td>zhuojie</td><td>peicheng</td></tr><tr><td><span class="module">Cân bằng nghề nghiệp/vai trò</span></td><td><span class="freq high">cao</span><span class="coverage"><span>Người chơi mới 12/7</span><span>Game thủ kỳ cựu Hardcore 12/9</span><span>Mất đi cầu thủ cũ 11/7</span></span></td><td class="point">Sự phân công lao động chuyên nghiệp trong 3v3 rất hấp dẫn, nhưng sức mạnh, độ khó thao tác và tính bảo mật của Warrior, Wizard/Pháp sư và Oracle/Priest không ổn định.</td><td class="action"><span class="next-tag">Xu hướng: Phổ biến đối với người chơi mới và cũ</span>Việc xuyên tường sẽ được sửa chữa; việc lựa chọn và hấp thụ điểm kỹ năng sẽ được tối ưu hóa; Tùy chỉnh HUD có thể được điều chỉnh trong hướng dẫn cho người mới sử dụng.</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Đội nào quản lý Pháp sư tốt hơn sẽ luôn giành chiến thắng.</p><p class="quote-line original">Nguyên văn tiếng Anh: "Đội nào quản lý Pháp sư tốt hơn sẽ luôn giành chiến thắng."</p><p class="quote-line src">Nguồn: MX Free Fireplayer.md, dòng 102</p><p class="quote-line cn">Bản dịch tiếng Trung: Wizard và Oracle có nguy cơ bị OP trong số những người chơi kỳ cựu.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Wizard và Oracle cho thấy rủi ro OP đối với những người chơi cũ."</p><p class="quote-line src">Nguồn: VN GNG_3C_FGD_Report_EN.docx, dòng 21-24</p><p class="quote-line cn">Bản dịch tiếng Trung: Chiến binh có thể đóng vai trò là hình mẫu cho lớp người mới thân thiện, nhưng phải bảo vệ đòn cận chiến một cách chắc chắn.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Chiến binh có thể là chuẩn mực cho cuộc chiến thân thiện với người mới, nhưng sự chắc chắn khi cận chiến phải được bảo vệ."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 12</p></td><td>zhuojie</td><td>huangyu</td></tr><tr><td><span class="module">Phản hồi/hoạt ảnh thổi</span></td><td><span class="freq mid">ở giữa</span><span class="coverage"><span>Người chơi mới 12/5</span><span>Game thủ kỳ cựu Hardcore 12/6</span><span>Mất đi cầu thủ cũ 11/5</span></span></td><td class="point">Các đòn đánh, độ rung và đồng bộ hóa âm thanh và video là những lợi thế, nhưng những đòn kiếm cận chiến, đòn tấn công mạnh, tác động chặn vũ khí và chuyển động cứng vẫn chưa đủ nặng.</td><td class="action">Xác nhận sửa đổi cuối cùng trước ngày 15/5</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Là một Hiệp sĩ, phản hồi từ thanh kiếm không rõ ràng, nó không giống như nhân vật thực sự sử dụng thanh kiếm.</p><p class="quote-line original">Nguyên bản tiếng Anh: "Khi vào vai Hiệp sĩ, anh ấy không cảm nhận được phản hồi của thanh kiếm."</p><p class="quote-line src">Nguồn: MX Free Fireplayer.md, dòng 166</p><p class="quote-line cn">Bản dịch tiếng Trung: Phản hồi lượt truy cập thiếu trọng lượng.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Phản hồi về lượt truy cập thiếu trọng lượng."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 404-407</p><p class="quote-line cn">Bản dịch tiếng Trung: Phản ứng đánh, hiệu ứng đốt cháy, tác động chặn vũ khí, độ rung và phản hồi sát thương cần được tăng cường.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Phản ứng khi đánh, hiệu ứng đốt cháy, tác động đỡ, độ rung và phản hồi sát thương cần phải mạnh hơn."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 15</p></td><td>zhuojie</td><td>huangyu</td></tr><tr><td><span class="module">Khả năng đọc nghệ thuật/môi trường</span></td><td><span class="freq mid">ở giữa</span><span class="coverage"><span>Người chơi mới 12/6</span><span>Game thủ kỳ cựu Hardcore 12/5</span><span>Mất đi cầu thủ cũ 11/5</span></span></td><td class="point">Chủ đề giả tưởng đen tối rất hấp dẫn, nhưng hình ảnh tối, độ tương phản thấp, độ trong suốt của tường/mốc và ánh sáng môi trường nhân vật không nhất quán có thể ảnh hưởng đến phán đoán chiến đấu.</td><td class="action">Xác nhận sửa đổi cuối cùng trước ngày 15/5</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Camera mới khiến trò chơi trở nên phức tạp và khó chịu hơn, bản đồ giờ tối đến mức khó phân biệt được bạn và thù.</p><p class="quote-line original">Nguyên văn tiếng Anh: "Trò chơi bây giờ quá tối và thật khó để phân biệt bạn và thù."</p><p class="quote-line src">Nguồn: MX R30_GNG.md, dòng 182</p><p class="quote-line cn">Bản dịch tiếng Trung: Dungeon và bản đồ tối, có độ chi tiết thấp hoặc khó đọc.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Ngục tối và bản đồ tối, ít chi tiết hoặc khó đọc."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 473-476</p><p class="quote-line cn">Bản dịch tiếng Trung: Phản hồi của Indonesia không thiên về phong cách nghệ thuật mà thiên về khả năng đọc trong chiến đấu.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Phản hồi của Indonesia ít thiên về định hướng nghệ thuật mà thiên về khả năng đọc trong chiến đấu."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 15</p></td><td>chengong</td><td>huangyu</td></tr><tr><td><span class="module">Hiệu ứng âm thanh/thông tin chiến đấu</span></td><td><span class="freq mid">ở giữa</span><span class="coverage"><span>Người chơi mới 12/5</span><span>Game thủ kỳ cựu Hardcore 12/5</span><span>Mất đi cầu thủ cũ 11/5</span></span></td><td class="point">Hiệu ứng âm thanh nhìn chung là tích cực, nhưng trong các trận chiến nhiều người chơi, kỹ năng của kẻ thù, hướng bước chân, khoảng cách và các lớp âm thanh của bản thân/đồng đội/địch không đủ rõ ràng.</td><td class="action">Xác nhận sửa đổi cuối cùng trước ngày 15/5</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Giọng nói của Pháp sư sẽ chặn các âm thanh khác, khiến một số kỹ năng của kẻ địch không thể nghe được.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Một số âm thanh từ Pháp sư chặn các âm thanh khác, khiến anh ta không nghe thấy một số khả năng của kẻ thù."</p><p class="quote-line src">Nguồn: MX R30_GNG.md, dòng 252</p><p class="quote-line cn">Bản dịch tiếng Trung: Dấu chân rất khó xác định dựa trên hướng hoặc khoảng cách.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Có thể khó xác định được bước chân hoặc khó phân biệt theo cạnh/khoảng cách."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 489-492</p><p class="quote-line cn">Bản dịch tiếng Trung: Trong 3v3, khi nhiều người sử dụng kỹ năng cùng lúc, hiệu ứng âm thanh sẽ quá dày đặc và hiệu ứng âm thanh của kỹ năng bạn/địch sẽ dễ phân biệt hơn.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "3v3 có thể trở nên quá ồn ào khi nhiều kỹ năng được sử dụng cùng lúc. Âm thanh kỹ năng của đồng minh/kẻ thù sẽ dễ phân biệt hơn."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 16</p></td><td>zhuojie</td><td>huangyu</td></tr><tr><td><span class="module">PvE / Bản đồ / Chế độ (Bổ sung)</span></td><td><span class="freq mid">ở giữa</span><span class="coverage"><span>Người chơi mới 12/5</span><span>Game thủ kỳ cựu Hardcore 12/4</span><span>Mất đi cầu thủ cũ 11/5</span></span></td><td class="point">Các vấn đề của PvE tập trung ở hai cấp độ: người chơi mới không thể hiểu được mục tiêu, lộ trình, sự kiện, vùng an toàn và lý do thất bại; Người chơi cũ có thể hiểu luật chơi cơ bản, nhưng nhận thấy lối chơi đơn giản, đơn lẻ, kém vui và thiếu động lực để chơi lại.</td><td class="action">Xác nhận sửa đổi cuối cùng trước ngày 15/5</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: PvE quá dễ và có thể không có giá trị chơi lại.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "PvE quá dễ và có thể không tạo ra giá trị chơi lại."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 711-714</p><p class="quote-line cn">Bản dịch tiếng Trung: Nếu PvE là một trải nghiệm mới hoặc nội dung được phát hành gần đây, nó sẽ trở thành một công cụ chặn hiểu biết cơ bản.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Nếu PVE là một phần của nội dung giới thiệu hoặc ra mắt, thì nội dung này sẽ trở thành một công cụ chặn khả năng hiểu cơ bản."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 17</p><p class="quote-line cn">Bản dịch tiếng Trung: Cần có thông báo nhắc nhở trước khi bị trùm tấn công như nhảy hoặc cúi người để tránh.</p><p class="quote-line original">Nguyên văn tiếng Anh: "Nên có tin nhắn thông báo khi nào boss chuẩn bị tấn công."</p><p class="quote-line src">Nguồn: MX R30_GNG.md, dòng 277</p></td><td>denghao</td><td>huangyu</td></tr><tr><td><span class="module">Giao tiếp xã hội/nhóm</span></td><td><span class="freq mid">ở giữa</span><span class="coverage"><span>Người chơi mới 12/5</span><span>Game thủ kỳ cựu Hardcore 12/4</span><span>Mất đi cầu thủ cũ 11/4</span></span></td><td class="point">Sự thú vị của 3v3 phụ thuộc vào sự hợp tác, nhưng việc nhắn tin nhanh, định vị đồng đội và giao tiếp chiến thuật không đủ sẽ hạn chế giới hạn trên của lối chơi đồng đội.</td><td class="action">Xác nhận sửa đổi cuối cùng trước ngày 15/5</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Anh ấy cần chơi với bạn bè để vui chơi.</p><p class="quote-line original">Nguyên văn tiếng Anh: "Đề cập rằng anh ấy cần chơi với bạn bè để có thể vui vẻ."</p><p class="quote-line src">Nguồn: MX Free Fireplayer.md, dòng 216</p><p class="quote-line cn">Bản dịch tiếng Trung: Hỗ trợ liên lạc nhóm hạn chế, yêu cầu trò chuyện/ping nhanh và lời nhắc về vị trí của đồng đội.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Hỗ trợ liên lạc nhóm bị hạn chế. Thêm tín hiệu trò chuyện/ping nhanh và vị trí đồng đội."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 408-411</p></td><td>zhuojie</td><td>huangyu</td></tr><tr><td><span class="module">Khái niệm nhân vật mới (bổ sung)</span></td><td><span class="freq low">Thấp</span><span class="coverage"><span>Người chơi mới 12/3</span><span>Game thủ kỳ cựu Hardcore 12/3</span><span>Mất đi cầu thủ cũ 11/2</span></span></td><td class="point">Khái niệm nhân vật mới nhìn chung là tích cực và người chơi rất mong chờ nhân vật mới. Thứ tự ưu tiên: ID là Ronin &gt; Búi đũa &gt; Muay / Cat / Cowboy Wizard / Elf &gt; Wuchang &gt; Oracle; #4/#6/#7 ở VN thú vị hơn.</td><td class="action">Xác nhận sửa đổi cuối cùng trước ngày 15/5</td><td class="quote-cell"><p class="quote-line cn">Bản dịch tiếng Trung: Khái niệm #4, #6 và #7 tạo ra sự quan tâm mạnh mẽ hơn.</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Các khái niệm #4, #6 và #7 tạo ra sự quan tâm mạnh mẽ hơn."</p><p class="quote-line src">Nguồn: VN Session1&amp;2 summary.docx, dòng 719-722</p><p class="quote-line cn">Bản dịch tiếng Trung: Thứ tự ưu tiên của Indonesia là Ronin (4.67/5) &gt; Bún Đũa (4.50/5) &gt; Muay / Cat / Cowboy Wizard / Elf (4.17/5) &gt; Wuchang (4.00/5) &gt; Oracle (3.67/5).</p><p class="quote-line original">Văn bản gốc tiếng Anh: "Nhìn chung, tín hiệu ID mạnh nhất là Ronin và Chopstick Bun. Cat và Muay có sức hấp dẫn rõ ràng hơn."</p><p class="quote-line src">Nguồn: ID Master Sheet, ID Recap hàng 18</p></td><td>zhuojie</td><td>huangyu</td></tr></tbody></table></div></section><article class="report-body appendix-body"><h2 id="appendix"><span>A</span>Phụ lục: Tổng hợp số liệu chấm điểm</h2><h3 id="a-1-3c-操作体验评分">A.1 Điểm kinh nghiệm vận hành 3C</h3><div class="table-frame"><table class="heatmap-table"><thead><tr><th>Kích thước</th><th>Điểm tổng hợp</th><th>người chơi mới</th><th>Game thủ kỳ cựu Hardcore</th><th>Mất cầu thủ cũ</th><th>Nhận xét</th></tr></thead><tbody><tr><td>Kinh nghiệm tổng thể/chiến đấu</td><td class="score-cell score-ok"><b>3.82</b></td><td class="score-cell score-ok"><b>4.07</b></td><td class="score-cell score-watch"><b>3.34</b></td><td class="score-cell score-ok"><b>4.09</b></td><td>Sự quan tâm chung của người chơi mới và người chơi cũ bị mất không hề thấp; Những người chơi cũ khó tính thì kén chọn hơn.</td></tr><tr><td>ống kính</td><td class="score-cell score-watch"><b>3.43</b></td><td class="score-cell score-ok"><b>3.92</b></td><td class="score-cell score-low"><b>2.83</b></td><td class="score-cell score-ok"><b>3.54</b></td><td>Những người chơi kỳ cựu Hardcore là thấp nhất. Họ chủ yếu lo lắng rằng ống kính quá rộng sẽ làm giảm cảm giác áp lực và cảm giác của phiên bản cũ.</td></tr><tr><td>Khóa mục tiêu kẻ thù/tự động</td><td class="score-cell score-low"><b>2.97</b></td><td class="score-cell score-watch"><b>3.15</b></td><td class="score-cell score-watch"><b>3.00</b></td><td class="score-cell score-low"><b>2.73</b></td><td>Không có loại nào trong ba loại là điểm mạnh. Việc mất đi những người chơi cũ là thấp nhất và đó là hạng mục rủi ro cần được giải thích và sửa chữa trước tiên.</td></tr><tr><td>Hoạt động/Chiến đấu</td><td class="score-cell score-watch"><b>3.48</b></td><td class="score-cell score-ok"><b>3.65</b></td><td class="score-cell score-watch"><b>3.34</b></td><td class="score-cell score-watch"><b>3.46</b></td><td>Người chơi mới được phân biệt rõ ràng: Người chơi mới VN có điểm kiểm soát thấp, trong khi người chơi ID mới có điểm kiểm soát cao.</td></tr><tr><td>né tránh nhân vật</td><td class="score-cell score-ok"><b>3.76</b></td><td class="score-cell score-watch"><b>3.32</b></td><td class="score-cell score-strong"><b>4.17</b></td><td class="score-cell score-ok"><b>3.82</b></td><td>Điểm thấp của người chơi mới chủ yếu đến từ nhân vật VN né tránh 2.3; Những người chơi cũ nhận ra giá trị của nhân vật né tránh nhiều hơn, nhưng lo ngại về sự khác biệt trong nghề nghiệp.</td></tr><tr><td>Khối vũ khí</td><td class="score-cell score-strong"><b>4.14</b></td><td class="score-cell score-strong"><b>4.50</b></td><td class="score-cell score-strong"><b>4.17</b></td><td class="score-cell score-ok"><b>3.91</b></td><td>Độ sâu của hành động nói chung là tích cực.</td></tr><tr><td>Lượt truy cập/phản hồi trực quan</td><td class="score-cell score-ok"><b>3.59</b></td><td class="score-cell score-ok"><b>3.74</b></td><td class="score-cell score-ok"><b>3.50</b></td><td class="score-cell score-ok"><b>3.55</b></td><td>Về cơ bản là trung lập đến tích cực, nhưng vẫn cần phản hồi đánh, đánh và sát thương rõ ràng hơn.</td></tr><tr><td>Hiệu ứng âm thanh</td><td class="score-cell score-ok"><b>3.94</b></td><td class="score-cell score-strong"><b>4.25</b></td><td class="score-cell score-ok"><b>3.84</b></td><td class="score-cell score-ok"><b>3.73</b></td><td>Người chơi mới là tích cực nhất; những người chơi kỳ cựu quan tâm nhiều hơn đến kỹ năng của kẻ thù và bạn bè, bước chân và mức độ khoảng cách trong các trận chiến nhiều người chơi.</td></tr></tbody></table></div><h3 id="a-2-模式体验评分-id-问卷">A.2 Đánh giá trải nghiệm phương thức (bảng câu hỏi ID)</h3><div class="table-frame"><table class="heatmap-table"><thead><tr><th>người mẫu</th><th>Điểm tổng hợp</th><th>người chơi mới</th><th>Game thủ kỳ cựu Hardcore</th><th>Mất cầu thủ cũ</th><th>Nhận xét</th></tr></thead><tbody><tr><td>1v1</td><td class="score-cell score-ok"><b>4.05</b></td><td class="score-cell score-ok"><b>4.00</b></td><td class="score-cell score-strong"><b>4.33</b></td><td class="score-cell score-ok"><b>3.83</b></td><td>Những người chơi kỳ cựu khó tính dễ tiếp thu 1v1 nhất.</td></tr><tr><td>3v3</td><td class="score-cell score-strong"><b>4.67</b></td><td class="score-cell score-strong"><b>4.83</b></td><td class="score-cell score-strong"><b>4.67</b></td><td class="score-cell score-strong"><b>4.50</b></td><td>3v3 là sự kiện có tính điểm cao giữa ba loại người chơi, điều này cho thấy hướng chiến đấu của đội rất hấp dẫn.</td></tr><tr><td>Boss Co-op</td><td class="score-cell score-ok"><b>4.06</b></td><td class="score-cell score-strong"><b>4.50</b></td><td class="score-cell score-strong"><b>4.17</b></td><td class="score-cell score-ok"><b>3.50</b></td><td>Những người chơi mới thích tưởng tượng các hầm ngục hợp tác, trong khi những người chơi cũ thường thấy PvE quá đơn giản hoặc không đủ để chơi lại.</td></tr><tr><td>Overall Combat</td><td class="score-cell score-ok"><b>4.05</b></td><td class="score-cell score-strong"><b>4.33</b></td><td class="score-cell score-ok"><b>3.50</b></td><td class="score-cell score-strong"><b>4.33</b></td><td>Những người chơi kỳ cựu hạng nặng thì nghiêm khắc hơn và điểm thấp chủ yếu đến từ những lo ngại về khả năng điều khiển, camera và khóa kẻ thù.</td></tr></tbody></table></div><h3 id="a-3-职业与新角色偏好">A.3 Sự nghiệp và sở thích vai trò mới</h3><div class="table-frame"><table class="heatmap-table"><thead><tr><th>dự án</th><th>Điểm tổng hợp</th><th>người chơi mới</th><th>Game thủ kỳ cựu Hardcore</th><th>Mất cầu thủ cũ</th><th>Nhận xét</th></tr></thead><tbody><tr><td>Warrior（VN）</td><td class="score-cell score-ok"><b>3.81</b></td><td class="score-cell score-ok"><b>3.8</b></td><td class="score-cell score-strong"><b>4.33</b></td><td class="score-cell score-watch"><b>3.2</b></td><td>Người mới chơi rất dễ hiểu Warrior; mất đi người chơi cũ sẽ khiến Warrior kém hấp dẫn.</td></tr><tr><td>Mage（VN）</td><td class="score-cell score-ok"><b>3.76</b></td><td class="score-cell score-watch"><b>3.0</b></td><td class="score-cell score-strong"><b>4.33</b></td><td class="score-cell score-ok"><b>4.0</b></td><td>Người chơi mới gặp khó khăn hơn khi bắt đầu và nhắm mục tiêu vào Pháp sư; người chơi có kinh nghiệm có thể hiểu rõ hơn về sức mạnh của nó.</td></tr><tr><td>Oracle（VN）</td><td class="score-cell score-strong"><b>4.52</b></td><td class="score-cell score-strong"><b>4.3</b></td><td class="score-cell score-strong"><b>4.67</b></td><td class="score-cell score-strong"><b>4.6</b></td><td>Oracle được đánh giá cao đối với cả ba loại người chơi VN, nhưng cần phải xem xét mức độ áp đảo và sự rõ ràng của thông tin.</td></tr></tbody></table></div></article><footer class="page-footer">Generated from Global_GnG_2026May_FGD_Report_CN.md</footer></main>
+<script id="report-comment-script">
+(() => {
+  const locale = document.body.dataset.locale || document.documentElement.lang || 'zh-CN';
+  const labelSets = {
+    'zh-CN': { read: '阅读模式', comment: '评论模式', status: '评论模式：点击页面任意位置添加评论', count: n => n + '条', add: '新增评论', edit: '编辑评论', meta: n => '#' + n, target: '点击位置', placeholder: '写下评论...', publish: '确认发布', save: '保存', cancel: '取消', remove: '删除', confirmDelete: '删除这条评论？' },
+    en: { read: 'Read', comment: 'Comment', status: 'Comment mode: click anywhere to add a comment', count: n => n, add: 'New comment', edit: 'Edit comment', meta: n => '#' + n, target: 'Selected position', placeholder: 'Write a comment...', publish: 'Publish', save: 'Save', cancel: 'Cancel', remove: 'Delete', confirmDelete: 'Delete this comment?' },
+    vi: { read: 'Đọc', comment: 'Bình luận', status: 'Chế độ bình luận: nhấp vào bất kỳ vị trí nào để thêm bình luận', count: n => n, add: 'Bình luận mới', edit: 'Sửa bình luận', meta: n => '#' + n, target: 'Vị trí đã chọn', placeholder: 'Nhập bình luận...', publish: 'Đăng', save: 'Lưu', cancel: 'Hủy', remove: 'Xóa', confirmDelete: 'Xóa bình luận này?' },
+    th: { read: 'อ่าน', comment: 'คอมเมนต์', status: 'โหมดคอมเมนต์: คลิกตำแหน่งใดก็ได้เพื่อเพิ่มคอมเมนต์', count: n => n, add: 'คอมเมนต์ใหม่', edit: 'แก้ไขคอมเมนต์', meta: n => '#' + n, target: 'ตำแหน่งที่เลือก', placeholder: 'เขียนคอมเมนต์...', publish: 'โพสต์', save: 'บันทึก', cancel: 'ยกเลิก', remove: 'ลบ', confirmDelete: 'ลบคอมเมนต์นี้?' },
+    id: { read: 'Baca', comment: 'Komentar', status: 'Mode komentar: klik di mana saja untuk menambahkan komentar', count: n => n, add: 'Komentar baru', edit: 'Edit komentar', meta: n => '#' + n, target: 'Posisi dipilih', placeholder: 'Tulis komentar...', publish: 'Kirim', save: 'Simpan', cancel: 'Batal', remove: 'Hapus', confirmDelete: 'Hapus komentar ini?' },
+    es: { read: 'Lectura', comment: 'Comentarios', status: 'Modo comentarios: haz clic en cualquier lugar para comentar', count: n => n, add: 'Nuevo comentario', edit: 'Editar comentario', meta: n => '#' + n, target: 'Posición seleccionada', placeholder: 'Escribe un comentario...', publish: 'Publicar', save: 'Guardar', cancel: 'Cancelar', remove: 'Eliminar', confirmDelete: '¿Eliminar este comentario?' },
+    'pt-BR': { read: 'Leitura', comment: 'Comentários', status: 'Modo de comentários: clique em qualquer lugar para comentar', count: n => n, add: 'Novo comentário', edit: 'Editar comentário', meta: n => '#' + n, target: 'Posição selecionada', placeholder: 'Escreva um comentário...', publish: 'Publicar', save: 'Salvar', cancel: 'Cancelar', remove: 'Excluir', confirmDelete: 'Excluir este comentário?' }
+  };
+  const labels = labelSets[locale] || labelSets[locale.split('-')[0]] || labelSets['zh-CN'];
+  const API_ROOT = window.REPORT_COMMENT_API_ROOT || (location.protocol.startsWith('http') ? '/api/comments' : '');
+  const fileName = (location.pathname.split('/').pop() || document.title || 'report').replace(/.html?$/i, '');
+  const DOC_ID = window.REPORT_COMMENT_DOC_ID || fileName.replace(/_(CN|EN|VN|TH|ID|ES|PT)$/i, '');
+  const storageKey = 'fgd-report-comments:' + DOC_ID;
+  const ignoredSelector = '.review-toolbar, .review-status, .report-comment-popover, .report-comment-bubble, .language-switcher, .nav-wrap';
+  let comments = [];
+  let mode = 'read';
+  let draft = null;
+
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const body = document.body;
+  const readBtn = $('.review-read');
+  const commentBtn = $('.review-comment');
+  const countEl = $('.review-count');
+  const statusEl = $('.review-status');
+
+  readBtn.textContent = labels.read;
+  commentBtn.textContent = labels.comment;
+  statusEl.textContent = labels.status;
+
+  const popover = document.createElement('div');
+  popover.className = 'report-comment-popover';
+  popover.innerHTML = '<div class="comment-popover-head"><span class="comment-title"></span><span class="comment-meta"></span></div><div class="comment-target-snippet"></div><textarea></textarea><div class="comment-actions"><button type="button" class="danger comment-delete"></button><button type="button" class="comment-cancel"></button><button type="button" class="primary comment-save"></button></div>';
+  document.body.appendChild(popover);
+
+  const titleEl = $('.comment-title', popover);
+  const metaEl = $('.comment-meta', popover);
+  const snippetEl = $('.comment-target-snippet', popover);
+  const textarea = $('textarea', popover);
+  const deleteBtn = $('.comment-delete', popover);
+  const saveBtn = $('.comment-save', popover);
+  const cancelBtn = $('.comment-cancel', popover);
+  textarea.placeholder = labels.placeholder;
+  deleteBtn.textContent = labels.remove;
+  cancelBtn.textContent = labels.cancel;
+
+  function localLoad() {
+    try { return JSON.parse(localStorage.getItem(storageKey) || '[]'); }
+    catch { return []; }
+  }
+  function localSave() {
+    localStorage.setItem(storageKey, JSON.stringify(comments));
+  }
+  async function api(path = '', options = {}) {
+    if (!API_ROOT) throw new Error('no api');
+    const response = await fetch(API_ROOT + path, {
+      headers: { 'Content-Type': 'application/json', ...(options.headers || {}) },
+      ...options,
+    });
+    if (!response.ok) throw new Error('api ' + response.status);
+    if (response.status === 204) return null;
+    return response.json();
+  }
+  async function loadComments() {
+    try {
+      comments = API_ROOT ? await api('?doc=' + encodeURIComponent(DOC_ID)) : localLoad();
+    } catch {
+      comments = localLoad();
+    }
+    renderBubbles();
+  }
+  async function saveComment(comment) {
+    if (comment.id) {
+      const updated = { ...comment, doc: DOC_ID, locale, updatedAt: new Date().toISOString() };
+      try {
+        if (API_ROOT) {
+          const saved = await api('/' + encodeURIComponent(comment.id), { method: 'PUT', body: JSON.stringify(updated) });
+          comments = comments.map(item => item.id === comment.id ? saved : item);
+        } else {
+          comments = comments.map(item => item.id === comment.id ? updated : item);
+          localSave();
+        }
+      } catch {
+        comments = comments.map(item => item.id === comment.id ? updated : item);
+        localSave();
+      }
+    } else {
+      const created = { ...comment, doc: DOC_ID, locale, id: 'c_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7), createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+      try {
+        if (API_ROOT) comments.push(await api('', { method: 'POST', body: JSON.stringify(created) }));
+        else { comments.push(created); localSave(); }
+      } catch {
+        comments.push(created);
+        localSave();
+      }
+    }
+    renderBubbles();
+  }
+  async function deleteComment(id) {
+    try {
+      if (API_ROOT) await api('/' + encodeURIComponent(id) + '?doc=' + encodeURIComponent(DOC_ID), { method: 'DELETE' });
+    } catch {}
+    comments = comments.filter(item => item.id !== id);
+    localSave();
+    renderBubbles();
+  }
+
+  function cssPath(el) {
+    if (!el || el === document.body) return 'body';
+    const parts = [];
+    while (el && el.nodeType === 1 && el !== document.body) {
+      let part = el.tagName.toLowerCase();
+      if (el.id) { part += '#' + CSS.escape(el.id); parts.unshift(part); break; }
+      const parent = el.parentElement;
+      if (parent) {
+        const same = Array.from(parent.children).filter(child => child.tagName === el.tagName);
+        if (same.length > 1) part += ':nth-of-type(' + (same.indexOf(el) + 1) + ')';
+      }
+      parts.unshift(part);
+      el = parent;
+    }
+    return parts.join(' > ');
+  }
+  function getTarget(eventTarget) {
+    return eventTarget.closest('td, th, p, li, h1, h2, h3, .lead, .meta-row span, .section-title, article, section, main') || eventTarget;
+  }
+  function targetData(target, event) {
+    const rect = target.getBoundingClientRect();
+    const xRatio = rect.width ? (event.clientX - rect.left) / rect.width : 0.5;
+    const yRatio = rect.height ? (event.clientY - rect.top) / rect.height : 0.2;
+    return {
+      selector: cssPath(target),
+      anchorText: (target.innerText || target.textContent || '').trim().replace(/s+/g, ' ').slice(0, 160),
+      xRatio: Math.max(0, Math.min(1, xRatio)),
+      yRatio: Math.max(0, Math.min(1, yRatio)),
+      pageX: event.pageX,
+      pageY: event.pageY,
+    };
+  }
+  function locate(comment) {
+    let target = null;
+    try { target = comment.selector ? document.querySelector(comment.selector) : null; } catch {}
+    if (target) {
+      const rect = target.getBoundingClientRect();
+      return {
+        x: window.scrollX + rect.left + rect.width * (comment.xRatio ?? 0.96),
+        y: window.scrollY + rect.top + rect.height * (comment.yRatio ?? 0.12),
+      };
+    }
+    return { x: comment.pageX || 24, y: comment.pageY || 24 };
+  }
+  function updateCount() {
+    if (countEl) countEl.textContent = labels.count(comments.length);
+  }
+  function renderBubbles() {
+    document.querySelectorAll('.report-comment-bubble').forEach(node => node.remove());
+    updateCount();
+    comments.forEach((comment, index) => {
+      const point = locate(comment);
+      const bubble = document.createElement('button');
+      bubble.type = 'button';
+      bubble.className = 'report-comment-bubble';
+      bubble.textContent = String(index + 1);
+      bubble.title = comment.text || 'comment';
+      bubble.style.left = Math.max(8, point.x - 12) + 'px';
+      bubble.style.top = Math.max(8, point.y - 12) + 'px';
+      bubble.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        openEditor(comment, point.x, point.y);
+      });
+      document.body.appendChild(bubble);
+    });
+  }
+  function setMode(nextMode) {
+    mode = nextMode;
+    body.classList.toggle('comment-mode', mode === 'comment');
+    readBtn.classList.toggle('active', mode === 'read');
+    commentBtn.classList.toggle('active', mode === 'comment');
+    closeEditor();
+    renderBubbles();
+  }
+  function openEditor(comment, x, y) {
+    draft = comment;
+    const isEdit = Boolean(comment.id);
+    titleEl.textContent = isEdit ? labels.edit : labels.add;
+    metaEl.textContent = isEdit ? labels.meta(comments.findIndex(item => item.id === comment.id) + 1) : '';
+    snippetEl.textContent = comment.anchorText || labels.target;
+    textarea.value = isEdit ? (comment.text || '') : '';
+    deleteBtn.style.display = isEdit ? '' : 'none';
+    saveBtn.textContent = isEdit ? labels.save : labels.publish;
+    const maxLeft = window.scrollX + window.innerWidth - 390;
+    const maxTop = window.scrollY + window.innerHeight - 260;
+    popover.style.left = Math.min(maxLeft, Math.max(window.scrollX + 12, x + 12)) + 'px';
+    popover.style.top = Math.min(maxTop, Math.max(window.scrollY + 12, y + 12)) + 'px';
+    popover.classList.add('open');
+    textarea.focus();
+  }
+  function closeEditor() {
+    draft = null;
+    popover.classList.remove('open');
+  }
+
+  readBtn?.addEventListener('click', () => setMode('read'));
+  commentBtn?.addEventListener('click', () => setMode('comment'));
+  window.addEventListener('resize', renderBubbles);
+  window.addEventListener('scroll', () => { if (mode === 'comment') renderBubbles(); }, { passive: true });
+
+  document.addEventListener('mouseover', (event) => {
+    if (mode !== 'comment') return;
+    const target = getTarget(event.target);
+    if (!target || target.closest(ignoredSelector)) return;
+    target.classList.add('commentable-hover');
+  });
+  document.addEventListener('mouseout', (event) => {
+    const target = event.target.closest?.('.commentable-hover');
+    if (target) target.classList.remove('commentable-hover');
+  });
+  document.addEventListener('click', (event) => {
+    if (mode !== 'comment') return;
+    if (event.target.closest(ignoredSelector)) return;
+    const target = getTarget(event.target);
+    if (!target) return;
+    event.preventDefault();
+    const data = targetData(target, event);
+    openEditor(data, event.pageX, event.pageY);
+  });
+  saveBtn.addEventListener('click', async () => {
+    const text = textarea.value.trim();
+    if (!text || !draft) return;
+    await saveComment({ ...draft, text });
+    closeEditor();
+  });
+  cancelBtn.addEventListener('click', closeEditor);
+  deleteBtn.addEventListener('click', async () => {
+    if (!draft?.id) return;
+    if (confirm(labels.confirmDelete)) {
+      await deleteComment(draft.id);
+      closeEditor();
+    }
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeEditor();
+  });
+
+  loadComments();
+  setMode('read');
+})();
+</script>
+</body></html>
